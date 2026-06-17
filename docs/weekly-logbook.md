@@ -77,7 +77,7 @@ Although useful, similar solutions already exist through Facebook groups and cam
 ### Evidence of Work
 
 - Opportunity scan file: docs/opportunity-scan.md
-- NUF scoring file: data/opportunity-scoring.xlsx
+- NUF scoring file: docs/opportunity-scan.md
 - Selected opportunity file: docs/selected-opportunity.md
 - GitHub issue screenshot: Added in repository evidence
 - Commit link: Latest Lab 02 commit in GitHub repository
