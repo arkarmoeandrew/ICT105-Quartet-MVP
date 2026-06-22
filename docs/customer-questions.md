@@ -1,51 +1,53 @@
-# Customer Questions
+# Customer Discovery Questions
 
-## Target Respondents
+## Project Title
 
-RSU students who have experience borrowing, lending, sharing, or searching for academic resources, equipment, or peer assistance.
+A Student Resource and Skill Sharing Platform for RSU
 
-## Interview Introduction
+## Target Respondent
 
-Thank you for participating in this interview. The purpose of this interview is to understand how students currently access academic resources, equipment, and peer support within the university community.
+RSU students who have experience searching for, borrowing, lending, or sharing academic resources, equipment, or peer support.
 
-## Current Behavior
+## Consent and Context
 
-1. Have you ever needed to borrow equipment, learning materials, or academic resources for your coursework or projects?
+1. May we ask you a few questions for our ICT105 course project?
 
-2. What types of resources did you need? (e.g., calculator, camera, textbook, Arduino kit, software, tutoring support)
+2. Your participation is voluntary. We will not collect unnecessary personal data. Is it okay if we take notes?
 
-3. How did you usually find these resources?
+## Recent Experience
 
-## Problems and Challenges
+3. Tell us about the last time you needed academic equipment, learning materials, or peer support for a course project.
 
-4. What difficulties did you experience when trying to find these resources?
+4. What resource or support were you trying to find at that time?
 
-5. Have you ever been unable to complete a task efficiently because you could not access the required resource?
+5. What happened from start to finish?
 
-6. How much time do you usually spend searching for equipment or assistance?
+## Current Workaround
 
-## Current Alternatives
+6. How do you usually solve or manage this problem now?
 
-7. Which platforms or methods do you currently use to find resources or ask for help?
+7. What platforms, apps, people, or methods do you currently use?
 
-8. What are the limitations of these methods?
+8. What is difficult, slow, confusing, risky, or frustrating about the current method?
 
-## Resource Sharing
+## Pain Severity and Consequence
 
-9. Do you own any equipment, resources, or skills that you would be willing to share with other students?
+9. How often does this problem happen?
 
-10. What concerns would you have about sharing your resources with others?
+10. How serious is this problem on a scale of 1 to 5? Why?
 
-## Solution Validation
+11. What happens if this problem is not solved?
 
-11. Would you use a university-exclusive platform that allows students to lend equipment, offer skills, and request resources?
+## Resource Sharing and Trust
 
-12. What features would be most valuable to you in such a platform?
+12. Do you own any equipment, resources, or skills that you would be willing to share with other students?
 
-13. Would student-email verification increase your trust in the platform?
+13. What concerns would you have about lending items or offering help to other students?
 
-14. How likely would you be to recommend such a platform to other students?
+14. Would student-email verification make you feel safer using a student-only sharing platform?
 
-## Consent Statement
+## Closing
 
-Participation is voluntary. Responses will be used only for educational and project-development purposes.
+15. Is there anything else we should understand about this problem?
+
+16. May we use your anonymized response as part of our course project evidence?
