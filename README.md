@@ -22,3 +22,18 @@ In Lab 02, we reviewed six possible IT opportunities, evaluated them using the N
 ## Next Step
 
 In Lab 03, we will prepare customer discovery questions, interview university students, collect evidence about the problem, and validate whether students need a dedicated campus resource-sharing platform.
+## Lab 03 Customer Discovery Findings
+
+The team conducted customer discovery interviews with RSU students to validate the selected opportunity.
+
+### Key Findings
+
+- Students frequently need temporary access to resources and equipment.
+- Students rely on friends, LINE groups, and Facebook groups.
+- Finding resources and skilled peers can take significant time.
+- Students prefer a trusted university-only platform.
+- Both resource sharing and skill sharing are valuable features.
+
+### Decision
+
+The team will continue developing RSUNexus as a student resource and skill-sharing platform.
