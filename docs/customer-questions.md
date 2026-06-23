@@ -2,7 +2,7 @@
 
 ## Project Title
 
-A Student Resource and Skill Sharing Platform for RSU
+RSUNexus: A Student Resource and Skill Sharing Platform for RSU
 
 ## Target Respondent
 
