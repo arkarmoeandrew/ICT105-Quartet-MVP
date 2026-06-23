@@ -116,9 +116,6 @@ The team will conduct customer discovery interviews with university students and
 - customer-discovery-summary.md
 
 ### Decision Made This Week
-
 Continue developing RSUNexus and focus on resource-sharing and skill-sharing features.
-
 ### Plan for Next Week
-
 Create wireframes and MVP prototype for RSUNexus.
