@@ -2,7 +2,7 @@
 
 ## Initial Problem Area
 
-University students frequently need short-term access to specialized tools, textbooks, equipment, or peer assistance, but finding available resources on campus is often difficult, time-consuming, and unorganized.
+University students frequently need short-term access to specialized tools, textbooks, equipment, or peer assistance, but finding available resources on campus is often difficult, time-consuming, and disorganized.
 
 ## Target Users
 
@@ -11,13 +11,13 @@ University students frequently need short-term access to specialized tools, text
 
 ## Selected IT Venture Direction
 
-Campus Equipment Lending & Student Services Marketplace
+RSU Nexus – Campus Resource Marketplace
 
-Our team selected a Campus Equipment Lending & Student Services Marketplace. The platform allows students to lend academic equipment, offer academic services, and request resources or assistance from other students within the campus community. The goal is to make campus resources and student services easier to discover, access, and manage.
+Our team selected a RSU Nexus – Campus Resource Marketplace. The platform allows students to lend academic equipment, offer academic services, and request resources or assistance from other students within the campus community. The goal is to make campus resources and student services easier to discover, access, and manage.
 
 ## Current Status
 
-In Lab 02, we reviewed six possible IT opportunities, evaluated them using the NUF (New, Useful, Feasible) scoring method, and selected the Campus Equipment Lending & Student Services Marketplace as our semester project opportunity.
+In Lab 02, we reviewed six possible IT opportunities, evaluated them using the NUF (New, Useful, Feasible) scoring method, and selected the RSU Nexus – Campus Resource Marketplace as our semester project opportunity.
 
 ## Next Step
 
