@@ -14,7 +14,7 @@ University students and campus club members.
 
 ## Problem Statement
 
-University students frequently need temporary access to academic equipment or student services for coursework and projects, but finding reliable providers on campus is often difficult, time-consuming, and unorganized.
+University students frequently need temporary access to academic equipment or student services for coursework and projects, but finding reliable providers on campus is often difficult, time-consuming, and disorganized.
 
 ### What problem does the user experience?
 
@@ -62,8 +62,6 @@ The MVP can be developed using HTML, CSS, JavaScript, and a simple database such
 
 Simple Web App Prototype
 
-- **Simple Web App Prototype** 
-
 ## Initial Validation Plan for Lab 03
 
 ### Who will the team ask?
@@ -79,4 +77,4 @@ University students and campus club members.
 
 ### What question must be answered first?
 
-Do university students experience enough difficulty borrowing academic equipment and finding student service providers to justify a dedicated campus equipment and student services marketplace?
+Do university students experience enough difficulty finding academic equipment and student services to justify a dedicated campus resource marketplace?
