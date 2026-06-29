@@ -2,20 +2,20 @@
 
 ## Selected Case
 
-RSUNexus – Campus Resource Sharing and Skill Exchange Platform
+RSU Nexus – Campus Equipment Lending & Student Services Marketplace
 
 ## Target Respondents
 
 | Respondent Type | Why This Respondent Matters | Planned Number | Actual Number |
 |---|---|---:|---:|
-| First-Year Students | Frequently need academic resources and campus guidance | 5 | 5 |
-| Senior Students | Often own resources and can provide assistance | 4 | 4 |
+| First-Year Students | Frequently need academic equiment and campus guidance | 5 | 5 |
+| Senior Students | Often own equiment and can provide assistance | 4 | 4 |
 | Student Club Members | Regularly borrow and share equipment | 3 | 3 |
-| Students with Technical Skills | Potential service providers on the platform | 3 | 3 |
+| Students Offering Services | Potential service providers on the platform | 3 | 3 |
 
 ## Observed / Reported Problem
 
-Students often struggle to find academic resources, equipment, and skilled peers when needed. Information is scattered across Facebook groups, LINE chats, Discord servers, and personal networks, making it difficult to discover available resources quickly and reliably.
+Students often struggle to find academic resources, equipment, and student services when needed. Information is scattered across Facebook groups, LINE chats, Discord servers, and personal networks, making it difficult to discover available resources quickly and reliably.
 
 ## Current Alternatives or Workarounds
 
@@ -33,7 +33,7 @@ Students often struggle to find academic resources, equipment, and skilled peers
 |---|---:|---|---|
 | Scattered information channels | 10 | Students search multiple chat groups before finding help | High |
 | No centralized resource directory | 9 | Students do not know who owns available equipment | High |
-| Difficulty finding skilled peers | 8 | Students struggle to find tutors or project partners | High |
+| Difficulty finding student services | 8 | Students struggle to find tutors or project partners | High |
 | Slow response times | 7 | Students wait hours or days for replies | Medium |
 | Limited visibility of campus resources | 6 | Equipment exists but students do not know about it | Medium |
 
@@ -44,7 +44,7 @@ Students often struggle to find academic resources, equipment, and skilled peers
 | Delayed assignment completion | Students cannot access required resources on time | Strong |
 | Increased project stress | Students spend extra time searching for help | Strong |
 | Underutilized campus resources | Equipment remains unused despite demand | Moderate |
-| Missed collaboration opportunities | Students cannot connect with capable peers | Moderate |
+| Unable to find needed services | Students cannot connect with capable peers | Moderate |
 
 ## Notes for MVP Direction
 
@@ -52,7 +52,7 @@ The MVP should focus on:
 
 - Student authentication using university email.
 - Resource and equipment listings.
-- Skill-sharing profiles.
+- Student service profiles
 - Search and filter functionality.
 - Borrow/request workflow.
 - Simple messaging or contact request system.
