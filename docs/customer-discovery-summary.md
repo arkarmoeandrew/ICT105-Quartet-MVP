@@ -2,7 +2,7 @@
 
 ## Project Title
 
-RSUNexus – Student Resource and Skill Sharing Platform
+RSU Nexus – Campus Equipment Lending & Student Services Marketplace
 
 ## Target Users Studied
 
