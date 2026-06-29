@@ -30,11 +30,11 @@ They post requests in social media groups, ask friends directly, or contact club
 
 ## Proposed IT Solution
 
-A web-based campus platform where students can list items they are willing to lend, offer skills they can provide, and submit requests for resources they need. The platform will include user accounts, listings, and a simple request and approval workflow.
+A web-based campus marketplace where students can lend equipment, offer professional services, and submit borrow or service requests. The platform includes verified student accounts, searchable listings, request management, and a simple approval workflow.
 
 ### What app, system, dashboard, or platform will the team develop?
 
-A Campus Item Lending & Skill Sharing Web Application.
+A Campus Equipment Lending & Student Services Marketplace Web Application.
 
 ## Why This Opportunity Was Selected
 
