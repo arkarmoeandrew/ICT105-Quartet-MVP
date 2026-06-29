@@ -2,7 +2,7 @@
 
 ## Selected Project Title
 
-Campus Item Lending & Skill Sharing Platform
+RSU Nexus – Campus Equipment Lending & Student Services Marketplace
 
 ## Target User
 
@@ -14,15 +14,15 @@ University students and campus club members.
 
 ## Problem Statement
 
-University students frequently need short-term access to specialized tools, textbooks, equipment, or peer assistance, but finding available resources on campus is often difficult, time-consuming, and unorganized.
+University students frequently need temporary access to academic equipment or skilled classmates for coursework and projects, but finding reliable resources on campus is often difficult, time-consuming, and unorganized.
 
 ### What problem does the user experience?
 
-Students often spend significant time searching through Facebook groups, Discord servers, and personal networks to find items or assistance. Information is scattered, requests are easily missed, and there is no centralized platform for resource sharing.
+Students often spend significant time searching through Facebook groups, Discord servers, and personal networks to find equipment or student services. Information is scattered, requests are easily missed, and there is no centralized campus marketplace for equipment and student services.
 
 ## Current Alternative
 
-Students currently rely on Facebook groups, Discord servers, friends, and personal networks to request items or assistance.
+Students currently rely on Facebook groups, Discord servers, LINE groups, friends, and personal networks to borrow equipment or find skilled classmates.
 
 ### How do users currently solve or manage this problem?
 
@@ -30,7 +30,7 @@ They post requests in social media groups, ask friends directly, or contact club
 
 ## Proposed IT Solution
 
-A web-based campus marketplace where students can lend equipment, offer professional services, and submit borrow or service requests. The platform includes verified student accounts, searchable listings, request management, and a simple approval workflow.
+A web-based campus marketplace where students can lend academic equipment, offer their skills or services, and submit borrow or service requests. The platform includes verified student accounts, searchable listings, request management, and a simple approval workflow.
 
 ### What app, system, dashboard, or platform will the team develop?
 
@@ -56,7 +56,7 @@ The project only requires a standard web application with authentication, databa
 
 ### Explain why the team can build or simulate the MVP using available tools.
 
-The MVP can be developed using React, Tailwind CSS, and Supabase. These technologies provide authentication, database functionality, and hosting capabilities that are sufficient for a working prototype.
+The MVP can be developed using HTML, CSS, JavaScript, and a simple database such as Supabase or Firebase if required. These technologies are sufficient for building a functional web application prototype.
 
 ## Possible MVP Type
 
@@ -75,8 +75,8 @@ University students and campus club members.
 - Student interviews
 - Survey responses
 - Examples of current borrowing requests
-- Evidence of resource-sharing difficulties on campus
+- Evidence of difficulties borrowing equipment and finding student services on campus
 
 ### What question must be answered first?
 
-Do university students experience enough difficulty finding academic tools, equipment, study materials, or peer assistance to justify a dedicated campus lending and skill-sharing platform?
+Do university students experience enough difficulty borrowing academic equipment and finding skilled classmates to justify a dedicated campus equipment and student services marketplace?
