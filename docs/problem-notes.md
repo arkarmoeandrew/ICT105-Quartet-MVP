@@ -8,8 +8,8 @@ RSU Nexus – Campus Resource Marketplace
 
 | Respondent Type | Why This Respondent Matters | Planned Number | Actual Number |
 |---|---|---:|---:|
-| First-Year Students | Frequently need academic equiment and campus guidance | 5 | 5 |
-| Senior Students | Often own equiment and can provide assistance | 4 | 4 |
+| First-Year Students | Frequently need academic equipment and campus guidance | 5 | 5 |
+| Senior Students | Often own equipment and can offer student services. | 4 | 4 |
 | Student Club Members | Regularly borrow and share equipment | 3 | 3 |
 | Students Offering Services | Potential service providers on the platform | 3 | 3 |
 
