@@ -11,29 +11,30 @@ University students frequently need short-term access to specialized tools, text
 
 ## Selected IT Venture Direction
 
-Campus Item Lending & Skill Sharing Platform
+Campus Equipment Lending & Student Services Marketplace
 
-Our team selected a Campus Item Lending & Skill Sharing Platform. The system will allow students to lend academic tools, share resources, offer skills, and request assistance from other students within the campus community. The platform aims to make resource sharing easier, faster, and more organized.
+Our team selected a Campus Equipment Lending & Student Services Marketplace. The platform allows students to lend academic equipment, offer academic services, and request resources or assistance from other students within the campus community. The goal is to make campus resources and student services easier to discover, access, and manage.
 
 ## Current Status
 
-In Lab 02, we reviewed six possible IT opportunities, evaluated them using the NUF (New, Useful, Feasible) scoring method, and selected the Campus Item Lending & Skill Sharing Platform as our semester project opportunity.
+In Lab 02, we reviewed six possible IT opportunities, evaluated them using the NUF (New, Useful, Feasible) scoring method, and selected the Campus Equipment Lending & Student Services Marketplace as our semester project opportunity.
 
 ## Next Step
 
-In Lab 03, we will prepare customer discovery questions, interview university students, collect evidence about the problem, and validate whether students need a dedicated campus resource-sharing platform.
+In Lab 03, we will prepare customer discovery questions, interview university students, collect evidence about the problem, and validate whether students need a dedicated campus equipment and student services marketplace.
+
 ## Lab 03 Customer Discovery Findings
 
 The team conducted customer discovery interviews with RSU students to validate the selected opportunity.
 
 ### Key Findings
 
-- Students frequently need temporary access to resources and equipment.
-- Students rely on friends, LINE groups, and Facebook groups.
-- Finding resources and skilled peers can take significant time.
+- Students frequently need temporary access to academic equipment and learning resources.
+- Students usually rely on friends, LINE groups, and Facebook groups.
+- Finding equipment or students offering academic services takes significant time.
 - Students prefer a trusted university-only platform.
-- Both resource sharing and skill sharing are valuable features.
+- Students value both equipment lending and student service features.
 
 ### Decision
 
-The team will continue developing RSUNexus as a student resource and skill-sharing platform.
+The team will continue developing RSUNexus as a Campus Equipment Lending and Student Services Marketplace.
