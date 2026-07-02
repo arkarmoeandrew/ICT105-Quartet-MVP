@@ -118,3 +118,111 @@ The team will conduct customer discovery interviews with university students and
 ### Decision Made This Week
 Continue developing RSU Nexus – Campus Resource Marketplace and focus on equipment listings, student services, and request management features.### Plan for Next Week
 Create wireframes and MVP prototype for RSUNexus.
+
+# Lab 04 - Weekly Logbook
+
+## Group Information
+
+- **Course:** ICT105 Fundamental Technology Entrepreneurship
+- **Lab:** Lab 04 - User Persona, Requirements, and User Stories
+- **Group Name:** Quartet
+- **Repository Link:** https://github.com/arkarmoeandrew/ICT105-Quartet-MVP.git
+- **Date:** 2026-06-30
+
+---
+
+## 1. Work Completed Today
+
+| Member Name | Contribution | GitHub Evidence (Commit/Issue/PR Link) |
+|---|---|---|
+| Lin Htet Aung | Updated README.md for Lab 04, reviewed project consistency, and organized GitHub documentation. | Issue: Update README and weekly logbook for Lab 04 |
+| Thiri Shin Thant | Created the user persona based on Lab 03 customer discovery evidence. | Issue: Create user persona based on Lab 03 evidence |
+| Arkar Moe | Wrote user stories, acceptance criteria, and helped prioritize MVP features. | Issue: Write user stories and acceptance criteria |
+| Min Khant Ko | Created the user flow diagram and use case diagram for RSU Nexus. | Issue: Create user flow and use case diagram |
+
+---
+
+## 2. Main Decisions
+
+- **Primary target user:** RSU students who need temporary access to academic equipment, learning resources, or student services for coursework and projects.
+
+- **Main persona:** Andrew, Year 2 Computer Science Student.
+
+- **Most important problem:** Students have difficulty finding academic equipment and student services because information is scattered across LINE groups, Facebook groups, Discord, friends, seniors, and personal networks.
+
+- **Must-have requirements:**
+  - Clear homepage / landing screen
+  - RSU student login
+  - Create resource listing
+  - Search and filter marketplace
+  - View listing details
+  - Submit borrow or service request
+  - Availability / request status
+  - Validation and error messages
+  - Confirmation / feedback messages
+  - Admin listing review
+  - Mobile-friendly interface
+  - Basic privacy and verified student access
+
+- **Features included in MVP:**
+  - RSU student login
+  - Browse marketplace
+  - Create resource listing
+  - Search and filter listings
+  - View listing details
+  - Contact resource owner
+  - Availability status
+  - Admin listing review
+  - Dashboard / summary view
+  - Validation and confirmation messages
+
+- **Features postponed:**
+  - Full private real-time messaging
+  - Online payment system
+  - Booking / reservation system
+  - Ratings and reviews
+  - Advanced notifications
+
+---
+
+## 3. Requirement Changes / Clarifications
+
+During Lab 04, the team clarified that the official project title is:
+
+**RSU Nexus – Campus Resource Marketplace**
+
+The project was refined from a general resource-sharing idea into a campus marketplace concept. The platform now focuses on:
+
+- Academic equipment lending
+- Learning resource discovery
+- Student service listings
+- Borrow/service request workflow
+- Verified RSU student access
+
+The team also clarified that full private chat, online payment, booking, and ratings are future features and will not be included in the first MVP prototype.
+
+---
+
+## 4. Problems Encountered
+
+- **Technical problem:**  
+  The team had to align the system requirements with the lecturer’s FR-01 to FR-16 minimum prototype requirements while keeping the MVP realistic.
+
+- **Team coordination problem:**  
+  The team needed to divide Lab 04 tasks clearly between persona writing, requirements writing, user stories, MVP feature list, and diagram creation.
+
+- **Evidence/requirement problem:**  
+  Some earlier documents used terms such as “skill sharing” and “resource sharing.” The team updated the wording to match the final project direction: **Campus Resource Marketplace**, **student services**, and **equipment lending**.
+
+---
+
+## 5. Next Actions Before Lab 05
+
+| Task | Owner | Deadline | GitHub Issue |
+|---|---|---|---|
+| Finalize homepage and main marketplace UI | Arkar Moe | Before Lab 05 | Issue: Prioritize MVP features |
+| Complete user persona and check evidence connection | Lin Htet Aung | Before Lab 05 | Issue: Create user persona based on Lab 03 evidence |
+| Finalize user stories and acceptance criteria | Thiri Shin That | Before Lab 05 | Issue: Write user stories and acceptance criteria |
+| Export and upload user flow and use case diagrams | Min Khnant Ko | Before Lab 05 | Issue: Create user flow and use case diagram |
+| Review all Lab 04 files for consistency | All Members | Before Lab 05 | Issue: Review requirement traceability before final submission |
+| Commit all Lab 04 documentation to GitHub | All Members | Before Lab 05 | Issue: Update README and weekly logbook for Lab 04 |
