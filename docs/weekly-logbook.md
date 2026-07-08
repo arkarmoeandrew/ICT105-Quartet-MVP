@@ -226,3 +226,98 @@ The team also clarified that full private chat, online payment, booking, and rat
 | Export and upload user flow and use case diagrams | Min Khnant Ko | Before Lab 05 | Issue: Create user flow and use case diagram |
 | Review all Lab 04 files for consistency | All Members | Before Lab 05 | Issue: Review requirement traceability before final submission |
 | Commit all Lab 04 documentation to GitHub | All Members | Before Lab 05 | Issue: Update README and weekly logbook for Lab 04 |
+
+## Lab 05: Wireframes and Prototype Planning
+
+### What We Completed
+
+1. Created the product concept for RSU Nexus – Campus Resource Marketplace.
+2. Prepared the feature–requirement mapping.
+3. Created the wireframe specification and usability checklist.
+4. Designed the six required wireframes:
+   - Homepage
+   - Resource Listing Form
+   - Marketplace Listing
+   - Resource Detail View
+   - Dashboard
+   - Admin Dashboard
+5. Created the user flow diagram.
+6. Updated the GitHub documentation and README.
+
+### What We Learned
+
+1. How to design low-fidelity wireframes based on user requirements.
+2. How to connect wireframes with functional requirements and user stories.
+3. The importance of consistent navigation and user interface design.
+
+### Problems or Difficulties
+
+1. Ensuring every wireframe matched the functional requirements.
+2. Keeping the interface consistent across all prototype screens.
+3. Deciding which features should remain outside the MVP scope.
+
+### Evidence of Work
+
+- product-concept.md
+- feature-requirement-mapping.md
+- wireframe-specification.md
+- wireframe-usability-checklist.md
+- user-flow.png
+- homepage.png
+- input-form.png
+- record-list.png
+- detail-view.png
+- dashboard.png
+- admin-view.png
+
+### Decision Made This Week
+
+The team finalized the complete wireframe design for the RSU Nexus – Campus Resource Marketplace and confirmed that every screen supports the MVP features defined in Lab 04.
+
+### Plan for Next Week
+
+For Lab 06, the team will prepare the Business Model Canvas, Feature–Value Mapping, Technical Architecture, Data Structure, System Architecture Diagram, Data Flow Diagram, and sample dataset for the final prototype.
+
+## Lab 06: Business Model and Technical Design
+
+### What We Completed
+
+1. Created the Business Model Canvas.
+2. Completed the Feature–Value Mapping.
+3. Designed the Technical Architecture.
+4. Defined the project Data Structure.
+5. Created the System Architecture Diagram.
+6. Created the Data Flow Diagram.
+7. Prepared sample records for the prototype.
+8. Updated the GitHub documentation and README.
+
+### What We Learned
+
+1. How business models support software projects.
+2. How technical architecture connects system components.
+3. How data structures support the MVP features.
+4. The importance of planning before implementation.
+
+### Problems or Difficulties
+
+1. Selecting a simple architecture suitable for the project scope.
+2. Designing a data structure that supports all required features.
+3. Mapping MVP features to user value and operational value.
+
+### Evidence of Work
+
+- business-model-canvas.md
+- feature-value-mapping.md
+- technical-architecture.md
+- data-structure.md
+- system-architecture.png
+- data-flow.png
+- sample-records.csv
+
+### Decision Made This Week
+
+The team finalized the business model, technical architecture, system design, and data structure for the RSU Nexus – Campus Resource Marketplace. These documents provide the foundation for implementing the final prototype.
+
+### Plan for Next Week
+
+For the next phase, the team will begin developing the final web prototype, integrate the frontend with Supabase, implement the MVP features, and test the complete user workflow.
