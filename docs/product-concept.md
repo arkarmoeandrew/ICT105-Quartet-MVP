@@ -1,36 +1,60 @@
-# Product Concept
+Product Concept
 
-## Project Title
+1. Project Title
+
 RSU Nexus – Campus Resource Marketplace
 
-## Target Users
-- RSU Students
-- Campus Club Members
+2. Target User
 
-## Problem
-Students have difficulty finding academic resources, equipment, and student services. They usually rely on Facebook groups, Discord servers, or personal contacts, making it slow and unreliable.
+Primary user: RSU students who want to lend, borrow, share, or exchange academic resources and everyday campus items.
 
-## Proposed Solution
-RSU Nexus is a web-based marketplace where verified RSU students can create listings, search for resources, and contact resource owners using their RSU accounts.
+Secondary user: System administrator who manages listings, monitors user activities, and removes inappropriate or inactive listings.
 
-## Value Proposition
-- Verified RSU users only
-- Easy resource discovery
-- Fast search and filtering
-- Simple communication between students
-- Secure campus-only marketplace
+⸻
 
-## MVP Scope
-- RSU Login
-- Create Resource Listing
-- Search & Filter Listings
-- View Listing Details
-- Contact Resource Owner
-- Manage My Listings
+3. Problem Statement
 
-## Out of Scope
-- Online payment
-- Reservation system
-- Private messaging/chat
-- Rating & review system
-- Push notifications
+RSU students often need to borrow or share textbooks, calculators, lab equipment, and other useful resources, but there is no centralized platform for finding available items. Existing methods rely on social media, chat groups, or word of mouth, making it difficult to discover, manage, and track shared resources efficiently.
+
+⸻
+
+4. Proposed IT Product
+
+A web-based campus resource marketplace that allows RSU students to create resource listings, browse and search available resources, view listing details, contact resource owners, and manage their own listings. The system also provides basic administrative functions to manage marketplace content.
+
+⸻
+
+5. Core Value Proposition
+
+The system provides a centralized, searchable, and easy-to-use marketplace that helps RSU students share campus resources more efficiently, reduces unnecessary purchases, and encourages collaboration within the university community.
+
+⸻
+
+6. MVP Scope
+
+The MVP will focus on:
+
+* User registration and login
+* Create resource listings
+* Browse marketplace listings
+* Search and filter resources
+* View listing details
+* Contact resource owners
+* Manage personal listings
+* Resource status tracking (Available, Reserved, Unavailable)
+* Basic admin management of listings
+* Responsive user interface
+
+⸻
+
+7. Out of Scope for Current Semester
+
+* Real-time private messaging (chat)
+* Online payment system
+* Identity verification beyond RSU account login
+* AI-based resource recommendations
+* Native Android/iOS mobile application
+* Push notifications
+* Rating and review system
+* QR code or barcode integration
+* 
