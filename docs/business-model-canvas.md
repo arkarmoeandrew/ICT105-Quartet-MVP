@@ -1,7 +1,7 @@
 # Business Model Canvas
 
 ## Project Title
-Campus Resource Sharing Platform
+Campus Resource Marketplace
 
 ## 1. Customer Segments
 - Students
