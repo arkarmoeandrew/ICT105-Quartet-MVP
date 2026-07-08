@@ -108,3 +108,113 @@ The primary target user of **RSU Nexus – Campus Resource Marketplace** is an R
 ### GitHub Contribution Evidence
 
 All members contributed to this repository through commits, issues, documentation updates, diagrams, or requirement preparation. During Lab 04, the team completed the user persona, system requirements, user stories, MVP feature list, user flow diagram, use case diagram, and README update for **RSU Nexus – Campus Resource Marketplace**.
+# Lab 05: Wireframes and Prototype Planning
+
+In Lab 05, our team designed low-fidelity wireframes for the **RSU Nexus – Campus Resource Marketplace**. These wireframes represent the core screens of the MVP and ensure that every screen is traceable to the system requirements, user stories, and MVP feature list developed in Lab 04.
+
+### Wireframe Screens
+
+The following wireframes were prepared for the final prototype:
+
+- **Homepage** – Displays the project overview, target users, navigation, and main actions.
+- **Resource Listing Form** – Allows students to create a new resource listing with validation.
+- **Marketplace Listing** – Displays available resources with search and category filtering.
+- **Resource Detail View** – Shows detailed information and the availability status of a selected resource.
+- **Dashboard** – Displays a summary of marketplace statistics and resource information.
+- **Admin Dashboard** – Allows administrators to manage listings and update resource status.
+
+### User Flow
+
+The user flow demonstrates the primary workflow of the system:
+
+> Homepage → Login → Browse Marketplace → Search Resources → View Resource Details → Contact Resource Owner → Manage Listings
+
+### Deliverables Completed
+
+The following Lab 05 deliverables were completed:
+
+| Deliverable | Status |
+|---|---|
+| Product Concept | ✅ Completed |
+| Feature–Requirement Mapping | ✅ Completed |
+| Wireframe Specification | ✅ Completed |
+| Wireframe Usability Checklist | ✅ Completed |
+| User Flow Diagram | ✅ Completed |
+| Homepage Wireframe | ✅ Completed |
+| Resource Listing Form Wireframe | ✅ Completed |
+| Marketplace Wireframe | ✅ Completed |
+| Resource Detail Wireframe | ✅ Completed |
+| Dashboard Wireframe | ✅ Completed |
+| Admin Dashboard Wireframe | ✅ Completed |
+| Weekly Logbook Update | ✅ Completed |
+
+### Wireframe Files
+
+- `wireframes/homepage.png`
+- `wireframes/input-form.png`
+- `wireframes/record-list.png`
+- `wireframes/detail-view.png`
+- `wireframes/dashboard.png`
+- `wireframes/admin-view.png`
+
+### Diagram
+
+- `diagrams/user-flow.png`
+
+### GitHub Contribution Evidence
+
+During Lab 05, the team completed the product concept, feature–requirement mapping, wireframe specification, usability checklist, user flow diagram, and all required wireframes for the **RSU Nexus – Campus Resource Marketplace**. These deliverables ensure that the final prototype follows the defined requirements and MVP scope.
+# Lab 06: Business Model and Technical Design
+
+In Lab 06, our team defined the business model and technical design for the **RSU Nexus – Campus Resource Marketplace**. We prepared the business model canvas, mapped MVP features to user and operational value, designed the system architecture and data flow, defined the data structure, and created a sample dataset to support the final prototype.
+
+### Business Model Summary
+
+The platform provides a centralized marketplace where RSU students can share and discover campus resources. The MVP focuses on improving resource accessibility, reducing unnecessary purchases, and encouraging collaboration within the university community.
+
+### Technical Design Summary
+
+The final prototype will be developed as a web application using **HTML, CSS, and JavaScript** for the frontend and **Supabase** for authentication and data storage. The system architecture and data flow diagrams illustrate how users interact with the platform and how resource information is managed.
+
+### Data Structure Summary
+
+The prototype includes three main entities:
+
+- **Users** – RSU student accounts
+- **Resources** – Campus resource listings
+- **Requests** – Borrow and reservation requests
+
+A sample dataset was prepared to support prototype development and testing.
+
+### Deliverables Completed
+
+| Deliverable | Status |
+|---|---|
+| Business Model Canvas | ✅ Completed |
+| Feature–Value Mapping | ✅ Completed |
+| Technical Architecture | ✅ Completed |
+| Data Structure | ✅ Completed |
+| System Architecture Diagram | ✅ Completed |
+| Data Flow Diagram | ✅ Completed |
+| Sample Dataset | ✅ Completed |
+| Weekly Logbook Update | ✅ Completed |
+
+### Documentation
+
+- `docs/business-model-canvas.md`
+- `docs/feature-value-mapping.md`
+- `docs/technical-architecture.md`
+- `docs/data-structure.md`
+
+### Diagrams
+
+- `diagrams/system-architecture.png`
+- `diagrams/data-flow.png`
+
+### Dataset
+
+- `data/sample-records.csv`
+
+### GitHub Contribution Evidence
+
+During Lab 06, the team completed the business model canvas, feature–value mapping, technical architecture, data structure, system architecture diagram, data flow diagram, and sample dataset for the **RSU Nexus – Campus Resource Marketplace**. These deliverables provide the foundation for implementing the final MVP in the next development phase.
