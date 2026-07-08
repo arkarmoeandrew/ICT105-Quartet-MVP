@@ -1,1 +1,15 @@
+flowchart LR
+    U[Main User] --> HOME[Homepage]
+    HOME --> LIST[Browse Resources]
+    HOME --> FORM[Create Listing]
+    FORM --> STORE[(Data Storage)]
+    STORE --> LIST
+    LIST --> SEARCH[Search / Filter]
+    SEARCH --> DETAIL[Resource Detail]
+    DETAIL --> CONTACT[Contact Owner]
+    STORE --> DASH[Dashboard / Summary]
 
+    ADMIN[Admin / Manager] --> ADMINP[Admin Panel]
+    ADMINP --> STORE
+    ADMINP --> STATUS[Update Resource Status]
+    STATUS --> STORE
