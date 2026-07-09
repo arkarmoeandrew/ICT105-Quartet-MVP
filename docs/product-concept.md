@@ -41,7 +41,7 @@ The MVP will focus on:
 * View listing details
 * Contact resource owners
 * Manage personal listings
-* Resource status tracking (Available, Reserved, Unavailable)
+* Resource status tracking (Available, Unavailable)
 * Basic admin management of listings
 * Responsive user interface
 
