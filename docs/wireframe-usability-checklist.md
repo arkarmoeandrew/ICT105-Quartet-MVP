@@ -1,6 +1,5 @@
 # Wireframe Usability Review Checklist
 
-Use this checklist before submitting Lab 05.
 
 | Check Item | Yes/No | Evidence or Screenshot |
 |---|---|---|
