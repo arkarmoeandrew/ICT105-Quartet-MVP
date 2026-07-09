@@ -53,10 +53,10 @@ Students currently solve the problem by:
 ## What We Must Revise
 
 - Add student verification using RSU email accounts.
-- Include both resource-sharing and skill-sharing features.
-- Improve trust through user profiles and activity history.
-- Focus on high-demand resources and services during the MVP stage.
-- Design a simple and searchable platform interface.
+- Support both resource sharing and student service listings.
+- Improve trust through user profiles, ratings, and activity history.
+- Focus on high-demand resources and student services for the MVP.
+- Design a simple, searchable, and user-friendly marketplace interface.
 
 ## Decision for Next Lab
 
