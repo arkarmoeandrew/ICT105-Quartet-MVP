@@ -33,9 +33,9 @@ The prototype is not intended to generate direct revenue. Its value comes from:
 ## 6. Key Resources
 - Development team members.
 - HTML, CSS, JavaScript, and PHP.
-- MySQL database.
+- Supabase.
 - GitHub repository.
-- Figma for UI/UX design.
+- Claude Design for UI/UX Design.
 - Web hosting and internet connection.
 
 ## 7. Key Activities
