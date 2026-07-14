@@ -338,10 +338,10 @@ The team finalized the business model, technical architecture, system design, an
 
 | Member Name | Contribution | Evidence/Commit/Issue Link |
 |---|---|---|
-|Lin Htet Aung| Reviewed the previous project requirements and helped prepare the MVP experiment objective, scope, test users, and testing procedure. | `/docs/mvp-experiment-plan.md` |
-|Thiri Shin Thant| Identified and documented the main assumptions that could affect the success of RSU Nexus. | `/docs/critical-assumptions.md` |
-|Arkar Moe| Prepared the tester scenario, usability-testing tasks, observation notes, and tester feedback questions. | `/docs/experiment-script.md`, `/docs/feedback-form.md` |
-|Min Khant Ko| Defined the experiment success metrics and decision rules, updated the README, and completed the Lab 07 weekly logbook. | `/docs/success-metrics.md`, `/docs/weekly-logbook.md`, `/README.md` |
+|Lin Htet Aung| Defined the measurable success metrics and decision rules for evaluating the MVP experiment. Also compiled the Lab 07 weekly logbook and recorded the team’s completed work, decisions, problems, and next actions. | `/docs/success-metrics.md`, /docs/weekly-logbook.md |
+|Thiri Shin Thant| Prepared the MVP experiment plan, including the experiment objective, requirement scope, experiment type, target testers, testing procedure, and expected learning. Also created the tester feedback form. | `/docs/mvp-experiment-plan.md`, /docs/feedback-form.md |
+|Arkar Moe| Identified and documented the critical assumptions that could affect the success of RSU Nexus. Also prepared the experiment script, including the test scenario, user tasks, observation notes, and closing questions. | `/docs/critical-assumptions.md`, /docs/experiment-script.md |
+|Min Khant Ko| Prepared the Lab 07 README update content, including the experiment objective, top assumptions, experiment type, success metrics, files added, and connection to the final prototype. Updated the project README with the Lab 07 section. | `/docs/readme-update-template.md`, /README.md |
 
 ## Key Decisions
 
