@@ -318,6 +318,54 @@ For Lab 06, the team will prepare the Business Model Canvas, Feature–Value Map
 
 The team finalized the business model, technical architecture, system design, and data structure for the RSU Nexus – Campus Resource Marketplace. These documents provide the foundation for implementing the final prototype.
 
+# Weekly Logbook - Lab 07
+
+## Group Information
+- **Group name:** Quartet
+- **Project title:** RSU Nexus – Campus Resource Marketplace
+- **Date:** 14 July 2026
+- **Repository link:** https://github.com/arkarmoeandrew/ICT105-Quartet-MVP
+
+## What We Completed Today
+- [x] Reviewed requirements, user stories, MVP features, architecture, and wireframes
+- [x] Identified critical assumptions
+- [x] Selected MVP experiment type
+- [x] Defined test users and success metrics
+- [x] Prepared experiment script and feedback form
+- [x] Updated GitHub repository and README
+
+## Member Contributions
+
+| Member Name | Contribution | Evidence/Commit/Issue Link |
+|---|---|---|
+|Lin Htet Aung| Reviewed the previous project requirements and helped prepare the MVP experiment objective, scope, test users, and testing procedure. | `/docs/mvp-experiment-plan.md` |
+|Thiri Shin Thant| Identified and documented the main assumptions that could affect the success of RSU Nexus. | `/docs/critical-assumptions.md` |
+|Arkar Moe| Prepared the tester scenario, usability-testing tasks, observation notes, and tester feedback questions. | `/docs/experiment-script.md`, `/docs/feedback-form.md` |
+|Min Khant Ko| Defined the experiment success metrics and decision rules, updated the README, and completed the Lab 07 weekly logbook. | `/docs/success-metrics.md`, `/docs/weekly-logbook.md`, `/README.md` |
+
+## Key Decisions
+
+| Decision | Reason | Evidence/Requirement Link |
+|---|---|---|
+| Test the main workflow from searching for a listing to submitting a request. | This is the primary workflow that demonstrates whether RSU Nexus can help students find and request campus resources or services. | `/docs/mvp-experiment-plan.md` |
+| Use an interactive web prototype and form-based simulation. | Testers need to interact with realistic pages, listings, forms, search controls, and request statuses. | `/docs/mvp-experiment-plan.md` |
+| Use RSU students as the main test-user group. | RSU students are the primary users of the proposed campus resource marketplace. | `/docs/mvp-experiment-plan.md` |
+| Test the assumptions about user need, platform usefulness, and workflow clarity. | These assumptions could cause the final prototype to fail if they are incorrect. | `/docs/critical-assumptions.md` |
+| Use an 80% task-success target and an average usability score of 4 out of 5. | These targets provide measurable evidence for deciding whether the design should continue or be revised. | `/docs/success-metrics.md` |
+| Collect both quantitative ratings and qualitative comments. | Ratings measure usability, while comments help identify specific problems and improvements. | `/docs/feedback-form.md` |
+| Keep advanced payments, complex booking, and real-time chat outside the MVP experiment. | These features are not necessary to validate the main resource-discovery and request workflow. | `/docs/mvp-experiment-plan.md` |
+
+## Problems and Next Action
+
+| Problem | Next Action | Responsible Member |
+|---|---|---|
+| The prototype has not yet been tested with the target users. | Recruit at least five RSU students and conduct the usability experiment. | Member 1 and Member 3 |
+| Search, filtering, and request submission may not be clear to every tester. | Observe testers while they complete the experiment tasks and record errors or requests for assistance. | Member 2 and Member 3 |
+| Availability and request-status labels may be confusing. | Ask testers to explain the meaning of each status and revise unclear labels. | Member 2 |
+| Tester results have not yet been collected and analyzed. | Calculate task-completion rates, usability ratings, and other success metrics after testing. | Member 1 and Member 4 |
+| The prototype may require changes after user testing. | Prioritize the identified usability problems and update the prototype before the implementation sprint. | All Members |
+| Actual member names and GitHub evidence links are still missing. | Replace the placeholders with the members’ names and add the relevant commit links before submission. | All Members |
+
 ### Plan for Next Week
 
 For the next phase, the team will begin developing the final web prototype, integrate the frontend with Supabase, implement the MVP features, and test the complete user workflow.
