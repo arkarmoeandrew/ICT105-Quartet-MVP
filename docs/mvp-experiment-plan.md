@@ -8,7 +8,7 @@
   
 ## 2. Experiment Objective
 
-> We want to test whether RSU students can independently search for a campus resource or student service, understand the listing information, submit a request, and identify its current status.
+We want to test whether RSU students can independently search for a campus resource or student service, understand the listing information, submit a request, and identify its current status.
 
 ## 3. Requirement Scope for the Experiment
 
