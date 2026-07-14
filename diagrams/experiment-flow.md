@@ -1,5 +1,7 @@
 flowchart TD
+   
     A[Review RSU Nexus Requirements, User Stories, MVP Features, Architecture, and Wireframes]
+    
     --> B[Identify Critical Assumptions]
 
     B --> C[Select Interactive Web Prototype and Form-Based Testing]
