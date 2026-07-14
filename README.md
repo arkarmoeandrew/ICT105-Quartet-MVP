@@ -218,3 +218,73 @@ A sample dataset was prepared to support prototype development and testing.
 ### GitHub Contribution Evidence
 
 During Lab 06, the team completed the business model canvas, feature–value mapping, technical architecture, data structure, system architecture diagram, data flow diagram, and sample dataset for the **RSU Nexus – Campus Resource Marketplace**. These deliverables provide the foundation for implementing the final MVP in the next development phase.
+
+
+## Lab 07: MVP Experiment Design
+
+### Experiment Objective
+The objective of this experiment is to test whether RSU students can use the RSU Nexus prototype to find academic equipment, learning resources, or student services, understand listing details and availability, and submit a request without assistance before deeper system implementation.
+
+### Critical Assumptions
+1. RSU students experience difficulty finding reliable campus resources and student services through scattered channels such as Facebook, LINE, Discord, and personal networks.
+2. Students will find a centralized and searchable campus marketplace more useful than relying on informal communication channels.
+3. Students can understand the listing categories, search and filter functions, availability labels, and request-status workflow without significant assistance.
+
+### MVP Experiment Type
+The selected experiment type is an **interactive web prototype with form-based usability testing**.
+
+This experiment type fits RSU Nexus because testers can interact with realistic screens and complete the main workflow:
+
+**Homepage → Browse/Search → View Listing Details → Submit Request → Check Request Status**
+
+The prototype will use HTML, CSS, and JavaScript for the frontend, Supabase for authentication and database services, and Vercel for deployment. This allows the team to test the core user experience using a live and accessible prototype before completing all advanced features.
+
+### Success Metrics
+- At least **80%** of testers can correctly explain the purpose of RSU Nexus after viewing the homepage.
+- At least **80%** of testers can successfully find a target resource or service using search and filters.
+- At least **80%** of testers can complete the main request workflow without assistance.
+- At least **80%** of testers can correctly understand listing availability and request-status labels.
+- At least **80%** of submitted listing forms contain valid and complete information.
+- The average usability rating is at least **4 out of 5**.
+- The average feature usefulness rating is at least **4 out of 5**.
+- At least **80%** of testers indicate that they would consider using RSU Nexus if it were available.
+
+### Files Added in Lab 07
+- /docs/mvp-experiment-plan.md
+- /docs/critical-assumptions.md
+- /docs/experiment-script.md
+- /docs/success-metrics.md
+- /docs/feedback-form.md
+- /docs/weekly-logbook.md
+
+### Connection to Final Prototype
+The Lab 07 experiment will help the team validate the main problem, critical assumptions, user workflow, and usability of RSU Nexus before deeper implementation. The testing results will show whether students can understand the platform, find suitable listings, submit requests, and follow request statuses successfully.
+
+Feedback from testers will be used to improve navigation, search and filter controls, listing information, form validation, availability labels, request-status labels, and overall interface clarity. Features that meet the success targets will continue to the implementation sprint, while features that do not meet the targets will be revised and tested again.
+
+This process will reduce development risk and help ensure that the final RSU Nexus prototype meets the real needs of RSU students.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
