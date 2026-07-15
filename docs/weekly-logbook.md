@@ -369,3 +369,49 @@ The team finalized the business model, technical architecture, system design, an
 ### Plan for Next Week
 
 For the next phase, the team will begin developing the final web prototype, integrate the frontend with Supabase, implement the MVP features, and test the complete user workflow.
+
+# Weekly Logbook – Lab 08
+
+## Group Information
+- Group name: Quartet
+- Project title: RSU Nexus – Campus Resource Marketplace
+- Repository link: https://github.com/arkarmoeandrew/ICT105-Quartet-MVP
+- Lab date: 15 July 2026
+
+## Work Completed Today
+- [x] Reviewed Lab 07 MVP experiment plan
+- [x] Prepared validation dataset structure
+- [x] Created or updated analytics sheet
+- [x] Wrote customer validation summary
+- [x] Wrote analytics insights
+- [x] Wrote MVP decision
+- [x] Updated README
+- [x] Created GitHub issues for prototype improvements
+
+## Member Contributions
+
+| Member Name | Contribution | GitHub Evidence |
+|---|---|---|
+| Min Khant Ko | Prepared the validation dataset structure and completed the raw validation data in CSV and XLSX formats. | `/data/validation-results.csv`, `/data/validation-results.xlsx` |
+| Lin Htet Aung | Prepared the customer validation summary, wrote the MVP decision, and created GitHub issues for prototype improvements. | `/docs/customer-validation-summary.md`, `/docs/mvp-decision.md`, GitHub Issues |
+| Thiri Shin Thant Ko | Prepared the test-user notes, analyzed the validation metrics, identified confusion points, and wrote the analytics insights. | `/docs/test-user-notes.md`, `/docs/analytics-insights.md` |
+| Arkar Moe | Updated the README and completed the Lab 08 weekly logbook. | `/README.md`, `/docs/weekly-logbook.md`, `/screenshots/lab08-powerbi-dashboard.png` |
+
+## Problems Found
+- Search and filter controls were not clear enough for some users, especially on mobile devices.
+- Some users did not understand the difference between Pending and Approved request statuses.
+- Form-validation messages were not noticeable enough.
+- Listing details did not always clearly explain availability, borrowing duration, pricing, or exchange arrangements.
+- Contact Provider and Request Resource buttons caused confusion.
+- The admin dashboard needed clearer filters for pending and inactive listings.
+- Personal contact information should not be displayed publicly.
+
+## Next Actions
+- Improve category labels and make mobile filters more visible.
+- Add clear explanations for availability and request-status labels.
+- Display validation messages directly below invalid form fields.
+- Improve listing details for borrowing, pricing, exchange, and availability.
+- Make request and contact buttons more clearly different.
+- Improve admin dashboard filtering and management controls.
+- Protect personal information by using private in-platform messaging.
+- Update the prototype based on the validation findings before the next lab.
