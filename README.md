@@ -264,6 +264,48 @@ Feedback from testers will be used to improve navigation, search and filter cont
 
 This process will reduce development risk and help ensure that the final RSU Nexus prototype meets the real needs of RSU students.
 
+# README Update – Lab 08
+
+## Lab 08: Customer Validation and Analytics Sheet
+
+### Validation Objective
+The objective of the validation exercise was to evaluate whether RSU students could use the RSU Nexus prototype to search for academic equipment, learning resources, and student services, understand listing details, submit requests, and follow request statuses.
+
+The group also evaluated the usability of the create-listing form, admin dashboard, mobile filtering, form validation, privacy handling, and confirmation messages.
+
+### Prototype Version Tested
+- Version: v0.1
+- Link: https://github.com/arkarmoeandrew/ICT105-Quartet-MVP
+- Screenshots: `/screenshots/validation-test-screens.png`
+
+### Analytics Summary
+
+| Metric | Result |
+|---|---:|
+| Total test users | 12 |
+| Task success rate | 83.3% |
+| Average feedback score | 4.17 out of 5 |
+| Average interest level | 4.25 out of 5 |
+| Main confusion point | Search and filtering |
+
+### MVP Decision
+**Continue with minor revisions.**
+
+The RSU Nexus prototype achieved an 83.3% task-success rate, which exceeded the Lab 07 target of 80%. The average feedback score was 4.17 out of 5, and the average interest level was 4.25 out of 5.
+
+These results support continuing with the RSU Nexus campus marketplace concept. However, the team will revise search and filter visibility, request-status explanations, form-validation messages, listing details, request-button wording, admin controls, mobile responsiveness, and privacy handling before deeper implementation.
+
+### Files Added
+- `/data/validation-results.xlsx`
+- `/data/validation-results.csv`
+- `/docs/customer-validation-summary.md`
+- `/docs/analytics-insights.md`
+- `/docs/mvp-decision.md`
+- `/docs/test-user-notes.md`
+- `/screenshots/validation-test-screens.png`
+- `/screenshots/lab08-powerbi-dashboard.png`
+- `/docs/weekly-logbook.md`
+
 
 
 
