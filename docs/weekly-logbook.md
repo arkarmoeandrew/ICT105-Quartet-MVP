@@ -394,7 +394,7 @@ For the next phase, the team will begin developing the final web prototype, inte
 |---|---|---|
 | Min Khant Ko | Prepared the validation dataset structure and completed the raw validation data in CSV and XLSX formats. | `/data/validation-results.csv`, `/data/validation-results.xlsx` |
 | Lin Htet Aung | Prepared the customer validation summary, wrote the MVP decision, and created GitHub issues for prototype improvements. | `/docs/customer-validation-summary.md`, `/docs/mvp-decision.md`, GitHub Issues |
-| Thiri Shin Thant Ko | Prepared the test-user notes, analyzed the validation metrics, identified confusion points, and wrote the analytics insights. | `/docs/test-user-notes.md`, `/docs/analytics-insights.md` |
+| Thiri Shin Thant | Prepared the test-user notes, analyzed the validation metrics, identified confusion points, and wrote the analytics insights. | `/docs/test-user-notes.md`, `/docs/analytics-insights.md` |
 | Arkar Moe | Updated the README and completed the Lab 08 weekly logbook. | `/README.md`, `/docs/weekly-logbook.md`, `/screenshots/lab08-powerbi-dashboard.png` |
 
 ## Problems Found
