@@ -1,0 +1,13 @@
+﻿Test_User_ID,User_Role,Prototype_Version,Main_Task,Task_Completed,Time_Seconds,Confusion_Point,Feature_Most_Useful,Feedback_Score_1_5,Interest_Level_1_5,Comment,Requirement_Affected
+TU-01,Student,v0.1,Find and request a DSLR camera,Yes,92,No confusion,Search and filters,5,5,The tester found the DSLR camera and submitted a request without assistance.,"FR-02, FR-06, FR-07, FR-11"
+TU-02,Student,v0.1,Search for a programming textbook,Yes,105,Search/filter,Category filter,4,4,The tester found the textbook but suggested using clearer category labels.,"FR-05, FR-06, FR-07"
+TU-03,Student,v0.1,Check the status of a resource request,Yes,118,Status tracking,Request tracking,4,4,The tester was initially unsure about the difference between Pending and Approved.,"FR-08, FR-11"
+TU-04,Student,v0.1,Create a calculator equipment listing,No,160,Form fields,Create listing form,4,5,The tester missed a required field because the validation message was not noticeable.,"FR-03, FR-10, FR-11"
+TU-05,Student,v0.1,Find and request a graphic design service,Yes,88,No confusion,Student service categories,5,5,The tester understood the service information and completed the request successfully.,"FR-02, FR-05, FR-06, FR-07"
+TU-06,Admin/Staff,v0.1,Review and manage pending marketplace listings,Yes,145,Admin dashboard,Admin dashboard,4,4,The admin dashboard was useful but needed clearer filtering for pending listings.,"FR-09, FR-12"
+TU-07,Student,v0.1,Open an Arduino kit listing and review its details,Yes,110,Detail view,Listing detail page,3,3,The tester wanted clearer information about borrowing duration and availability.,"FR-07, FR-08"
+TU-08,Student,v0.1,Request a programming tutoring service,Yes,97,No confusion,Confirmation message,5,5,The confirmation message clearly explained that the request was submitted.,"FR-02, FR-08, FR-11"
+TU-09,Student,v0.1,Search for available equipment on a mobile device,Yes,120,Search/filter,Mobile marketplace filter,4,4,The tester suggested making the mobile filter button more visible.,"FR-06, FR-14"
+TU-10,Student,v0.1,Contact a provider and request a scientific calculator,No,132,Request button,Request workflow,4,4,The tester confused the Contact Provider button with the Request Resource button.,"FR-02, FR-11"
+TU-11,Student,v0.1,Create a video editing service listing,Yes,90,No confusion,Validation message,4,5,The tester completed the listing form successfully and understood the required fields.,"FR-03, FR-10, FR-11"
+TU-12,Admin/Staff,v0.1,Review listing details for privacy and responsible data handling,Yes,115,Privacy note,Privacy controls,4,4,The tester recommended hiding personal phone numbers and using private platform messaging.,"FR-07, FR-15"
