@@ -11,7 +11,4 @@ TU-09,Student,v0.1,Search for available equipment on a mobile device,Yes,120,Sea
 TU-10,Student,v0.1,Contact a provider and request a scientific calculator,No,132,Request button,Request workflow,4,4,The tester confused the Contact Provider button with the Request Resource button.,"FR-02, FR-11",,,
 TU-11,Student,v0.1,Create a video editing service listing,Yes,90,No confusion,Validation message,4,5,The tester completed the listing form successfully and understood the required fields.,"FR-03, FR-10, FR-11",,,
 TU-12,Admin/Staff,v0.1,Review listing details for privacy and responsible data handling,Yes,115,Privacy note,Privacy controls,4,4,The tester recommended hiding personal phone numbers and using private platform messaging.,"FR-07, FR-15",,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,, ,,,,,
+
