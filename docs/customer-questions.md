@@ -2,11 +2,11 @@
 
 ## Project Title
 
-RSU Nexus – Campus Equipment Lending & Student Services Marketplace
+RSU Nexus – Campus Resource Marketplace
 
 ## Target Respondent
 
-RSU students who have experience borrowing or lending academic equipment, or hiring and providing student services such as tutoring, programming, graphic design, or video editing.
+RSU students who have experience borrowing or lending academic equipment, searching for learning resources, or requesting and providing student services such as tutoring, programming, graphic design, or video editing.
 
 ## Consent and Context
 
@@ -42,7 +42,7 @@ RSU students who have experience borrowing or lending academic equipment, or hir
 
 12. Do you own any academic equipment or provide any student services that you would be willing to offer to other RSU students?
 
-13. What concerns would you have about lending equipment or providing paid student services to other students?
+13. What concerns would you have about lending equipment or providing free, exchange-based, or paid student services to other students?
 
 14. Would student-email verification make you feel safer using a student-only sharing platform?
 

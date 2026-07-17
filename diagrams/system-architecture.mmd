@@ -1,15 +1,25 @@
 flowchart LR
-    U[Main User] --> HOME[Homepage]
-    HOME --> LIST[Browse Resources]
-    HOME --> FORM[Create Listing]
-    FORM --> STORE[(Data Storage)]
-    STORE --> LIST
-    LIST --> SEARCH[Search / Filter]
-    SEARCH --> DETAIL[Resource Detail]
-    DETAIL --> CONTACT[Contact Owner]
-    STORE --> DASH[Dashboard / Summary]
+    U[RSU Student] --> WEB[RSU Nexus Frontend]
+    ADMIN[Authorized Admin] --> WEB
 
-    ADMIN[Admin / Manager] --> ADMINP[Admin Panel]
-    ADMINP --> STORE
-    ADMINP --> STATUS[Update Resource Status]
-    STATUS --> STORE
+    V[Vercel Hosting] --> WEB
+    WEB --> AUTH[Supabase Authentication]
+    WEB --> DB[(Supabase PostgreSQL)]
+    WEB --> STORAGE[(Supabase Storage)]
+
+    WEB --> HOME[Homepage and Navigation]
+    WEB --> MARKET[Browse / Search / Filter]
+    WEB --> FORM[Create Listing and Request Forms]
+    WEB --> DETAIL[Listing Detail and Status]
+    WEB --> DASH[Dashboard / My Listings]
+    WEB --> ADMINP[Protected Admin View]
+
+    FORM --> DB
+    FORM --> STORAGE
+    DB --> MARKET
+    DB --> DETAIL
+    DB --> DASH
+    ADMINP --> DB
+
+    RLS[Row Level Security Policies] --> DB
+    RLS --> STORAGE

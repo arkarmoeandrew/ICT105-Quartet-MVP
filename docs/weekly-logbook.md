@@ -1,6 +1,6 @@
 # Weekly Venture Logbook
 
-## Lab 1: Lab Setup and IT Venture Repository
+## Lab 01: Lab Setup and IT Venture Repository
 
 ### What We Completed
 
@@ -116,12 +116,15 @@ The team will conduct customer discovery interviews with university students and
 - customer-discovery-summary.md
 
 ### Decision Made This Week
-Continue developing RSU Nexus – Campus Resource Marketplace and focus on equipment listings, student services, and request management features.### Plan for Next Week
-Create wireframes and MVP prototype for RSUNexus.
+Continue developing **RSU Nexus – Campus Resource Marketplace** and focus on equipment listings, learning resources, student services, and request management.
 
-# Lab 04 - Weekly Logbook
+### Plan for Next Week
 
-## Group Information
+Create the requirements, user stories, MVP feature scope, and later wireframes for RSU Nexus.
+
+## Lab 04: User Persona, Requirements, and User Stories
+
+### Group Information
 
 - **Course:** ICT105 Fundamental Technology Entrepreneurship
 - **Lab:** Lab 04 - User Persona, Requirements, and User Stories
@@ -131,18 +134,18 @@ Create wireframes and MVP prototype for RSUNexus.
 
 ---
 
-## 1. Work Completed Today
+### 1. Work Completed Today
 
 | Member Name | Contribution | GitHub Evidence (Commit/Issue/PR Link) |
 |---|---|---|
 | Lin Htet Aung | Updated README.md for Lab 04, reviewed project consistency, and organized GitHub documentation. | Issue: Update README and weekly logbook for Lab 04 |
-| Thiri Shin Thant | Created the user persona based on Lab 03 customer discovery evidence. | Issue: Create user persona based on Lab 03 evidence |
+| Thiri Shin Thant Ko | Created the user persona based on Lab 03 customer discovery evidence. | Issue: Create user persona based on Lab 03 evidence |
 | Arkar Moe | Wrote user stories, acceptance criteria, and helped prioritize MVP features. | Issue: Write user stories and acceptance criteria |
 | Min Khant Ko | Created the user flow diagram and use case diagram for RSU Nexus. | Issue: Create user flow and use case diagram |
 
 ---
 
-## 2. Main Decisions
+### 2. Main Decisions
 
 - **Primary target user:** RSU students who need temporary access to academic equipment, learning resources, or student services for coursework and projects.
 
@@ -185,7 +188,7 @@ Create wireframes and MVP prototype for RSUNexus.
 
 ---
 
-## 3. Requirement Changes / Clarifications
+### 3. Requirement Changes / Clarifications
 
 During Lab 04, the team clarified that the official project title is:
 
@@ -203,7 +206,7 @@ The team also clarified that full private chat, online payment, booking, and rat
 
 ---
 
-## 4. Problems Encountered
+### 4. Problems Encountered
 
 - **Technical problem:**  
   The team had to align the system requirements with the lecturer’s FR-01 to FR-16 minimum prototype requirements while keeping the MVP realistic.
@@ -216,14 +219,14 @@ The team also clarified that full private chat, online payment, booking, and rat
 
 ---
 
-## 5. Next Actions Before Lab 05
+### 5. Next Actions Before Lab 05
 
 | Task | Owner | Deadline | GitHub Issue |
 |---|---|---|---|
 | Finalize homepage and main marketplace UI | Arkar Moe | Before Lab 05 | Issue: Prioritize MVP features |
 | Complete user persona and check evidence connection | Lin Htet Aung | Before Lab 05 | Issue: Create user persona based on Lab 03 evidence |
-| Finalize user stories and acceptance criteria | Thiri Shin That | Before Lab 05 | Issue: Write user stories and acceptance criteria |
-| Export and upload user flow and use case diagrams | Min Khnant Ko | Before Lab 05 | Issue: Create user flow and use case diagram |
+| Finalize user stories and acceptance criteria | Thiri Shin Thant Ko | Before Lab 05 | Issue: Write user stories and acceptance criteria |
+| Export and upload user flow and use case diagrams | Min Khant Ko | Before Lab 05 | Issue: Create user flow and use case diagram |
 | Review all Lab 04 files for consistency | All Members | Before Lab 05 | Issue: Review requirement traceability before final submission |
 | Commit all Lab 04 documentation to GitHub | All Members | Before Lab 05 | Issue: Update README and weekly logbook for Lab 04 |
 
@@ -263,12 +266,12 @@ The team also clarified that full private chat, online payment, booking, and rat
 - wireframe-specification.md
 - wireframe-usability-checklist.md
 - user-flow.png
-- homepage.png
-- input-form.png
-- record-list.png
-- detail-view.png
-- dashboard.png
-- admin-view.png
+- `/wireframes/homepage.png/Screenshot 2569-07-08 at 22.02.41.png`
+- `/wireframes/input-form.png/Screenshot 2569-07-08 at 22.39.15.png`
+- `/wireframes/record-list.png/Screenshot 2569-07-08 at 23.20.12.png`
+- `/wireframes/details-view.png/Screenshot 2569-07-08 at 23.23.03.png`
+- `/wireframes/Dashboard.png/Screenshot 2569-07-08 at 22.29.40.png`
+- `/wireframes/admin-view.png/Screenshot 2569-07-08 at 23.18.01.png`
 
 ### Decision Made This Week
 
@@ -310,23 +313,23 @@ For Lab 06, the team will prepare the Business Model Canvas, Feature–Value Map
 - feature-value-mapping.md
 - technical-architecture.md
 - data-structure.md
-- system-architecture.png
-- data-flow.png
-- sample-records.csv
+- `/diagrams/system-architecture.mmd`
+- `/diagrams/data-flow.mmd`
+- `/data/sample-record.csv`
 
 ### Decision Made This Week
 
-The team finalized the business model, technical architecture, system design, and data structure for the RSU Nexus – Campus Resource Marketplace. These documents provide the foundation for implementing the final prototype.
+The team finalized the business model, technical architecture, system design, and data structure for RSU Nexus. The original Lab 06 simulation plan used `localStorage` or JSON; the later architecture revision finalized HTML5, CSS3, vanilla JavaScript, Supabase, and Vercel while retaining sample JSON only for isolated development or fallback demonstrations.
 
-# Weekly Logbook - Lab 07
+## Lab 07: MVP Experiment Design
 
-## Group Information
+### Group Information
 - **Group name:** Quartet
 - **Project title:** RSU Nexus – Campus Resource Marketplace
 - **Date:** 14 July 2026
 - **Repository link:** https://github.com/arkarmoeandrew/ICT105-Quartet-MVP
 
-## What We Completed Today
+### What We Completed Today
 - [x] Reviewed requirements, user stories, MVP features, architecture, and wireframes
 - [x] Identified critical assumptions
 - [x] Selected MVP experiment type
@@ -334,16 +337,16 @@ The team finalized the business model, technical architecture, system design, an
 - [x] Prepared experiment script and feedback form
 - [x] Updated GitHub repository and README
 
-## Member Contributions
+### Member Contributions
 
 | Member Name | Contribution | Evidence/Commit/Issue Link |
 |---|---|---|
-|Lin Htet Aung| Defined the measurable success metrics and decision rules for evaluating the MVP experiment. Also compiled the Lab 07 weekly logbook and recorded the team’s completed work, decisions, problems, and next actions. | `/docs/success-metrics.md`, /docs/weekly-logbook.md |
-|Thiri Shin Thant| Prepared the MVP experiment plan, including the experiment objective, requirement scope, experiment type, target testers, testing procedure, and expected learning. Also created the tester feedback form. | `/docs/mvp-experiment-plan.md`, /docs/feedback-form.md |
-|Arkar Moe| Identified and documented the critical assumptions that could affect the success of RSU Nexus. Also prepared the experiment script, including the test scenario, user tasks, observation notes, and closing questions. | `/docs/critical-assumptions.md`, /docs/experiment-script.md |
-|Min Khant Ko| Prepared the Lab 07 README update content, including the experiment objective, top assumptions, experiment type, success metrics, files added, and connection to the final prototype. Updated the project README with the Lab 07 section. | `/docs/readme-update-template.md`, /README.md |
+| Lin Htet Aung | Defined the measurable success metrics and decision rules for evaluating the MVP experiment. Also compiled the Lab 07 weekly logbook and recorded the team’s completed work, decisions, problems, and next actions. | `/docs/success-metrics.md`, `/docs/weekly-logbook.md` |
+| Thiri Shin Thant Ko | Prepared the MVP experiment plan, including the experiment objective, requirement scope, experiment type, target testers, testing procedure, and expected learning. Also created the tester feedback form. | `/docs/mvp-experiment-plan.md`, `/docs/feedback-form.md` |
+| Arkar Moe | Identified and documented the critical assumptions that could affect the success of RSU Nexus. Also prepared the experiment script, including the test scenario, user tasks, observation notes, and closing questions. | `/docs/critical-assumptions.md`, `/docs/experiment-script.md` |
+| Min Khant Ko | Prepared the Lab 07 README update content, including the experiment objective, top assumptions, experiment type, success metrics, files added, and connection to the final prototype. Updated the project README with the Lab 07 section. | `/README.md` |
 
-## Key Decisions
+### Key Decisions
 
 | Decision | Reason | Evidence/Requirement Link |
 |---|---|---|
@@ -355,7 +358,7 @@ The team finalized the business model, technical architecture, system design, an
 | Collect both quantitative ratings and qualitative comments. | Ratings measure usability, while comments help identify specific problems and improvements. | `/docs/feedback-form.md` |
 | Keep advanced payments, complex booking, and real-time chat outside the MVP experiment. | These features are not necessary to validate the main resource-discovery and request workflow. | `/docs/mvp-experiment-plan.md` |
 
-## Problems and Next Action
+### Problems and Next Action
 
 | Problem | Next Action | Responsible Member |
 |---|---|---|
@@ -364,21 +367,22 @@ The team finalized the business model, technical architecture, system design, an
 | Availability and request-status labels may be confusing. | Ask testers to explain the meaning of each status and revise unclear labels. | Member 2 |
 | Tester results have not yet been collected and analyzed. | Calculate task-completion rates, usability ratings, and other success metrics after testing. | Member 1 and Member 4 |
 | The prototype may require changes after user testing. | Prioritize the identified usability problems and update the prototype before the implementation sprint. | All Members |
-| Actual member names and GitHub evidence links are still missing. | Replace the placeholders with the members’ names and add the relevant commit links before submission. | All Members |
+| Direct GitHub commit or issue links were not recorded for every contribution. | Add the relevant GitHub evidence links before final submission. | All Members |
 
 ### Plan for Next Week
 
 For the next phase, the team will begin developing the final web prototype, integrate the frontend with Supabase, implement the MVP features, and test the complete user workflow.
 
-# Weekly Logbook – Lab 08
+## Lab 08: Customer Validation and Analytics
 
-## Group Information
+### Group Information
 - Group name: Quartet
 - Project title: RSU Nexus – Campus Resource Marketplace
 - Repository link: https://github.com/arkarmoeandrew/ICT105-Quartet-MVP
-- Lab date: 15 July 2026
+- Validation testing date: 14 July 2026
+- Analysis and documentation date: 15 July 2026
 
-## Work Completed Today
+### Work Completed Today
 - [x] Reviewed Lab 07 MVP experiment plan
 - [x] Prepared validation dataset structure
 - [x] Created or updated analytics sheet
@@ -388,25 +392,37 @@ For the next phase, the team will begin developing the final web prototype, inte
 - [x] Updated README
 - [x] Created GitHub issues for prototype improvements
 
-## Member Contributions
+### Member Contributions
 
 | Member Name | Contribution | GitHub Evidence |
 |---|---|---|
 | Min Khant Ko | Prepared the validation dataset structure and completed the raw validation data in CSV and XLSX formats. | `/data/validation-results.csv`, `/data/validation-results.xlsx` |
 | Lin Htet Aung | Prepared the customer validation summary, wrote the MVP decision, and created GitHub issues for prototype improvements. | `/docs/customer-validation-summary.md`, `/docs/mvp-decision.md`, GitHub Issues |
-| Thiri Shin Thant | Prepared the test-user notes, analyzed the validation metrics, identified confusion points, and wrote the analytics insights. | `/docs/test-user-notes.md`, `/docs/analytics-insights.md` |
-| Arkar Moe | Updated the README and completed the Lab 08 weekly logbook. | `/README.md`, `/docs/weekly-logbook.md`, `/screenshots/lab08-powerbi-dashboard.png` |
+| Thiri Shin Thant Ko | Prepared the test-user notes, analyzed the validation metrics, identified confusion points, and wrote the analytics insights. | `/docs/test-user-notes.md`, `/docs/analytics-insights.md` |
+| Arkar Moe | Updated the README and completed the Lab 08 weekly logbook. | `/README.md`, `/docs/weekly-logbook.md`, `/screenshots/lab08_powerbi_dashboard.png` |
 
-## Problems Found
+### Dataset-Aligned Results
+
+| Metric | Result |
+|---|---:|
+| Total test users | 12 |
+| Completed tasks | 10 |
+| Task success rate | 83.3% |
+| Average ease-of-use score | 4.17 out of 5 |
+| Average usefulness score | 5.00 out of 5 |
+| Average interest level | 4.25 out of 5 |
+| Users with confusion points | 8 of 12 (66.7%) |
+
+### Problems Found
 - Search and filter controls were not clear enough for some users, especially on mobile devices.
-- Some users did not understand the difference between Pending and Approved request statuses.
+- One user did not clearly understand the Available and Reserved labels, and another misunderstood the request action.
 - Form-validation messages were not noticeable enough.
 - Listing details did not always clearly explain availability, borrowing duration, pricing, or exchange arrangements.
 - Contact Provider and Request Resource buttons caused confusion.
 - The admin dashboard needed clearer filters for pending and inactive listings.
 - Personal contact information should not be displayed publicly.
 
-## Next Actions
+### Next Actions
 - Improve category labels and make mobile filters more visible.
 - Add clear explanations for availability and request-status labels.
 - Display validation messages directly below invalid form fields.

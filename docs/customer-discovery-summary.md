@@ -54,7 +54,7 @@ Students currently solve the problem by:
 
 - Add student verification using RSU email accounts.
 - Support both resource sharing and student service listings.
-- Improve trust through user profiles, ratings, and activity history.
+- Improve trust through verified profiles and clear request/activity history. Ratings and reviews may be considered after the first MVP.
 - Focus on high-demand resources and student services for the MVP.
 - Design a simple, searchable, and user-friendly marketplace interface.
 
@@ -62,7 +62,7 @@ Students currently solve the problem by:
 
 Continue with same problem direction.
 
-The collected evidence confirms that students face difficulties finding resources and peer support efficiently. The team will proceed with the RSUNexus concept and begin developing the MVP prototype.
+The collected evidence confirms that students face difficulties finding resources and peer support efficiently. The team will proceed with the RSU Nexus concept and begin developing the MVP prototype.
 
 ## Updated Problem Statement
 

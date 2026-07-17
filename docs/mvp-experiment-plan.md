@@ -4,7 +4,7 @@
 - Project title: RSU Nexus – Campus Resource Marketplace
 - Repository link: https://github.com/arkarmoeandrew/ICT105-Quartet-MVP
 - Main target user: RSU students who need academic equipment, learning resources, or student services
-- Prototype platform: Interactive web application built with HTML, CSS, and JavaScript, using Supabase for authentication, database storage, file storage, and backend services, with the frontend deployed on Vercel. Google AI Studio will be used as an AI-assisted development and prototyping tool.
+- Prototype platform: Interactive web application built with HTML, CSS, and vanilla JavaScript, using Supabase for authentication, PostgreSQL database storage, file storage, and backend services, with the frontend deployed on Vercel.
   
 ## 2. Experiment Objective
 
@@ -17,7 +17,7 @@ We want to test whether RSU students can independently search for a campus resou
 | FR-01 | Clear problem-specific homepage or landing screen | Homepage | Yes |
 | FR-02 | Primary user pathway | Homepage → Marketplace → Listing Details → Request Status | Yes |
 | FR-03 | User input or data submission feature | Create Listing and Submit Request forms | Yes |
-| FR-04 | Data storage or record management | Listing and request data stored using localStorage or JSON | Yes |
+| FR-04 | Data storage or record management | Listing and request data stored in Supabase PostgreSQL; sample JSON may be used only as temporary test data | Yes |
 | FR-05 | View records or information list | Marketplace listing page | Yes |
 | FR-06 | Search, filter, or category function | Marketplace search and filters | Yes |
 | FR-07 | Detail view for each record | Resource or service detail page | Yes |
@@ -49,6 +49,8 @@ A functional web prototype allows testers to interact with realistic pages, navi
 | Test User Group | Number of Testers | Why They Are Relevant |
 |---|---|---|
 | RSU students | 5 | They are the main target users who may search for equipment, learning resources, or student services and may also create their own listings. |
+
+The Lab 07 plan required at least five testers. The completed Lab 08 validation later expanded the dataset to 12 test users.
 
 ## 6. Experiment Procedure Summary
 
