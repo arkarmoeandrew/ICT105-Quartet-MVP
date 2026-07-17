@@ -6,7 +6,7 @@ RSU Nexus – Campus Resource Marketplace
 
 ## 2. Target User
 
-Primary user: RSU students who want to lend, borrow, share, or exchange academic resources and everyday campus items.
+Primary user: RSU students who want to lend, borrow, share, or request academic equipment, learning resources, and student services.
 
 Secondary user: System administrator who manages listings, monitors user activities, and removes inappropriate or inactive listings.
 
@@ -14,13 +14,13 @@ Secondary user: System administrator who manages listings, monitors user activit
 
 ## 3. Problem Statement
 
-RSU students often need to borrow or share textbooks, calculators, lab equipment, and other useful resources, but there is no centralized platform for finding available items. Existing methods rely on social media, chat groups, or word of mouth, making it difficult to discover, manage, and track shared resources efficiently.
+RSU students often need to borrow or share textbooks, calculators, lab equipment, and other academic resources or find student services such as tutoring and project support. Existing methods rely on social media, chat groups, or word of mouth, making it difficult to discover providers, manage requests, and track availability efficiently.
 
 ⸻
 
 ## 4. Proposed IT Product
 
-A web-based campus resource marketplace that allows RSU students to create resource listings, browse and search available resources, view listing details, contact resource owners, and manage their own listings. The system also provides basic administrative functions to manage marketplace content.
+A web-based campus resource marketplace that allows RSU students to create equipment, learning-resource, or student-service listings; browse and search available listings; view details; submit requests; track status; and manage their own listings. The system also provides basic administrative functions to manage marketplace content.
 
 ⸻
 
@@ -39,9 +39,10 @@ The MVP will focus on:
 * Browse marketplace listings
 * Search and filter resources
 * View listing details
-* Contact resource owners
+* Submit a request or contact the listing provider
 * Manage personal listings
-* Resource status tracking (Available, Unavailable)
+* Listing and request status tracking
+* Marketplace dashboard summary
 * Basic admin management of listings
 * Responsive user interface
 

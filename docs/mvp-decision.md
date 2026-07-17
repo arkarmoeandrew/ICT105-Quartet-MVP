@@ -12,9 +12,9 @@ Choose one:
 ## 2. Evidence Supporting the Decision
 The RSU Nexus customer validation results support continuing with the current MVP direction with minor revisions.
 
-The prototype was evaluated using 12 test users, including students and admin/staff roles. Ten users successfully completed their assigned tasks, producing a task success rate of 83.3%.
+The prototype was evaluated using 12 test users, including RSU Student and RSU Staff roles. Ten users successfully completed their assigned tasks, producing a task success rate of 83.3%.
 
-The average feedback score was 4.17 out of 5, and the average interest level was 4.25 out of 5. These results show that users generally understood the purpose of RSU Nexus and considered the platform useful.
+The average ease-of-use score was 4.17 out of 5, the average usefulness score was 5.00 out of 5, and the average interest level was 4.25 out of 5. These results show that users generally understood the purpose of RSU Nexus and considered the platform useful.
 
 The main marketplace workflow was successfully completed by most users:
 
@@ -48,7 +48,7 @@ The evidence shows that the main RSU Nexus concept is useful and should continue
 | FR-03 | One tester could not complete the create-listing task. | Simplify the form and clearly identify all required fields. |
 | FR-06 | Category labels and mobile filters caused confusion. | Use clearer category names and make the mobile filter button more visible. |
 | FR-07 | Some listing details did not clearly explain borrowing duration, price, exchange, or availability. | Add structured arrangement information to every listing-detail page. |
-| FR-08 | Pending and Approved request statuses were not immediately clear. | Add short descriptions or tooltips for all availability and request statuses. |
+| FR-08 | Available and Reserved were not immediately clear, and one request action was misunderstood. | Add short descriptions or tooltips for all availability and request statuses and clarify the request action. |
 | FR-09 | The admin dashboard needed clearer filtering for pending listings. | Add status filters and clearer management action buttons. |
 | FR-10 | Form-validation messages were not noticeable enough. | Display specific error messages directly below invalid fields. |
 | FR-11 | Contact Provider and Request Resource caused confusion. | Use more distinct button labels and clearer confirmation messages. |
@@ -74,7 +74,7 @@ The team will make the following changes:
 |---|---|---|
 | Improve marketplace search and mobile filters | Arkar Moe | FR-06, FR-14 |
 | Clarify availability and request-status labels | Min Khant Ko | FR-08 |
-| Improve listing form validation messages | Thiri Shin Thant | FR-03, FR-10, FR-11 |
-| Improve listing details and request-button wording | Thiri Shin Thant | FR-07, FR-11 |
-| Improve admin dashboard filtering and actions | Lin Htet Aung| FR-09, FR-12 |
+| Improve listing form validation messages | Thiri Shin Thant Ko | FR-03, FR-10, FR-11 |
+| Improve listing details and request-button wording | Thiri Shin Thant Ko | FR-07, FR-11 |
+| Improve admin dashboard filtering and actions | Lin Htet Aung | FR-09, FR-12 |
 | Improve privacy and private communication handling | Lin Htet Aung | FR-15 |

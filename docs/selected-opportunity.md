@@ -34,7 +34,9 @@ A web-based campus marketplace where students can lend academic equipment, offer
 
 ### What app, system, dashboard, or platform will the team develop?
 
-A Campus Equipment Lending & Student Services Marketplace Web Application.
+**RSU Nexus – Campus Resource Marketplace**, a web application for equipment, learning-resource, and student-service listings and requests.
+
+> **Project evolution:** At selection time, the working description was “Campus Equipment Lending & Student Services Marketplace.” In Lab 04, the team finalized the official title and broadened the wording to include learning resources while preserving the same core problem and target users.
 
 ## Why This Opportunity Was Selected
 
@@ -56,7 +58,7 @@ The project only requires a standard web application with authentication, databa
 
 ### Explain why the team can build or simulate the MVP using available tools.
 
-The MVP can be developed using HTML, CSS, JavaScript, and a simple database such as Supabase or Firebase if required. These technologies are sufficient for building a functional web application prototype.
+The early feasibility review considered either Supabase or Firebase. The later architecture decision finalized HTML5, CSS3, vanilla JavaScript, Supabase, and Vercel for the prototype.
 
 ## Possible MVP Type
 

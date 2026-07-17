@@ -1,12 +1,27 @@
 flowchart TD
-    A[User creates a resource listing] --> B{Input validation}
-    B -->|Valid| C[Save listing]
-    B -->|Invalid| D[Show error message]
-    C --> E[Display confirmation]
-    C --> F[Marketplace listings]
-    F --> G[Search / Filter resources]
-    F --> H[Resource detail view]
-    H --> I[Contact resource owner]
-    I --> J[Admin updates listing status]
-    J --> K[Updated listing]
-    K --> L[Dashboard / Summary]
+    A[User authenticates with approved RSU email] --> B[Supabase Authentication]
+    B --> C[Open RSU Nexus frontend]
+    C --> D{Choose an action}
+
+    D -->|Create listing| E[Validate listing form]
+    E -->|Invalid| F[Show field-specific error]
+    E -->|Valid| G[Save listing in Supabase PostgreSQL]
+    G --> H[Store approved image in Supabase Storage]
+    G --> I[Show listing-created confirmation]
+
+    D -->|Browse| J[Load active marketplace listings]
+    J --> K[Search / Filter]
+    K --> L[Open listing details]
+    L --> M[Submit request]
+    M --> N[Save request with Pending status]
+    N --> O[Show confirmation and request status]
+
+    D -->|Manage records| P{Authorized owner or admin?}
+    P -->|No| Q[Deny update]
+    P -->|Yes| R[Update owned listing, request status, or moderated record]
+    R --> S[Refresh dashboard and marketplace]
+
+    T[Supabase Row Level Security] --> G
+    T --> J
+    T --> N
+    T --> R

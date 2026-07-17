@@ -1,62 +1,70 @@
 # Data Structure
 
 ## Project Title
+
 RSU Nexus – Campus Resource Marketplace
 
-## 1. Main Data Entities / Tables
+## 1. Main Supabase Tables and Storage
 
-| Entity / Table | Purpose | Example Records |
+| Table / Resource | Purpose | Example Record |
 |---|---|---|
-| Users | Store student and admin account information | U001, Andrew, andrew@rsu.ac.th, Student |
-| Resource Listings | Store academic equipment, learning resources, and student service listings | L001, Canon DSLR Camera, Equipment, Available |
-| Requests | Store borrow/contact requests between students | R001, U002 requests L001, Pending |
-| Messages | Store simple contact messages between requester and owner | M001, “Is this available tomorrow?” |
-| Categories | Store listing categories for filtering | Equipment, Textbooks, Student Services |
-| Admin Actions | Store admin management actions | A001, Delete invalid listing, Admin01 |
+| `profiles` | Store student and authorized-admin profile information linked to Supabase Auth | User UUID, Andrew, masked RSU email, Student |
+| `categories` | Store approved marketplace categories | Equipment, Learning Resources, Student Services |
+| `listings` | Store equipment, learning-resource, and student-service listings | Listing UUID, Canon DSLR Camera, Equipment, Available |
+| `requests` | Store requests between students and track their status | Request UUID, requester UUID, listing UUID, Pending |
+| `messages` | Store private request-related messages when this simplified feature is enabled | Message UUID, request UUID, “Is this available tomorrow?” |
+| `admin_actions` | Record important moderation actions | Action UUID, remove invalid listing, admin UUID |
+| `listing-images` bucket | Store listing images in Supabase Storage | Authenticated image upload linked to a listing |
 
-## 2. Field Definition
+## 2. Core Field Definitions
 
-| Entity | Field Name | Data Type | Required? | Example Value | Validation Rule | Used For Search/Filter? |
+| Table | Field Name | Data Type | Required? | Example Value | Validation Rule | Used for Search/Filter? |
 |---|---|---|---|---|---|---|
-| User | user_id | Text/ID | Yes | U001 | Unique value | Yes |
-| User | name | Text | Yes | Andrew | Cannot be empty | No |
-| User | email | Text | Yes | andrew@rsu.ac.th | Must be valid RSU email | Yes |
-| User | role | Text/List | Yes | Student | Student/Admin only | Yes |
-| Resource Listing | listing_id | Text/ID | Yes | L001 | Unique value | Yes |
-| Resource Listing | title | Text | Yes | Canon DSLR Camera | Cannot be empty | Yes |
-| Resource Listing | category | Text/List | Yes | Equipment | Must match category list | Yes |
-| Resource Listing | description | Text | Yes | DSLR camera available for project work | Cannot be empty | No |
-| Resource Listing | availability_status | Text/List | Yes | Available | Available/Reserved/Unavailable | Yes |
-| Resource Listing | owner_id | Text/ID | Yes | U001 | Must match existing user | No |
-| Request | request_id | Text/ID | Yes | R001 | Unique value | Yes |
-| Request | listing_id | Text/ID | Yes | L001 | Must match existing listing | No |
-| Request | requester_id | Text/ID | Yes | U002 | Must match existing user | No |
-| Request | request_status | Text/List | Yes | Pending | Pending/Approved/Rejected/Completed | Yes |
-| Message | message_id | Text/ID | Yes | M001 | Unique value | No |
-| Message | request_id | Text/ID | Yes | R001 | Must match existing request | No |
-| Message | message_text | Text | Yes | Is this available tomorrow? | Cannot be empty | No |
+| `profiles` | `id` | UUID | Yes | Auth user UUID | Must match an authenticated Supabase user | No |
+| `profiles` | `display_name` | Text | Yes | Andrew | Cannot be empty | No |
+| `profiles` | `email` | Text | Yes | a***@rsu.ac.th | Must be a valid approved RSU email | No |
+| `profiles` | `role` | Text/List | Yes | Student | Student/Admin only | Yes |
+| `listings` | `id` | UUID | Yes | Listing UUID | Unique value | No |
+| `listings` | `title` | Text | Yes | Canon DSLR Camera | Cannot be empty | Yes |
+| `listings` | `category_id` | UUID | Yes | Equipment category UUID | Must match an existing category | Yes |
+| `listings` | `description` | Text | Yes | DSLR camera available for project work | Cannot be empty | Yes |
+| `listings` | `availability_status` | Text/List | Yes | Available | Available/Reserved/Unavailable | Yes |
+| `listings` | `owner_id` | UUID | Yes | User UUID | Must match the authenticated owner | No |
+| `listings` | `image_path` | Text | No | listing-images/camera.jpg | Must reference an approved Storage path | No |
+| `requests` | `id` | UUID | Yes | Request UUID | Unique value | No |
+| `requests` | `listing_id` | UUID | Yes | Listing UUID | Must match an existing listing | No |
+| `requests` | `requester_id` | UUID | Yes | User UUID | Must match the authenticated requester | No |
+| `requests` | `request_status` | Text/List | Yes | Pending | Pending/Approved/Rejected/Completed/Closed | Yes |
+| `messages` | `id` | UUID | Yes | Message UUID | Unique value | No |
+| `messages` | `request_id` | UUID | Yes | Request UUID | Must match an accessible request | No |
+| `messages` | `sender_id` | UUID | Yes | User UUID | Must be a participant in the request | No |
+| `messages` | `message_text` | Text | Yes | Is this available tomorrow? | Cannot be empty | No |
 
 ## 3. Status Values
 
 | Status | Meaning | Who Can Update? |
 |---|---|---|
-| Available | The resource or service is currently available | Listing Owner |
-| Reserved | The resource or service has been requested or reserved | Listing Owner |
-| Unavailable | The resource or service is not currently available | Listing Owner / Admin |
-| Pending | A request has been submitted but not yet reviewed | System |
-| Approved | The owner accepted the request | Listing Owner |
-| Rejected | The owner declined the request | Listing Owner |
-| Completed | The borrowing or service request has been completed | Listing Owner / Admin |
-| Closed | The listing or request is no longer active | Admin |
+| Available | The resource or service is currently available | Listing owner |
+| Reserved | The resource or service has an active approved arrangement | Listing owner |
+| Unavailable | The resource or service is not currently available | Listing owner or authorized admin |
+| Pending | A request has been submitted but not yet reviewed | System on submission |
+| Approved | The listing owner accepted the request | Listing owner |
+| Rejected | The listing owner declined the request | Listing owner |
+| Completed | The borrowing or service request has been completed | Request participants or authorized admin |
+| Closed | The listing or request is no longer active | Record owner or authorized admin |
 
-## 4. Sample Records
+## 4. Access-Control Rules
 
-Sample dataset will be stored in:
+Supabase Row Level Security will be enabled for exposed tables. Authenticated users may view appropriate active listings, create listings under their own account, manage only their own listings, submit their own requests, and view requests in which they are the requester or listing owner. Only authorized administrators may perform moderation actions.
 
-`/data/sample-records.csv`
+## 5. Sample Records
 
-Example records may include sample users, resource listings, categories, requests, and message records.
+The repository’s current sample-data reference is stored at:
 
-## 5. Data Privacy Note
+`/data/sample-record.csv`
 
-The prototype will not collect sensitive personal information such as national ID numbers, passwords, phone numbers, addresses, or payment details. Sample data will use fictional student names, masked RSU email addresses, and example resource listings. Any user data shown in the prototype will be anonymized and used only for demonstration purposes.
+The sample data may include fictional profiles, listings, categories, requests, and messages for development and demonstration.
+
+## 6. Data Privacy Note
+
+The prototype will not collect unnecessary sensitive information such as national ID numbers, home addresses, payment details, or publicly displayed personal phone numbers. Passwords are handled by Supabase Authentication and are not stored directly by the application. Sample data will use fictional names, masked RSU email addresses, and example listings.

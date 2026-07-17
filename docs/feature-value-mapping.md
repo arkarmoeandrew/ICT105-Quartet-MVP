@@ -2,19 +2,20 @@
 
 | Feature ID | MVP Feature | Requirement ID | User Story ID | User Value | Business / Operational Value | Prototype Screen or Module | Priority |
 |---|---|---|---|---|---|---|---|
-| F-01 | User Registration & Login | FR-02, FR-10 | US-01 | Users can securely access their accounts | Enables user management and secure access | login.html | Must |
-| F-02 | Create Resource Listing | FR-03, FR-10, FR-11 | US-02 | Users can easily post items for sale or sharing | Generates marketplace content and records | create-listing.html | Must |
-| F-03 | Browse, Search & Filter Resources | FR-05, FR-06 | US-03 | Users can quickly find relevant resources | Improves usability and marketplace efficiency | marketplace.html | Must |
-| F-04 | Resource Detail View | FR-07, FR-08 | US-04 | Users can view complete item information and availability | Reduces confusion before contacting sellers | resource-detail.html | Must |
-| F-05 | Private Messaging | FR-02 | US-05 | Buyers and sellers can communicate directly | Supports successful transactions | chat.html | Should |
-| F-06 | Dashboard Summary | FR-12 | US-06 | Users can monitor their listings and activities | Provides marketplace insights and statistics | dashboard.html | Should |
-| F-07 | Admin Listing Management | FR-09, FR-08 | US-07 | Admin can approve, edit, or remove listings | Maintains marketplace quality and safety | admin.html | Must |
+| F-01 | Homepage and Verified Access | FR-01, FR-02, FR-10, FR-15 | US-01 | Users understand the platform and can securely access it | Enables trusted user access | index.html, login.html | Must |
+| F-02 | Create Resource Listing | FR-03, FR-04, FR-10, FR-11 | US-02 | Users can post equipment, learning resources, or student services | Generates persistent marketplace records | create-listing.html | Must |
+| F-03 | Browse, Search, and Filter Marketplace | FR-05, FR-06 | US-03 | Users can quickly find relevant listings | Improves discovery and marketplace efficiency | marketplace.html | Must |
+| F-04 | Listing Detail and Status | FR-07, FR-08 | US-04 | Users can view complete listing information and availability | Reduces confusion before submitting a request | listing-detail.html | Must |
+| F-05 | Request or Contact Provider | FR-02, FR-08, FR-11 | US-05 | Requesters and providers can coordinate through a structured workflow | Supports successful resource and service requests | listing-detail.html | Must |
+| F-06 | My Listings Management | FR-04, FR-05, FR-08, FR-11 | US-06 | Users can keep their own listings accurate | Improves record quality and availability information | my-listings.html | Could |
+| F-07 | Admin Listing Management | FR-09 | US-07 | Authorized admins can review or remove listings | Maintains marketplace quality and safety | admin.html | Must |
+| F-08 | Dashboard Summary | FR-12 | US-08 | Users can review listing and request activity | Provides marketplace insights and statistics | dashboard.html | Should |
 
 ## Reflection
 
 ### Which feature creates the strongest user value?
 
-**Browse, Search & Filter Resources (F-03)** because it helps students quickly find the items they need, making the marketplace easy and convenient to use.
+**Browse, Search, and Filter Marketplace (F-03)** because it helps students quickly find the equipment, learning resources, or services they need.
 
 ### Which feature creates the strongest business or operational value?
 
@@ -22,4 +23,4 @@
 
 ### Which required feature is still weak or unclear?
 
-**Private Messaging (F-05)** may require additional planning for notifications, message history, and privacy features if it is fully implemented in the final prototype.
+**My Listings Management (F-06)** needs final ownership and status-update rules so students can change only records that belong to them. Full real-time messaging remains outside the first MVP scope.
