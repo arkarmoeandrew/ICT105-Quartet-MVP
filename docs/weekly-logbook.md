@@ -428,7 +428,7 @@ For the next phase, the team will begin developing the final web prototype, inte
 - Display validation messages directly below invalid form fields.
 - Improve listing details for borrowing, pricing, exchange, and availability.
 
-  # Weekly Logbook – Lab 09
+# Weekly Logbook – Lab 09
 
 ## Group Name
 
@@ -444,6 +444,15 @@ For the next phase, the team will begin developing the final web prototype, inte
 - Thiri Shin Thant Ko
 - Min Khant Ko
 - Lin Htet Aung
+
+## Work Completed Today
+
+- **Privacy review:** Reviewed data collection, privacy rules, data minimization, and user access control. Updated the privacy and data protection documentation.
+- **Ethical review:** Reviewed legal and ethical issues including project purpose, verification claims, privacy, moderation, and user protection. Completed the legal and ethical checklist.
+- **IP review:** Documented original project assets, third-party resources, AI-assisted development tools, licences, and attribution requirements.
+- **Security review:** Reviewed authentication, administrator access, ownership control, private data access, uploaded files, secret-key management, and Supabase security requirements.
+- **Risk register:** Identified legal, ethical, privacy, intellectual property, security, and data-quality risks together with mitigation actions and responsible owners.
+- **Requirements update note:** Documented requirement clarifications resulting from the Lab 09 review without changing the official FR-01 to FR-16 baseline.
 
 ## Member Contributions
 
@@ -480,7 +489,3 @@ For the next phase, the team will begin developing the final web prototype, inte
 - Add upload validation and confirmation messages.
 - Verify consistency across README, weekly logbook, issues, datasets, Power BI, and supporting documents before the final submission.
 - Begin full frontend implementation and testing for the final prototype.
-- Make request and contact buttons more clearly different.
-- Improve admin dashboard filtering and management controls.
-- Protect personal information by using private in-platform messaging.
-- Update the prototype based on the validation findings before the next lab.
