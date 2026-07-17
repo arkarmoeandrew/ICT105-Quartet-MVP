@@ -15,7 +15,6 @@
 | Sample listing images or placeholders | Placeholder images | Created by the project team or generated specifically for the prototype | Original or AI-generated project assets | Used for fictional equipment, learning-resource, and student-service listings | No | Low | Do not use copyrighted product photographs copied from commercial websites |
 | Official Rangsit University name | Institutional name | Rangsit University | Used only to describe the intended university community | Used in the project title, target-user description, and statements such as “Built for RSU students” | No | Medium | Do not claim that RSU Nexus is an official university system without written approval |
 | Official Rangsit University logo | Trademarked university asset | Rangsit University | Not approved for use in this prototype | Not used in the RSU Nexus interface or project logo | Not applicable | High | Do not copy, modify, or display the official RSU logo unless formal permission is received |
-| Google AI Studio | AI development platform | Google | Not used | Not included in the development, design, backend, hosting, or asset-generation workflow | No | None | Do not list Google AI Studio as a project platform or third-party tool |
 
 ## IP Summary
 
@@ -23,7 +22,6 @@ RSU Nexus mainly uses original source code, interface designs, documentation, mo
 
 The homepage hero visual and some prototype listing images may use AI-generated materials created specifically for RSU Nexus. These materials are not copied from external websites and will be identified as AI-generated project assets when necessary.
 
-Google AI Studio is not used in the project and should not be listed as a development, hosting, backend, or asset-generation platform.
 
 The project does not use the official Rangsit University logo and does not claim to be an official university service. The wording “Built for RSU students” or “Designed for the RSU community” will be used instead.
 
