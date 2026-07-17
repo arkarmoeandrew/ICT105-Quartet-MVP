@@ -214,6 +214,79 @@ The task-success rate exceeded the Lab 07 target. Search/filter visibility, stat
 - `/screenshots/validation-test-screens.png` — currently a placeholder and must be replaced manually with a valid screenshot
 - `/docs/weekly-logbook.md`
 
+## Lab 09 – Responsible IT Check
+
+### Responsible Design Summary
+
+During Lab 09, the RSU Nexus team reviewed the prototype from legal, ethical, privacy, intellectual property, and security perspectives to ensure responsible system design before implementation.
+
+The review identified several improvements:
+
+- Clarified that **RSU Nexus is an ICT105 student project** and is **not an official Rangsit University service**.
+- Reviewed the **"Verified RSU students"** claim to ensure it is not misleading before verification is implemented.
+- Applied **data minimization**, ensuring only necessary information is collected while excluding sensitive data such as national ID numbers, home addresses, payment information, and medical records.
+- Improved **privacy protection** by recommending private platform communication instead of displaying personal phone numbers or email addresses.
+- Documented **third-party assets, licences, and AI-assisted development tools** including the homepage image, Figma, OpenAI, Supabase, Vercel, GitHub, and Power BI.
+- Reviewed **basic security risks** including authentication, administrator access, ownership control, uploaded files, secret-key management, and Supabase Row Level Security.
+- Created a **risk register** documenting project risks, mitigation actions, responsible owners, and GitHub traceability.
+- Recorded all requirement clarifications without changing the official FR-01 to FR-16 baseline.
+
+Overall, the review concluded that the project is **safe to continue with revision**, provided that the identified privacy, security, moderation, and verification improvements are completed before the final implementation.
+
+---
+
+### Files Added
+
+#### Documentation
+
+- docs/legal-ethical-checklist.md
+- docs/privacy-and-data-protection.md
+- docs/ip-and-third-party-assets.md
+- docs/security-risk-check.md
+- docs/risk-register.md
+- docs/updated-requirements-note.md
+
+
+#### Existing Files Updated
+
+- README.md
+- docs/weekly-logbook.md
+
+---
+
+### Requirement Update
+
+The official **FR-01 to FR-16** requirements were **not replaced or renumbered**.
+
+Instead, Lab 09 introduced **requirement clarifications** related to:
+
+- Student-project disclaimer
+- Privacy and responsible data collection
+- Verification claims
+- Access control
+- Administrator authorization
+- Listing ownership
+- Status explanations
+- Upload validation
+- Fair moderation
+- Security controls
+- Intellectual property
+- Project traceability
+
+These clarifications were documented in:
+
+- docs/updated-requirements-note.md
+
+---
+
+### Team Contributions
+
+| Member | Main Contribution | GitHub Issues |
+|---|---|---|
+| **Arkar Moe** | Legal and ethical review, intellectual property review, homepage wording, documentation updates | #21, #25 |
+| **Thiri Shin Thant Ko** | Requirement review and requirement update documentation | #22 |
+| **Min Khant Ko** | Data inventory, privacy review, responsible design risk register | #23, #24, #27 |
+| **Lin Htet Aung** | Security review, README update, weekly logbook update | #26, #28 |
 ## Current Status After Lab 08
 
 The project direction is validated well enough to continue with minor revisions. The next implementation stage should follow the requirement baseline, the revised Supabase/Vercel architecture, and the evidence-based improvements recorded in the Lab 08 documents and GitHub Issues.
