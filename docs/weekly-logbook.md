@@ -427,6 +427,59 @@ For the next phase, the team will begin developing the final web prototype, inte
 - Add clear explanations for availability and request-status labels.
 - Display validation messages directly below invalid form fields.
 - Improve listing details for borrowing, pricing, exchange, and availability.
+
+  # Weekly Logbook – Lab 09
+
+## Group Name
+
+**Quartet**
+
+## Date
+
+**17 July 2026**
+
+## Members Present
+
+- Arkar Moe
+- Thiri Shin Thant Ko
+- Min Khant Ko
+- Lin Htet Aung
+
+## Member Contributions
+
+| Member | Contribution | GitHub Evidence |
+|---|---|---|
+| Arkar Moe | Completed legal and ethical review, intellectual property review, homepage wording review, and project documentation updates. | Issue #21, Issue #25 |
+| Thiri Shin Thant Ko | Prepared requirement clarifications and updated requirement documentation. | Issue #22 |
+| Min Khant Ko | Completed data inventory, privacy review, and responsible design risk register. | Issue #23, Issue #24, Issue #27 |
+| Lin Htet Aung | Completed security review and README / weekly logbook updates. | Issue #26, Issue #28 |
+
+## Decisions Made
+
+- Continue using the official FR-01 to FR-16 requirement structure without changing requirement IDs.
+- Keep RSU Nexus clearly identified as an academic student project rather than an official university service.
+- Replace or justify the "Verified RSU students" wording until user verification is fully implemented.
+- Protect personal contact information by using private platform communication instead of public phone numbers or email addresses.
+- Use Supabase Authentication and Row Level Security for account protection and access control.
+- Record all third-party assets, licences, and AI-assisted development tools.
+- Link every responsible-design document to the corresponding GitHub issue for traceability.
+
+## Issues / Blockers
+
+- Supabase authentication and Row Level Security are planned but require implementation and testing.
+- Upload validation for listing images has not yet been fully implemented.
+- Administrator authorization and moderation workflow still require implementation.
+- Final README and documentation updates will be completed after all Lab 09 files are reviewed by the team.
+
+## Next Action Before Lab 10
+
+- Complete any remaining Lab 09 documentation updates.
+- Finish Supabase authentication and database integration.
+- Implement Row Level Security policies.
+- Complete administrator authorization and moderation functions.
+- Add upload validation and confirmation messages.
+- Verify consistency across README, weekly logbook, issues, datasets, Power BI, and supporting documents before the final submission.
+- Begin full frontend implementation and testing for the final prototype.
 - Make request and contact buttons more clearly different.
 - Improve admin dashboard filtering and management controls.
 - Protect personal information by using private in-platform messaging.
