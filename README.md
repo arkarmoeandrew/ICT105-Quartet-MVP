@@ -285,7 +285,7 @@ These clarifications were documented in:
 |---|---|---|
 | **Arkar Moe** | Legal and ethical review, intellectual property review, homepage wording, documentation updates | #21, #25 |
 | **Thiri Shin Thant Ko** | Requirement review and requirement update documentation | #22 |
-| **Min Khant Ko** | Data inventory, privacy review, responsible design risk register | #23, #24, #27 |
+| **Min Khant Ko** | Data inventory, privacy review, responsible design risk register | #23, #25, #27 |
 | **Lin Htet Aung** | Security review, README update, weekly logbook update | #26, #28 |
 ## Current Status After Lab 08
 
