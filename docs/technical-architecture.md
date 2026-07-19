@@ -62,3 +62,22 @@ The main technical risks are incorrect access policies, exposed secrets, and att
 The group will reduce delivery risk by implementing and testing the core workflow first:
 
 **Homepage → Login → Browse/Search → Listing Details → Submit Request → Check Status**
+
+## Final Architecture Revision
+
+The original Lab 06 prototype plan allowed localStorage or JSON data simulation.
+
+During implementation, the team upgraded the final architecture to:
+
+| Layer | Final Technology |
+|---|---|
+| Frontend | Semantic HTML5, CSS3, Vanilla JavaScript |
+| Authentication | Supabase Authentication |
+| Database | Supabase PostgreSQL |
+| File Storage | Supabase Storage |
+| Realtime Communication | Supabase Realtime |
+| Access Control | SQL migrations and Row Level Security |
+| Deployment | Vercel |
+| Version Control | GitHub |
+
+The earlier Figma-generated React and TypeScript prototype was used only as a visual reference. React, TypeScript, Vite, Tailwind CSS, and Express are not used in the final implementation.
