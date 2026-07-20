@@ -485,6 +485,63 @@ For the next phase, the team will begin developing the final web prototype, inte
 - Complete any remaining Lab 09 documentation updates.
 - Finish Supabase authentication and database integration.
 - Implement Row Level Security policies.
+  
+# Weekly Logbook – Lab 10
+
+## Lab Topic
+MVP Implementation Sprint 1
+
+## What We Built Today
+
+- Created the Sprint 1 implementation plan and feature implementation status document.
+- Developed the first working prototype screens using HTML5, CSS3, Vanilla JavaScript, and Supabase.
+- Uploaded prototype files, screenshots and updated GitHub issues.
+
+## Requirement IDs Addressed
+
+- FR-01 – Homepage and Landing Screen
+- FR-03 – Resource Submission
+- FR-05 – Marketplace Record List
+- FR-06 – Search and Category Filter
+- FR-07 – Resource Detail View
+- FR-08 – Request and Status Tracking
+- FR-09 – Admin Management
+- FR-12 – Dashboard
+- FR-13 – UI Consistency
+- FR-14 – Responsive Design
+- FR-15 – Privacy and Responsible Data Handling
+- FR-16 – Prototype Traceability
+
+## Contribution by Members
+
+| Member | Contribution | Evidence |
+|--------|--------------|----------|
+| Arkar Moe | Homepage, Marketplace, Detail View, Technical Architecture, Prototype Uploads | GitHub Commits, Issues #30, #32 |
+| Min Khant Ko | Listing Form, Search & Filter, Sample Data, Screenshots | GitHub Commits, Issues #31, #34 |
+| Thiri Shin Thant Ko | Implementation Plan, Feature Status, Documentation | GitHub Commits, Issues #29, #35 |
+| Lin Htet Aung | Dashboard, Admin View, README, Weekly Logbook | GitHub Commits, Issues #33, #36 |
+
+## Screenshots Added
+
+- `/screenshots/homepage.png`
+- `/screenshots/input-form.png`
+- `/screenshots/record-list.png`
+- `/screenshots/detail-view.png`
+- `/screenshots/admin-view.png`
+
+## Problems Faced
+
+- Integrating Supabase Authentication and Database with the frontend required additional testing.
+- Some prototype features are still under refinement and require further UI improvements.
+- Responsive layout and feature integration will continue to be improved in future implementation sprints.
+
+## Plan for Next Lab
+
+- Complete the remaining Sprint 1 features.
+- Improve authentication, request workflow, and dashboard functionality.
+- Add additional testing and fix identified issues.
+- Update feature implementation status and README with new progress.
+- Continue collecting screenshots and GitHub evidence for completed features.
 - Complete administrator authorization and moderation functions.
 - Add upload validation and confirmation messages.
 - Verify consistency across README, weekly logbook, issues, datasets, Power BI, and supporting documents before the final submission.
