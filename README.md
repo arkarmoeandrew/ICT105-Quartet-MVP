@@ -290,3 +290,48 @@ These clarifications were documented in:
 ## Current Status After Lab 08
 
 The project direction is validated well enough to continue with minor revisions. The next implementation stage should follow the requirement baseline, the revised Supabase/Vercel architecture, and the evidence-based improvements recorded in the Lab 08 documents and GitHub Issues.
+
+## Lab 10 – MVP Implementation Sprint 1
+
+### Sprint Goal
+
+The goal of Lab 10 is to develop the first working version of the RSU Nexus prototype based on the approved system requirements, user stories, wireframes, technical architecture, and responsible IT review completed in previous labs.
+
+### Implementation Approach
+
+- **Platform/tools:** HTML5, CSS3, Vanilla JavaScript, Supabase JavaScript Client v2, PostgreSQL, Supabase Storage, Supabase Authentication, Vercel
+- **Backend status:** Real backend (Supabase)
+- **Data storage/simulation:** Supabase PostgreSQL Database with sample marketplace data
+- **Prototype folder:** /prototype/
+
+### Features Implemented in Sprint 1
+
+| Feature | Requirement ID | Status | Evidence |
+|---------|----------------|--------|----------|
+| Homepage | FR-01 | Working Draft | `/prototype/index.html`, /screenshots/homepage.png |
+| Resource submission form | FR-03 | Working Draft | /screenshots/input-form.png |
+| Marketplace record list | FR-05 | Working Draft | /screenshots/record-list.png |
+| Search and category filter | FR-06 | Working Draft | JavaScript filtering, /screenshots/record-list.png |
+| Resource detail view | FR-07 | Working Draft | /screenshots/detail-view.png |
+| Request and status tracking | FR-08 | In Progress | Prototype workflow |
+| Admin management | FR-09 | Working Draft | /screenshots/admin-view.png |
+| Dashboard | FR-12 | Working Draft | Admin dashboard |
+
+### Screenshots
+
+- Homepage: /screenshots/homepage.png
+- Input Form: /screenshots/input-form.png
+- Record List: /screenshots/record-list.png
+- Detail View: /screenshots/detail-view.png
+- Admin View: /screenshots/admin-view.png
+
+### Team Contribution
+
+All team members contributed to the same GitHub repository through implementation, documentation, GitHub Issues, commits, screenshots, testing, and prototype development.
+
+| Member | Main Contribution |
+|--------|-------------------|
+| Arkar Moe | Homepage, Marketplace, Detail View, Technical Architecture |
+| Min Khant Ko | Listing Form, Search & Filter, Sample Data |
+| Thiri Shin Thant Ko | Implementation Plan, Feature Status, Documentation |
+| Lin Htet Aung | Dashboard, Admin View, README, Weekly Logbook |
