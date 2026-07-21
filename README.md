@@ -335,3 +335,82 @@ All team members contributed to the same GitHub repository through implementatio
 | Min Khant Ko | Listing Form, Search & Filter, Sample Data |
 | Thiri Shin Thant Ko | Implementation Plan, Feature Status, Documentation |
 | Lin Htet Aung | Dashboard, Admin View, README, Weekly Logbook |
+
+## Lab 11: MVP Implementation Sprint 2 and Startup Metrics
+
+### Prototype Progress
+
+During Lab 11, the Nexus Borrow Item System was significantly improved based on the feedback received in Lab 10. The prototype now includes a complete borrow request workflow, search and filtering functions, item detail pages, status tracking, improved form validation, and a Power BI Startup/Product Metrics Dashboard. Documentation, testing evidence, screenshots, and GitHub records were also updated to demonstrate the progress made during Sprint 2.
+
+---
+
+### Implemented / Improved Features
+
+| Requirement ID | Feature | Status | Evidence |
+|---|---|---|---|
+| FR-03 | Borrow Request Form | ✅ Completed | Borrow Form Screenshot |
+| FR-06 | Search & Category Filter | ✅ Completed | Search Module Screenshot |
+| FR-08 | Item Status Tracking | ✅ Completed | Status Module Screenshot |
+| FR-09 | Admin Review & Status Update | 🟡 Partially Completed | Admin Dashboard Screenshot |
+| FR-10 | Form Validation | ✅ Completed | Validation Screenshot |
+| FR-11 | Confirmation Messages | ✅ Completed | Submission Screenshot |
+| FR-12 | Startup Metrics Dashboard | ✅ Completed | Power BI Dashboard |
+| FR-13 | UI Consistency Improvements | ✅ Completed | Updated Prototype Screenshots |
+
+---
+
+### Startup/Product Metrics
+
+The following metrics were implemented and visualized in the Power BI dashboard:
+
+- Total Records
+- New Borrow Requests
+- Pending Requests
+- Resolution Rate
+- Search Activity
+- Average Processing Time
+- Activity Timeline
+- Requirement Coverage
+- Record Status Distribution
+- Item Category Distribution
+
+These metrics help evaluate product usage, operational performance, and prototype validation during Sprint 2.
+
+---
+
+### Prototype Screenshots
+
+Updated screenshots included in the repository:
+
+- Homepage
+- Borrow Request Form
+- Item List
+- Item Detail Page
+- Search & Filter
+- Admin Dashboard
+- Startup/Product Metrics Dashboard
+
+---
+
+### Member Contributions
+
+| Member | Contribution |
+|---|---|
+| **Arkar Moe** | Developed and improved the prototype, including UI, user flow, and core system features. |
+| **Min Khant Ko** | Created the CSV datasets, integrated them with Power BI, built the Startup/Product Metrics Dashboard, and uploaded the Power BI project. |
+| **Thiri Shin Thant Ko** | Completed and uploaded the Lab 11 documentation files, including Feature Implementation Status and Prototype Testing Notes. |
+| **Lin Htet Aung** | Updated the Weekly Logbook, README, and Startup Metrics documentation. |
+
+---
+
+### Remaining Work
+
+Before the final prototype submission, the team plans to:
+
+- Connect the prototype to a live database instead of CSV files.
+- Complete additional admin management features.
+- Improve mobile responsiveness across all pages.
+- Add user authentication and authorization.
+- Automate dashboard data refresh using the connected database.
+- Perform additional usability testing and resolve remaining UI/UX issues.
+- Finalize project documentation and prepare for the final presentation.
