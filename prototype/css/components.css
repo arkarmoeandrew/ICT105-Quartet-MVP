@@ -313,7 +313,21 @@
 .hero__media {
   z-index: -5;
   inset: 0 0 0 auto;
-  width: 58%;
+  width: 72%;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.14) 12%,
+    rgba(0, 0, 0, 0.72) 32%,
+    #000000 52%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.14) 12%,
+    rgba(0, 0, 0, 0.72) 32%,
+    #000000 52%
+  );
 }
 
 .hero__media img {

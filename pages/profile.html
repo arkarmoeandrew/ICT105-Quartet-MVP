@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="View a privacy-safe RSU Nexus member profile and active listings.">
+  <title>Member Profile | RSU Nexus</title>
+  <link rel="icon" href="../assets/logo/rsu-nexus-logo.png?v=20260719-2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css?v=20260720-3">
+  <link rel="stylesheet" href="../css/app.css?v=20260720-2">
+  <link rel="stylesheet" href="../css/responsive.css?v=20260719-3">
+</head>
+<body class="app-body">
+  <header data-app-header></header>
+  <main data-profile-page><p class="loading-state">Opening member profile…</p></main>
+  <footer data-app-footer></footer>
+
+  <div class="modal" hidden data-profile-modal>
+    <div class="modal__card">
+      <div class="modal__head">
+        <div><p class="panel__eyebrow">Public profile</p><h2 class="panel__title">Edit how RSU students see you</h2></div>
+        <button class="text-button" type="button" data-profile-close>Close</button>
+      </div>
+      <form data-profile-form>
+        <div class="modal__body">
+          <p class="notice" hidden data-profile-status></p>
+          <div class="profile-photo-setting">
+            <span class="avatar profile-photo-setting__preview" data-profile-form-avatar>RS</span>
+            <span><b>Profile picture</b><small>Shown on your RSU Nexus profile, listings, and messages.</small></span>
+            <button class="button button--surface button--small" type="button" data-open-photo-editor>Change photo</button>
+          </div>
+          <div class="form-grid">
+            <label class="field-label">Display name<input class="field" name="display_name" required maxlength="80"></label>
+            <label class="field-label">Faculty or program<input class="field" name="faculty"></label>
+            <label class="field-label">Year of study
+              <select class="field-select" name="year_of_study">
+                <option value="">Select year</option><option>Year 1</option><option>Year 2</option><option>Year 3</option><option>Year 4</option><option>Graduate student</option><option>Alumni</option>
+              </select>
+            </label>
+            <label class="field-label">Preferred RSU campus area<input class="field" name="campus_location" placeholder="Building 6"></label>
+            <label class="field-label span-2">Short biography<textarea class="field-textarea" name="bio" maxlength="500"></textarea></label>
+            <label class="field-label">Typical availability<input class="field" name="availability" placeholder="Weekdays after 4 PM"></label>
+            <label class="field-label">Interests and skills<input class="field" name="interests" placeholder="Photography, coding, tutoring"></label>
+          </div>
+        </div>
+        <div class="modal__foot">
+          <button class="button button--surface button--small" type="button" data-profile-close>Cancel</button>
+          <button class="button button--gradient button--small" type="submit">Save profile</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal profile-photo-modal" hidden data-photo-modal>
+    <div class="modal__card photo-editor-card" role="dialog" aria-modal="true" aria-labelledby="photo-editor-title">
+      <div class="modal__head photo-editor-head">
+        <div><p class="panel__eyebrow">RSU Nexus profile</p><h2 class="panel__title" id="photo-editor-title">Choose profile picture</h2></div>
+        <button class="photo-editor-close" type="button" aria-label="Close profile picture editor" data-photo-close>×</button>
+      </div>
+      <div class="modal__body photo-editor-body">
+        <p class="notice" hidden data-photo-status></p>
+        <input type="file" accept="image/jpeg,image/png,image/webp" hidden data-photo-input>
+        <div class="photo-editor-empty" data-photo-empty>
+          <span aria-hidden="true">📷</span>
+          <h3>Add a profile picture</h3>
+          <p>Choose a clear JPG, PNG, or WebP image up to 5 MB.</p>
+          <button class="button button--gradient button--small" type="button" data-photo-choose>Choose photo</button>
+        </div>
+        <div class="photo-editor-workspace" hidden data-photo-workspace>
+          <div class="photo-editor-viewport" data-photo-viewport>
+            <canvas width="640" height="640" aria-label="Circular profile photo preview" data-photo-canvas></canvas>
+            <div class="photo-editor-mask" aria-hidden="true"></div>
+            <p class="photo-editor-tip">↕ Drag to reposition</p>
+          </div>
+          <label class="photo-zoom-label" for="profile-photo-zoom"><span aria-hidden="true">−</span><span class="sr-only">Photo zoom</span><input id="profile-photo-zoom" type="range" min="1" max="3" step="0.01" value="1" data-photo-zoom><span aria-hidden="true">＋</span></label>
+          <button class="text-button" type="button" data-photo-choose>Choose a different photo</button>
+        </div>
+        <p class="photo-editor-privacy"><span aria-hidden="true">◉</span><span><b>Your profile picture identifies you in the RSU Nexus.</b><small>It is visible with your public RSU profile, listings, requests, and messages.</small></span></p>
+      </div>
+      <div class="modal__foot photo-editor-foot">
+        <button class="button button--surface button--small" type="button" data-photo-close>Cancel</button>
+        <button class="button button--gradient button--small" type="button" disabled data-photo-save>Save profile picture</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="../js/ui.js?v=20260720-4"></script>
+  <script type="module" src="../js/profile.js?v=20260720-4"></script>
+</body>
+</html>

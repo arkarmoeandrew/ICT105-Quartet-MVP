@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="RSU Nexus is a student-focused campus marketplace for equipment, learning resources, and student services.">
+    <meta name="theme-color" content="#241428">
+    <title>RSU Nexus | Campus Resource Marketplace</title>
+    <link rel="icon" href="assets/logo/rsu-nexus-logo.png?v=20260719-2" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css?v=20260722-2">
+    <link rel="stylesheet" href="css/responsive.css?v=20260719-3">
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" data-site-header>
+      <nav class="site-nav container" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="RSU Nexus home">
+          <img class="brand__mark" src="assets/logo/rsu-nexus-logo.png?v=20260719-2" alt="" width="52" height="52">
+          <span class="brand__copy">
+            <strong>RSU Nexus</strong>
+            <small>Campus Resource Marketplace</small>
+          </span>
+        </a>
+
+        <div class="site-nav__links" aria-label="Marketplace sections">
+          <a href="pages/marketplace.html">Explore</a>
+          <a href="pages/marketplace.html?type=Equipment">Equipment</a>
+          <a href="pages/marketplace.html?type=Learning">Learning</a>
+          <a href="pages/marketplace.html?type=Service">Services</a>
+          <a href="#how-it-works">How it works</a>
+        </div>
+
+        <div class="site-nav__actions">
+          <a class="icon-button icon-button--ghost" href="#search" aria-label="Open marketplace search">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          </a>
+          <a class="member-link" href="pages/login.html" data-user-link>
+            <span class="member-link__avatar" aria-hidden="true" data-user-avatar>
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"></circle><path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path></svg>
+            </span>
+            <span data-user-name>Log in</span>
+          </a>
+          <a class="button button--light button--small" href="pages/create-listing.html">Create listing</a>
+        </div>
+
+        <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+          <span class="sr-only">Open navigation menu</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+        </button>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu" hidden data-mobile-menu>
+        <div class="mobile-menu__top">
+          <a class="brand brand--mobile" href="index.html">
+            <img class="brand__mark" src="assets/logo/rsu-nexus-logo.png?v=20260719-2" alt="" width="44" height="44">
+            <span class="brand__copy"><strong>RSU Nexus</strong><small>Campus marketplace</small></span>
+          </a>
+          <button class="icon-button icon-button--soft" type="button" data-menu-close>
+            <span class="sr-only">Close navigation menu</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+          </button>
+        </div>
+
+        <nav class="mobile-menu__links" aria-label="Mobile navigation">
+          <a href="pages/marketplace.html">Explore</a>
+          <a href="pages/marketplace.html?type=Equipment">Equipment</a>
+          <a href="pages/marketplace.html?type=Learning">Learning</a>
+          <a href="pages/marketplace.html?type=Service">Services</a>
+          <a href="#how-it-works">How it works</a>
+        </nav>
+
+        <div class="mobile-menu__actions">
+          <a class="button button--outline-light" href="pages/login.html" data-mobile-user-link>Log in</a>
+          <a class="button button--gradient" href="pages/create-listing.html">Create a listing</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__media" aria-hidden="true">
+          <img src="assets/images/rsu-campus.png?v=20260722-1" alt="">
+        </div>
+        <div class="hero__shade"></div>
+        <div class="hero__shape hero__shape--purple"></div>
+        <div class="hero__shape hero__shape--pink"></div>
+        <div class="hero__glow"></div>
+
+        <div class="hero__content container">
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span>Built for the RSU community</p>
+          <h1 id="hero-title">Your campus has<br>more to <span>offer.</span></h1>
+          <p class="hero__intro">Find equipment, learning resources, and student services offered by verified people across the RSU community.</p>
+
+          <div class="hero__actions">
+            <a class="button button--gradient" href="pages/marketplace.html">
+              Explore marketplace
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </a>
+            <a class="button button--outline-light" href="pages/create-listing.html">Offer a resource</a>
+          </div>
+
+          <ul class="trust-list" aria-label="Marketplace benefits">
+            <li><span class="check-icon">✓</span>Verified RSU students</li>
+            <li><span class="check-icon">✓</span>Structured requests</li>
+            <li><span class="check-icon">✓</span>Clear availability</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="search-shell container" id="search" aria-label="Search the marketplace">
+        <div class="search-card">
+          <form class="search-form" data-home-search>
+            <label class="search-field">
+              <span class="sr-only">Search marketplace</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+              <input type="search" name="query" autocomplete="off" placeholder="Search cameras, calculators, textbooks, tutoring…" data-search-input>
+            </label>
+            <button class="button button--blue search-form__submit" type="submit">Search the Nexus</button>
+          </form>
+
+          <div class="quick-search" aria-label="Popular searches">
+            <button type="button" data-search-term="Equipment"><span style="--quick-color: #642b73"></span>Equipment</button>
+            <button type="button" data-search-term="Learning resources"><span style="--quick-color: #1677e8"></span>Learning resources</button>
+            <button type="button" data-search-term="Student services"><span style="--quick-color: #c226b8"></span>Student services</button>
+            <button type="button" data-search-term="Available now">Available now</button>
+          </div>
+          <p class="search-feedback" role="status" aria-live="polite" data-search-feedback></p>
+        </div>
+      </section>
+
+      <section class="section section--worlds container" id="worlds" aria-labelledby="worlds-title">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Discover the Nexus</p>
+            <h2 id="worlds-title">Made for how<br>students <span>actually work.</span></h2>
+          </div>
+          <p>A focused campus marketplace for sharing what you have and finding what makes progress possible.</p>
+        </div>
+
+        <div class="world-grid">
+          <article class="world-card" style="--card-accent: #642b73">
+            <div class="world-card__top"><span class="index-number">01</span><span class="world-card__mark">E</span></div>
+            <h3>Equipment</h3>
+            <p>Cameras, calculators, lab gear, and creative tools for your next project.</p>
+            <div class="world-card__footer"><strong>186 resources</strong><a href="#marketplace">Explore <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="world-card" style="--card-accent: #1677e8">
+            <div class="world-card__top"><span class="index-number">02</span><span class="world-card__mark">L</span></div>
+            <h3>Learning resources</h3>
+            <p>Textbooks, notes, templates, and references shared across every faculty.</p>
+            <div class="world-card__footer"><strong>428 resources</strong><a href="#marketplace">Explore <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="world-card" style="--card-accent: #c226b8">
+            <div class="world-card__top"><span class="index-number">03</span><span class="world-card__mark">S</span></div>
+            <h3>Student services</h3>
+            <p>Find classmates with practical skills and a helpful point of view.</p>
+            <div class="world-card__footer"><strong>94 providers</strong><a href="#services">Explore <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section marketplace-section" id="marketplace" aria-labelledby="marketplace-title">
+        <div class="container">
+          <div class="section-heading section-heading--split">
+            <div>
+              <p class="eyebrow eyebrow--blue">Live campus marketplace</p>
+              <h2 id="marketplace-title">Ready when<br>you <span class="text-pink">are.</span></h2>
+            </div>
+            <a class="button button--surface" href="pages/marketplace.html">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"></path></svg>
+              Browse all 708 listings
+            </a>
+          </div>
+
+          <div class="listing-layout">
+            <article class="feature-listing">
+              <img src="https://images.unsplash.com/photo-1550291396-edb0f09d48c2?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Canon DSLR camera available for student projects">
+              <div class="feature-listing__shade"></div>
+              <a href="pages/listing-detail.html?id=sample-camera" aria-label="View Canon DSLR Camera details"><span class="listing-badges"><span>Available</span><span>Equipment</span></span></a>
+              <div class="feature-listing__content">
+                <div>
+                  <p>Camera equipment · Borrow</p>
+                  <h3>Canon DSLR Camera</h3>
+                  <small>Alex Morgan · Architecture · Verified member</small>
+                </div>
+                <strong class="price-badge">Free</strong>
+              </div>
+            </article>
+
+            <div class="listing-stack">
+              <article class="mini-listing">
+                <img src="https://images.unsplash.com/photo-1535905496755-26ae35d0ae54?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Academic textbooks stacked on a desk" loading="lazy">
+                <div class="mini-listing__content">
+                  <div class="mini-listing__label"><span style="--label-color: #1677e8"></span>Learning resources</div>
+                  <h3>Database Systems Study Notes</h3>
+                  <p>May W. · Share</p>
+                  <div><strong>Free</strong><a href="pages/listing-detail.html?id=sample-notes">View details →</a></div>
+                </div>
+              </article>
+
+              <article class="mini-listing">
+                <img src="https://images.unsplash.com/photo-1710743688495-9a87a64c37b0?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Creative student workspace with design materials" loading="lazy">
+                <div class="mini-listing__content">
+                  <div class="mini-listing__label"><span style="--label-color: #1677e8"></span>Learning resources</div>
+                  <h3>Presentation Template Kit</h3>
+                  <p>Tan P. · Download</p>
+                  <div><strong>Free</strong><a href="pages/marketplace.html?type=Learning">View details →</a></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="services" aria-labelledby="services-title">
+        <div class="talent-panel">
+          <div class="talent-panel__copy">
+            <p class="eyebrow eyebrow--light-blue">Student talent, on campus</p>
+            <h2 id="services-title">More than<br>a marketplace.</h2>
+            <p>Your classmates can tutor, design, code, photograph, translate, and help turn a deadline into a finished project.</p>
+            <a class="button button--light" href="#marketplace">Find a student service</a>
+          </div>
+          <div class="talent-panel__visual" aria-label="Featured student service">
+            <div class="talent-panel__ring"></div>
+            <article class="service-card">
+              <div class="service-card__person">
+                <span>NT</span>
+                <div><strong>Nina Tan</strong><small>✓ Verified RSU member</small></div>
+              </div>
+              <h3>Graphic design assistance</h3>
+              <p>Posters, decks and visual identities</p>
+              <div><strong>From ฿250</strong><a href="pages/marketplace.html?type=Service">View service</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section how-section" id="how-it-works" aria-labelledby="how-title">
+        <div class="container">
+          <div class="section-heading section-heading--split">
+            <div>
+              <p class="eyebrow">Simple by design</p>
+              <h2 id="how-title">Find. Request.<br>Connect.</h2>
+            </div>
+            <p>Structured listings and private requests keep every exchange clear from start to finish.</p>
+          </div>
+
+          <ol class="steps-grid">
+            <li><span>01</span><h3>Discover</h3><p>Search the campus network for exactly what you need.</p></li>
+            <li><span>02</span><h3>Request</h3><p>Send a clear request to a verified student provider.</p></li>
+            <li><span>03</span><h3>Connect</h3><p>Chat privately and agree on the details.</p></li>
+            <li><span>04</span><h3>Complete</h3><p>Track the exchange, then keep the Nexus moving.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section final-cta-section" aria-labelledby="cta-title">
+        <div class="final-cta container-small">
+          <div>
+            <p class="eyebrow eyebrow--light-blue">For the RSU community</p>
+            <h2 id="cta-title">What you need may already be <span>on campus.</span></h2>
+            <p>Connect with verified university members through structured listings, private requests, and clear availability.</p>
+            <div class="final-cta__actions">
+              <a class="button button--light" href="pages/marketplace.html">Explore marketplace</a>
+              <a class="button button--outline-light" href="pages/create-listing.html">Create listing</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__about">
+          <a class="brand brand--footer" href="index.html">
+            <img class="brand__mark" src="assets/logo/rsu-nexus-logo.png?v=20260719-2" alt="" width="42" height="42">
+            <span class="brand__copy"><strong>RSU Nexus</strong><small>Campus Resource Marketplace</small></span>
+          </a>
+          <p>A student-focused campus resource marketplace designed for the RSU community.</p>
+          <small>This student project is not an official university service.</small>
+        </div>
+
+        <div class="footer-column"><h2>Marketplace</h2><a href="pages/marketplace.html">Explore resources</a><a href="pages/create-listing.html">Offer a resource</a><a href="pages/marketplace.html?type=Service">Student services</a></div>
+        <div class="footer-column"><h2>Account</h2><a href="pages/dashboard.html">Dashboard</a><a href="pages/requests.html">Requests</a><a href="pages/messages.html">Messages</a></div>
+        <div class="footer-column"><h2>Project</h2><a href="README.md">Documentation</a><a href="pages/profile.html">Profile privacy</a><a href="pages/admin.html">Admin</a></div>
+      </div>
+
+      <div class="container site-footer__bottom">
+        <p>© <span data-current-year>2026</span> RSU Nexus · Built with care for the RSU community.</p>
+        <p class="photo-credit">Hero image: existing RSU Nexus project asset. Usage rights must be confirmed before public deployment.</p>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
+
+    <script type="module" src="js/ui.js?v=20260720-4"></script>
+  </body>
+</html>

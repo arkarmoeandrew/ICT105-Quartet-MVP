@@ -42,6 +42,8 @@
 
   .hero__media {
     width: 100%;
+    -webkit-mask-image: none;
+    mask-image: none;
     opacity: 1;
   }
 
