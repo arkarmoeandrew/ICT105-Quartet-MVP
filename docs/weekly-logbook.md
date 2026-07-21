@@ -546,3 +546,94 @@ MVP Implementation Sprint 1
 - Add upload validation and confirmation messages.
 - Verify consistency across README, weekly logbook, issues, datasets, Power BI, and supporting documents before the final submission.
 - Begin full frontend implementation and testing for the final prototype.
+
+# Weekly Logbook – Lab 11
+
+## Lab Topic
+MVP Implementation Sprint 2 and Startup Metrics
+
+## Group Case
+**Project Title:** Nexus Borrow Item System  
+**Selected Case:** University Item Borrowing Management System
+
+---
+
+## Work Completed Today
+
+- Improved the Nexus prototype based on Lab 10 feedback.
+- Added search and category filtering for borrowable items.
+- Improved the borrow request form with validation and confirmation messages.
+- Updated the item status tracking module (Available, Borrowed, Pending, Returned, Claimed, Closed).
+- Created the **PrototypeRecords** and **ActivityLog** datasets for Power BI.
+- Built the Startup/Product Metrics Dashboard using the required DAX measures.
+- Added KPI cards, charts, tables, timeline, and slicers to the dashboard.
+- Updated project documentation, testing notes, startup metrics, screenshots, and GitHub repository.
+
+---
+
+## Member Contributions
+
+| Member Name | Contribution | File/Feature Updated | GitHub Evidence |
+|---|---|---|---|
+| Arkar Moe | Developed and improved the prototype, including UI, user flow, and core system features. | `prototype/` (HTML, CSS, JavaScript, Prototype Features) | Prototype Development Commits |
+| Min Khant Ko | Created the Power BI datasets (CSV files), imported data into Power BI, developed the Startup Metrics Dashboard, and uploaded the Power BI project. | `lab11_prototype_record.csv`, `lab11_activity_log.csv`, Power BI Dashboard | CSV & Power BI Commits |
+| Thiri Shin Thant Ko | Prepared, completed, and uploaded the required documentation files for Lab 11. | `docs/feature-implementation-status.md`, `docs/prototype-testing-notes.md` | Documentation Commits |
+| Lin Htet Aung | Updated the weekly logbook, README file, and startup metrics documentation. | `docs/weekly-logbook.md`, `README.md`, `docs/startup-metrics.md` | Documentation Update Commits |
+
+---
+
+## Requirements Addressed
+
+- **FR-01** Homepage
+- **FR-02** User Flow
+- **FR-03** User Input & Submission
+- **FR-04** Data Storage
+- **FR-05** Record List
+- **FR-06** Search & Filter
+- **FR-07** Detail View
+- **FR-08** Status Tracking
+- **FR-09** Admin Functions
+- **FR-10** Form Validation
+- **FR-11** Confirmation Messages
+- **FR-12** Dashboard & Analytics
+- **FR-13** UI Consistency
+- **FR-14** Responsive Design
+- **FR-15** Privacy & Data Handling
+- **FR-16** Documentation & Traceability
+
+---
+
+## Metrics Added
+
+- Total Records
+- New Borrow Requests
+- Pending Requests
+- Resolution Rate
+- Search Activity
+- Average Processing Time
+- Activity Timeline
+- Requirement Coverage
+- Record Status Distribution
+- Item Category Distribution
+
+---
+
+## Problems Found
+
+- Some prototype features required additional refinement to improve the user experience and navigation.
+- Integrating the CSV datasets with Power BI required ensuring that table relationships and column names matched correctly.
+- Several DAX measures initially returned incorrect values because of slicer filters and data relationships, requiring further testing and adjustment.
+- The Power BI dashboard required manual data refresh after updating the CSV files to ensure the latest information was displayed.
+- Team members worked on different parts of the project simultaneously, so merging updates and keeping GitHub documentation synchronized required extra coordination.
+
+---
+
+## Next Action Before Lab 12
+
+- Connect the prototype directly to a live database instead of CSV files.
+- Improve responsive design for mobile devices.
+- Add user authentication and authorization.
+- Automate dashboard refresh using the connected database.
+- Enhance the admin panel with additional management functions.
+- Perform additional usability testing and resolve any remaining UI issues.
+- Finalize documentation and prepare the project for the final presentation.
