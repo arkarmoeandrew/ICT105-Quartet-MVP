@@ -1,0 +1,16 @@
+RecordID,SubmittedDate,LastUpdatedDate,ItemCategory,Location,Priority,CurrentStatus,ResolutionDays,RequirementID,OwnerRole
+BR001,7/15/2026,7/16/2026,Laptop,Engineering Building,High,Borrowed,1,FR-03,Admin
+BR002,7/15/2026,7/17/2026,Camera,Library,Medium,Pending,2,FR-08,Admin
+BR003,7/16/2026,7/18/2026,Projector,Media Room,High,Returned,2,FR-08,Staff
+BR004,7/16/2026,7/18/2026,Calculator,Science Block,Low,Available,0,FR-05,Admin
+BR005,7/17/2026,7/19/2026,Power Bank,Student Center,Medium,Borrowed,2,FR-06,Admin
+BR006,7/17/2026,7/20/2026,Microphone,Auditorium,High,Pending,3,FR-09,Staff
+BR007,7/18/2026,7/19/2026,HDMI Cable,IT Lab,Low,Returned,1,FR-05,Admin
+BR008,7/18/2026,7/21/2026,Tablet,Library,High,Borrowed,3,FR-08,Staff
+BR009,7/19/2026,7/20/2026,Tripod,Media Room,Medium,Closed,1,FR-06,Admin
+BR010,7/19/2026,7/22/2026,Speaker,Student Center,Medium,Pending,3,FR-12,Admin
+BR011,7/20/2026,7/22/2026,Extension Cord,Engineering Building,Low,Available,0,FR-05,Staff
+BR012,7/20/2026,7/23/2026,DSLR Camera,Media Room,High,Claimed,3,FR-08,Admin
+BR013,7/21/2026,7/22/2026,Monitor,IT Lab,Medium,Borrowed,1,FR-03,Staff
+BR014,7/21/2026,7/24/2026,Mouse,Computer Lab,Low,Pending,3,FR-06,Admin
+BR015,7/22/2026,7/24/2026,Keyboard,Computer Lab,Low,Closed,2,FR-05,Admin
