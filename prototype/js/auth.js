@@ -82,6 +82,16 @@ function togglePasswordVisibility() {
   passwordInput.setSelectionRange(end, end);
 }
 
+function duplicateSignupMessage() {
+  return "An account may already exist for this email. Try signing in or reset your password. If you just created it, check your inbox for the confirmation email.";
+}
+
+function isDuplicateSignupError(error) {
+  const code = String(error?.code || "").toLowerCase();
+  const message = String(error?.message || "").toLowerCase();
+  return code === "user_already_exists" || message.includes("already registered") || message.includes("already exists");
+}
+
 async function submitAuth(event) {
   event.preventDefault();
   const data = new FormData(form);
@@ -146,6 +156,10 @@ async function submitAuth(event) {
         options: { data: { display_name: displayName, faculty } }
       });
       if (error) throw error;
+      if (Array.isArray(result.user?.identities) && result.user.identities.length === 0) {
+        setStatus(status, duplicateSignupMessage(), "error");
+        return;
+      }
       if (!result.session) {
         setStatus(status, "Check your inbox to confirm your account, then return here to sign in.", "success");
         return;
@@ -158,7 +172,8 @@ async function submitAuth(event) {
     }
     location.href = await destinationForSession(session);
   } catch (error) {
-    setStatus(status, error.message, "error");
+    const message = mode === "signup" && isDuplicateSignupError(error) ? duplicateSignupMessage() : error.message;
+    setStatus(status, message, "error");
   } finally {
     submitButton.disabled = false;
   }
