@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="../css/variables.css">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/components.css?v=20260720-3">
-  <link rel="stylesheet" href="../css/app.css?v=20260720-2">
+  <link rel="stylesheet" href="../css/app.css?v=20260722-1">
   <link rel="stylesheet" href="../css/responsive.css?v=20260719-3">
 </head>
 <body class="app-body" data-page="admin">
@@ -32,6 +32,24 @@
       </div>
       <p class="notice" hidden data-admin-status></p>
       <div class="metric-grid" data-admin-metrics><div class="metric-card"><b>—</b><span>Checking access</span></div></div>
+
+      <section class="admin-section" aria-labelledby="auto-approval-title">
+        <div class="admin-section__heading">
+          <div><p class="panel__eyebrow">Automation</p><h2 class="panel__title" id="auto-approval-title">Listing approval</h2><p>Choose whether every new listing is published immediately or waits for an administrator.</p></div>
+        </div>
+        <section class="panel admin-setting-card">
+          <div class="admin-setting-card__copy">
+            <h3>Auto-approve all new listings</h3>
+            <p id="auto-approval-description">When enabled, every newly submitted listing becomes public automatically. Existing pending listings are unchanged.</p>
+            <small data-auto-approve-meta>Loading moderation setting…</small>
+          </div>
+          <label class="admin-toggle">
+            <input type="checkbox" role="switch" aria-describedby="auto-approval-description" disabled data-auto-approve-toggle>
+            <span class="admin-toggle__track" aria-hidden="true"><span></span></span>
+            <b data-auto-approve-label>Off</b>
+          </label>
+        </section>
+      </section>
 
       <section class="admin-section" aria-labelledby="listing-moderation-title">
         <div class="admin-section__heading">
@@ -70,6 +88,6 @@
   </main>
   <footer data-app-footer></footer>
   <script type="module" src="../js/ui.js?v=20260720-4"></script>
-  <script type="module" src="../js/admin.js?v=20260720-4"></script>
+  <script type="module" src="../js/admin.js?v=20260722-1"></script>
 </body>
 </html>

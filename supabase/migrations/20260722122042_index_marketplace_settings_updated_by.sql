@@ -1,0 +1,2 @@
+create index marketplace_settings_updated_by_idx
+on public.marketplace_settings(updated_by);

@@ -5,6 +5,9 @@ const listingBody = document.querySelector("[data-admin-listings]");
 const memberBody = document.querySelector("[data-admin-members]");
 const searchInput = document.querySelector("[data-admin-search]");
 const statusFilter = document.querySelector("[data-admin-filter]");
+const autoApproveToggle = document.querySelector("[data-auto-approve-toggle]");
+const autoApproveLabel = document.querySelector("[data-auto-approve-label]");
+const autoApproveMeta = document.querySelector("[data-auto-approve-meta]");
 let currentSession;
 let allListings = [];
 let allMembers = [];
@@ -56,6 +59,16 @@ function renderMembers() {
   memberBody.querySelectorAll("[data-member-role]").forEach((button) => button.addEventListener("click", () => void updateMemberRole(button)));
 }
 
+function renderAutoApproveSetting(setting) {
+  const enabled = Boolean(setting?.auto_approve_listings);
+  autoApproveToggle.checked = enabled;
+  autoApproveToggle.disabled = false;
+  autoApproveLabel.textContent = enabled ? "On" : "Off";
+  autoApproveMeta.textContent = enabled
+    ? "New listings publish immediately. Turn this off to restore manual review."
+    : "New listings wait in Pending until an administrator approves them.";
+}
+
 async function initialiseAdmin() {
   currentSession = await getSession();
   if (!currentSession) {
@@ -74,12 +87,13 @@ async function initialiseAdmin() {
 }
 
 async function loadAdminData() {
-  const [listingResult, requestResult, memberResult] = await Promise.all([
+  const [listingResult, requestResult, memberResult, settingResult] = await Promise.all([
     supabase.from("listings").select("id,title,type,status,created_at,profiles!listings_owner_id_fkey(display_name)").order("created_at", { ascending: false }),
     supabase.from("requests").select("id", { count: "exact", head: true }),
-    supabase.from("profiles").select("id,display_name,faculty,role,created_at").order("created_at", { ascending: true })
+    supabase.from("profiles").select("id,display_name,faculty,role,created_at").order("created_at", { ascending: true }),
+    supabase.from("marketplace_settings").select("id,auto_approve_listings,updated_at").eq("id", "marketplace").single()
   ]);
-  const error = listingResult.error || requestResult.error || memberResult.error;
+  const error = listingResult.error || requestResult.error || memberResult.error || settingResult.error;
   if (error) {
     setStatus(statusBox, error.message, "error");
     return;
@@ -87,6 +101,7 @@ async function loadAdminData() {
 
   allListings = listingResult.data || [];
   allMembers = memberResult.data || [];
+  renderAutoApproveSetting(settingResult.data);
   const pending = allListings.filter((item) => item.status === "Pending").length;
   const available = allListings.filter((item) => item.status === "Available").length;
   document.querySelector("[data-admin-metrics]").innerHTML = [
@@ -98,6 +113,32 @@ async function loadAdminData() {
   ].map(([value, label]) => `<div class="metric-card"><b>${value}</b><span>${label}</span></div>`).join("");
   renderListings();
   renderMembers();
+}
+
+async function updateAutoApproval() {
+  const enabled = autoApproveToggle.checked;
+  autoApproveToggle.disabled = true;
+  autoApproveLabel.textContent = "Saving…";
+
+  const { data, error } = await supabase
+    .from("marketplace_settings")
+    .update({ auto_approve_listings: enabled })
+    .eq("id", "marketplace")
+    .select("id,auto_approve_listings,updated_at")
+    .single();
+
+  if (error) {
+    autoApproveToggle.checked = !enabled;
+    autoApproveToggle.disabled = false;
+    autoApproveLabel.textContent = enabled ? "Off" : "On";
+    setStatus(statusBox, error.message, "error");
+    return;
+  }
+
+  renderAutoApproveSetting(data);
+  setStatus(statusBox, enabled
+    ? "Auto-approval is on. Every new listing will publish immediately."
+    : "Auto-approval is off. New listings now require manual approval.", "success");
 }
 
 async function moderate(button) {
@@ -132,4 +173,5 @@ async function updateMemberRole(button) {
 
 searchInput?.addEventListener("input", renderListings);
 statusFilter?.addEventListener("change", renderListings);
+autoApproveToggle?.addEventListener("change", () => void updateAutoApproval());
 void initialiseAdmin();

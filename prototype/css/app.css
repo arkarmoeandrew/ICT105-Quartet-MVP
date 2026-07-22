@@ -1281,6 +1281,21 @@
 .role-badge--admin { background: #eee7f5; color: #642b73; }
 .current-admin-label { color: #16734b; font-size: .58rem; font-weight: 800; }
 
+.admin-setting-card { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.1rem 1.2rem; }
+.admin-setting-card__copy { min-width: 0; }
+.admin-setting-card__copy h3 { font-size: .82rem; }
+.admin-setting-card__copy p { max-width: 42rem; margin-top: .3rem; color: #706a75; font-size: .64rem; line-height: 1.55; }
+.admin-setting-card__copy small { display: block; margin-top: .55rem; color: #817686; font-size: .56rem; }
+.admin-toggle { display: inline-flex; flex: 0 0 auto; align-items: center; gap: .55rem; cursor: pointer; }
+.admin-toggle input { position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
+.admin-toggle__track { display: flex; width: 2.65rem; height: 1.45rem; align-items: center; padding: .16rem; border: 1px solid #d8cfdd; border-radius: 999px; background: #e9e4ec; transition: background .2s ease, border-color .2s ease; }
+.admin-toggle__track span { width: 1rem; height: 1rem; border-radius: 50%; background: white; box-shadow: 0 2px 6px rgba(45,24,49,.22); transition: transform .2s ease; }
+.admin-toggle input:checked + .admin-toggle__track { border-color: #642b73; background: #642b73; }
+.admin-toggle input:checked + .admin-toggle__track span { transform: translateX(1.15rem); }
+.admin-toggle input:focus-visible + .admin-toggle__track { outline: 3px solid rgba(45,148,255,.32); outline-offset: 2px; }
+.admin-toggle input:disabled + .admin-toggle__track { opacity: .5; }
+.admin-toggle b { min-width: 2.8rem; color: #642b73; font-size: .62rem; }
+
 .request-list { display: grid; gap: .75rem; margin-top: 1.25rem; }
 .request-card { padding: 1rem; }
 .request-card__top { display: flex; justify-content: space-between; gap: 1rem; }
@@ -1555,6 +1570,7 @@
   .metric-card { padding: .85rem; }
   .metric-card b { font-size: 1.2rem; }
   .admin-section__heading { align-items: stretch; flex-direction: column; }
+  .admin-setting-card { align-items: flex-start; flex-direction: column; }
   .admin-filters { grid-template-columns: 1fr; }
   .admin-table-wrap { overflow: visible; }
   .admin-data-table,

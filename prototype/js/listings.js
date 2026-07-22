@@ -322,9 +322,11 @@ async function publishListing(form, type, status, images = []) {
     }
     setStatus(status, "Publishing your listing…");
     const payload = { owner_id: session.user.id, type, title: String(data.get("title")).trim(), category: listingCategory(data), offer_method: String(data.get("offer_method")), price_label: formatPriceLabel(data.get("price_label"), "Free"), description: String(data.get("description")).trim(), extra_one: String(data.get("extra_one") || ""), extra_two: String(data.get("extra_two") || "").trim() || null, image_url: imageUrls[0] || null, image_urls: imageUrls, status: "Pending" };
-    const { data: listing, error } = await supabase.from("listings").insert(payload).select("id").single();
+    const { data: listing, error } = await supabase.from("listings").insert(payload).select("id,status").single();
     if (error) throw error;
-    setStatus(status, "Your listing is ready for review. You can manage it from My Listings.", "success");
+    setStatus(status, listing.status === "Available"
+      ? "Your listing was approved automatically and is now live in the marketplace."
+      : "Your listing is ready for review. You can manage it from My Listings.", "success");
     document.querySelector("[data-listing-next]").textContent = "Go to My Listings";
     return listing.id;
   } catch (error) {
