@@ -1,4 +1,4 @@
-import { escapeHtml, getSession, initials, setStatus, supabase } from "./supabase-client.js?v=20260720-4";
+import { escapeHtml, getSession, initials, supabase } from "./supabase-client.js?v=20260720-4";
 
 const conversationList = document.querySelector("[data-conversation-list]");
 const stream = document.querySelector("[data-message-stream]");
@@ -34,8 +34,8 @@ async function loadConversations() {
 }
 
 function renderConversationList() {
-  if (!conversations.length) { conversationList.innerHTML = `<div class="empty-state" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);color:white"><h3>No conversations yet</h3><p>Start from a listing or member profile.</p></div>`; return; }
-  conversationList.innerHTML = conversations.map((item) => `<button class="conversation-button ${item.id === activeId ? "is-active" : ""}" type="button" data-conversation-id="${item.id}"><span class="avatar">${item.other?.avatar_url ? `<img src="${escapeHtml(item.other.avatar_url)}" alt="">` : initials(item.other?.display_name)}</span><span><b>${escapeHtml(item.other?.display_name || "RSU member")}</b><small>Private conversation</small></span></button>`).join("");
+  if (!conversations.length) { conversationList.innerHTML = `<div class="empty-state" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);color:white"><h3>No conversations yet</h3><p>Open a marketplace listing and message its owner.</p><a class="button button--light button--small" href="marketplace.html" style="margin-top:.75rem">Browse listings</a></div>`; return; }
+  conversationList.innerHTML = conversations.map((item) => `<button class="conversation-button ${item.id === activeId ? "is-active" : ""}" type="button" data-conversation-id="${item.id}"><span class="avatar">${item.other?.avatar_url ? `<img src="${escapeHtml(item.other.avatar_url)}" alt="">` : initials(item.other?.display_name)}</span><span><b>${escapeHtml(item.other?.display_name || "RSU user")}</b><small>Private conversation</small></span></button>`).join("");
   conversationList.querySelectorAll("[data-conversation-id]").forEach((button) => button.addEventListener("click", () => void selectConversation(button.dataset.conversationId)));
 }
 
@@ -43,7 +43,7 @@ async function selectConversation(id) {
   activeId = id;
   renderConversationList();
   const conversation = conversations.find((item) => item.id === id);
-  header.innerHTML = `<span class="avatar">${conversation.other?.avatar_url ? `<img src="${escapeHtml(conversation.other.avatar_url)}" alt="">` : initials(conversation.other?.display_name)}</span><div><b>${escapeHtml(conversation.other?.display_name || "RSU member")}</b><small>Private conversation</small></div>`;
+  header.innerHTML = `<span class="avatar">${conversation.other?.avatar_url ? `<img src="${escapeHtml(conversation.other.avatar_url)}" alt="">` : initials(conversation.other?.display_name)}</span><div><b>${escapeHtml(conversation.other?.display_name || "RSU user")}</b><small>Private conversation</small></div>`;
   input.disabled = false;
   send.disabled = false;
   await loadMessages();
@@ -117,32 +117,13 @@ async function sendMessage(event) {
   }
 }
 
-async function loadMembers() {
-  const { data } = await supabase.from("profiles").select("id,display_name,faculty").neq("id", userId).order("display_name").limit(100);
-  document.querySelector("[data-member-select]").innerHTML = `<option value="">Select a member</option>${(data || []).map((profile) => `<option value="${profile.id}">${escapeHtml(profile.display_name)}${profile.faculty ? ` · ${escapeHtml(profile.faculty)}` : ""}</option>`).join("")}`;
-}
-
-async function createConversation(event) {
-  event.preventDefault();
-  const data = new FormData(event.currentTarget);
-  const status = document.querySelector("[data-new-conversation-status]");
-  const { data: id, error } = await supabase.rpc("start_conversation", { p_other_user: data.get("member_id"), p_listing_id: null, p_listing_title: "Direct message", p_listing_image_url: null });
-  if (error) { setStatus(status, error.message, "error"); return; }
-  document.querySelector("[data-new-conversation-modal]").hidden = true;
-  await loadConversations();
-  await selectConversation(id);
-}
-
 async function initialise() {
   const session = await getSession();
   if (!session) { location.href = `login.html?redirect=${encodeURIComponent(location.pathname + location.search)}`; return; }
   userId = session.user.id;
-  await Promise.all([loadConversations(), loadMembers()]);
+  await loadConversations();
 }
 
 form.addEventListener("submit", sendMessage);
-document.querySelector("[data-new-conversation]").addEventListener("click", () => { document.querySelector("[data-new-conversation-modal]").hidden = false; });
-document.querySelectorAll("[data-new-conversation-close]").forEach((button) => button.addEventListener("click", () => { document.querySelector("[data-new-conversation-modal]").hidden = true; }));
-document.querySelector("[data-new-conversation-form]").addEventListener("submit", createConversation);
 window.addEventListener("beforeunload", () => { if (channel) void supabase.removeChannel(channel); });
 void initialise();
