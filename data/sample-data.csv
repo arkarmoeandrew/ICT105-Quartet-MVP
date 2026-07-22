@@ -1,0 +1,16 @@
+RecordID,ItemCategory,ItemName,Description,CurrentStatus,Priority,Location,BorrowerName,BorrowDate,ReturnDate,RequirementID
+BR001,Laptop,Dell Latitude 5420,14-inch student laptop,Borrowed,High,IT Service Center,Alice,7/15/2026,7/20/2026,FR-03
+BR002,Camera,Canon EOS M50,Mirrorless camera for media projects,Pending,Medium,Media Room,,7/16/2026,,FR-08
+BR003,Projector,Epson EB-X06,Portable classroom projector,Returned,High,Engineering Building,Bob,7/16/2026,7/18/2026,FR-08
+BR004,Calculator,Casio FX-991ES Plus,Scientific calculator,Available,Low,Library,,,,FR-05
+BR005,Power Bank,Anker PowerCore 20000,Portable phone charger,Borrowed,Medium,Student Affairs,Charlie,7/17/2026,7/22/2026,FR-06
+BR006,Microphone,Blue Yeti USB,USB microphone for presentations,Pending,High,Media Lab,,7/18/2026,,FR-09
+BR007,HDMI Cable,HDMI 2.1 Cable,2-meter HDMI cable,Returned,Low,IT Service Center,David,7/18/2026,7/19/2026,FR-05
+BR008,Tablet,iPad Air,Tablet for classroom activities,Borrowed,High,Library,Eva,7/19/2026,7/24/2026,FR-08
+BR009,Tripod,Camera Tripod,Adjustable tripod for cameras,Closed,Medium,Media Room,Frank,7/20/2026,7/21/2026,FR-06
+BR010,Speaker,JBL Flip 6,Bluetooth portable speaker,Pending,Medium,Student Center,,7/20/2026,,FR-12
+BR011,Monitor,Dell 24-inch Monitor,External monitor for study,Available,Low,Computer Lab,,,,FR-05
+BR012,Mouse,Logitech M720,Wireless mouse,Claimed,Low,Library,Grace,7/21/2026,7/21/2026,FR-07
+BR013,Keyboard,Keychron K2,Mechanical keyboard,Borrowed,Medium,Computer Lab,Henry,7/21/2026,7/25/2026,FR-06
+BR014,DSLR Camera,Nikon D5600,DSLR camera for photography,Available,High,Media Room,,,,FR-07
+BR015,Extension Cable,Power Extension Board,6-outlet extension cable,Closed,Low,Engineering Building,Ian,7/22/2026,7/22/2026,FR-12
