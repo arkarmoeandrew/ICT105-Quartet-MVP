@@ -145,7 +145,7 @@ async function submitRequest(event) {
     const { data: request, error } = await supabase.from("requests").insert({ listing_id: modal.dataset.listingId, requester_id: session.user.id, owner_id: modal.dataset.ownerId, message, preferred_time: String(formData.get("preferred_time") || "").trim() || null }).select("id").single();
     if (error) throw error;
     const { data: conversationId, error: conversationError } = await supabase.rpc("start_conversation", { p_other_user: modal.dataset.ownerId, p_listing_id: modal.dataset.listingId, p_listing_title: modal.dataset.listingTitle, p_listing_image_url: null });
-    if (!conversationError && conversationId) await supabase.from("messages").insert({ conversation_id: conversationId, sender_id: session.user.id, body: `Request sent: ${message}` });
+    if (!conversationError && conversationId) await supabase.from("messages").insert({ conversation_id: conversationId, sender_id: session.user.id, body: `Request for ${modal.dataset.listingTitle}: ${message}` });
     requestForm.reset();
     modal.hidden = true;
     setStatus(status, "");

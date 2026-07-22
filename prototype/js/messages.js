@@ -35,7 +35,7 @@ async function loadConversations() {
 
 function renderConversationList() {
   if (!conversations.length) { conversationList.innerHTML = `<div class="empty-state" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);color:white"><h3>No conversations yet</h3><p>Start from a listing or member profile.</p></div>`; return; }
-  conversationList.innerHTML = conversations.map((item) => `<button class="conversation-button ${item.id === activeId ? "is-active" : ""}" type="button" data-conversation-id="${item.id}"><span class="avatar">${item.other?.avatar_url ? `<img src="${escapeHtml(item.other.avatar_url)}" alt="">` : initials(item.other?.display_name)}</span><span><b>${escapeHtml(item.other?.display_name || "RSU member")}</b><small>${escapeHtml(item.listing_title)}</small><small>${escapeHtml(item.request_status)}</small></span></button>`).join("");
+  conversationList.innerHTML = conversations.map((item) => `<button class="conversation-button ${item.id === activeId ? "is-active" : ""}" type="button" data-conversation-id="${item.id}"><span class="avatar">${item.other?.avatar_url ? `<img src="${escapeHtml(item.other.avatar_url)}" alt="">` : initials(item.other?.display_name)}</span><span><b>${escapeHtml(item.other?.display_name || "RSU member")}</b><small>Private conversation</small></span></button>`).join("");
   conversationList.querySelectorAll("[data-conversation-id]").forEach((button) => button.addEventListener("click", () => void selectConversation(button.dataset.conversationId)));
 }
 
@@ -43,7 +43,7 @@ async function selectConversation(id) {
   activeId = id;
   renderConversationList();
   const conversation = conversations.find((item) => item.id === id);
-  header.innerHTML = `<span class="avatar">${conversation.other?.avatar_url ? `<img src="${escapeHtml(conversation.other.avatar_url)}" alt="">` : initials(conversation.other?.display_name)}</span><div><b>${escapeHtml(conversation.other?.display_name || "RSU member")}</b><small>${escapeHtml(conversation.listing_title)} · ${escapeHtml(conversation.request_status)}</small></div>`;
+  header.innerHTML = `<span class="avatar">${conversation.other?.avatar_url ? `<img src="${escapeHtml(conversation.other.avatar_url)}" alt="">` : initials(conversation.other?.display_name)}</span><div><b>${escapeHtml(conversation.other?.display_name || "RSU member")}</b><small>Private conversation</small></div>`;
   input.disabled = false;
   send.disabled = false;
   await loadMessages();
@@ -126,7 +126,7 @@ async function createConversation(event) {
   event.preventDefault();
   const data = new FormData(event.currentTarget);
   const status = document.querySelector("[data-new-conversation-status]");
-  const { data: id, error } = await supabase.rpc("start_conversation", { p_other_user: data.get("member_id"), p_listing_id: null, p_listing_title: String(data.get("listing_title") || "").trim() || "Direct message", p_listing_image_url: null });
+  const { data: id, error } = await supabase.rpc("start_conversation", { p_other_user: data.get("member_id"), p_listing_id: null, p_listing_title: "Direct message", p_listing_image_url: null });
   if (error) { setStatus(status, error.message, "error"); return; }
   document.querySelector("[data-new-conversation-modal]").hidden = true;
   await loadConversations();
