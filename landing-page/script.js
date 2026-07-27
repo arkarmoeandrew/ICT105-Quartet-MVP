@@ -6,13 +6,13 @@ const interestBars = document.querySelectorAll("[data-interest-bar]");
 const interestCounts = document.querySelectorAll("[data-interest-count]");
 
 const STORAGE_KEYS = {
-  interestCount: "rsu-nexus-demo-interest-count",
-  submitted: "rsu-nexus-demo-interest-submitted",
-  ctaClicks: "rsu-nexus-demo-cta-clicks"
+  interestCount: "rsu-nexus-landing-demo-interest-v2",
+  submitted: "rsu-nexus-landing-demo-submitted-v2",
+  ctaClicks: "rsu-nexus-landing-demo-cta-clicks-v2"
 };
 
-const BASE_INTEREST_COUNT = 126;
-const INTEREST_TARGET = 200;
+const BASE_INTEREST_COUNT = 0;
+const INTEREST_TARGET = 20;
 
 function readNumber(key, fallback) {
   try {
@@ -90,16 +90,16 @@ const resourceExamples = {
   Learning: {
     icon: "NOTE",
     category: "LEARNING RESOURCE",
-    title: "Database Study Notes",
-    description: "Shared by an ICT student",
+    title: "Database Systems Study Notes",
+    description: "Learning resource · Share",
     price: "Free"
   },
   Services: {
     icon: "DES",
     category: "STUDENT SERVICE",
-    title: "Presentation Design Help",
-    description: "On-campus creative support",
-    price: "฿250"
+    title: "Graphic design assistance",
+    description: "Posters, decks and visual identities",
+    price: "From ฿250"
   }
 };
 
@@ -133,9 +133,9 @@ interestForm?.addEventListener("submit", (event) => {
     saveValue(STORAGE_KEYS.interestCount, updatedCount);
     saveValue(STORAGE_KEYS.submitted, true);
     renderInterestMetric();
-    statusMessage.textContent = "Thanks—your simulated interest was added to the prototype metric.";
+    statusMessage.textContent = "Thanks—your demo response was added to this browser’s local metric.";
   } else {
-    statusMessage.textContent = "Your simulated interest is already included in the metric.";
+    statusMessage.textContent = "Your demo response is already included in this browser’s local metric.";
   }
 
   interestForm.reset();

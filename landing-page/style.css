@@ -91,19 +91,14 @@ a {
   gap: 11px;
 }
 
-.brand-mark {
-  display: grid;
+.brand-logo {
+  display: block;
   width: 45px;
   height: 45px;
-  place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 13px;
-  background: linear-gradient(145deg, #8d36b2 0%, #df2db8 52%, #2389f2 100%);
   box-shadow: 0 10px 25px rgba(199, 40, 190, 0.24);
-  color: white;
-  font-family: "DM Mono", monospace;
-  font-size: 1.15rem;
-  font-weight: 500;
+  object-fit: cover;
 }
 
 .brand strong,
@@ -775,12 +770,61 @@ select:focus-visible {
   line-height: 1.75;
 }
 
+.validation-metrics {
+  display: grid;
+  gap: 10px;
+  margin-top: 32px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.validation-metrics > div {
+  padding: 18px;
+  border: 1px solid #dfd6e3;
+  border-radius: 14px;
+  background: #faf7fb;
+}
+
+.validation-metrics strong,
+.validation-metrics span {
+  display: block;
+}
+
+.validation-metrics strong {
+  color: var(--purple-700);
+  font-size: 1.15rem;
+  letter-spacing: -0.04em;
+}
+
+.validation-metrics span {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.55rem;
+}
+
+.evidence-note {
+  margin: 14px 0 0;
+  color: #8c828f;
+  font-size: 0.51rem;
+  line-height: 1.6;
+}
+
+.evidence-note code {
+  color: var(--purple-700);
+  font-family: "DM Mono", monospace;
+}
+
 .interest-card {
   margin-top: 36px;
   padding: 23px;
   border: 1px solid #dfd6e3;
   border-radius: 16px;
   background: #faf7fb;
+}
+
+.interest-card-compact {
+  margin-top: 22px;
+  padding: 18px;
+  background: white;
 }
 
 .interest-card strong {
