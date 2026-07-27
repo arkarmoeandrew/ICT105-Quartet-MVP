@@ -414,3 +414,44 @@ Before the final prototype submission, the team plans to:
 - Automate dashboard data refresh using the connected database.
 - Perform additional usability testing and resolve remaining UI/UX issues.
 - Finalize project documentation and prepare for the final presentation.
+
+## Lab 12 – Landing Page and Digital Go-to-Market
+
+### Landing Page
+- Landing page folder/link: `/landing-page/`
+- Main CTA: **Explore RSU Nexus**
+- Prototype/demo link: https://ict-105-quartet-mvp-w2yc.vercel.app
+
+### Go-to-Market Plan
+- Target early users:
+  RSU students looking to borrow, rent, share, offer equipment, learning resources, tutors, and student services.
+
+- Selected channels:
+  - Class Chat
+  - Email
+  - Campus Poster / QR Code
+  - Instagram / Facebook
+
+- Main marketing message:
+  **One campus. One marketplace. Discover, borrow, rent, share, and offer equipment, learning resources, tutors, and student services with RSU Nexus.**
+
+### Acquisition Metrics
+- Metric 1: Landing Page Views
+- Metric 2: CTA Click Rate
+- Metric 3: Demo Attempts / Feedback Responses
+
+### Screenshots
+- Landing page screenshot: `/screenshots/landing-page.png`
+- CTA screenshot: `/screenshots/call-to-action.png`
+
+### Requirement Alignment
+The Lab 12 landing page accurately represents the RSU Nexus prototype developed in Labs 10 and 11. It highlights the core value proposition, supported features, and a clear call-to-action that directs users to the working prototype. The landing page aligns with the final system requirements by promoting only implemented or planned MVP functionality, including browsing resources, searching listings, creating requests, and connecting students with campus equipment, learning resources, tutors, and student services.
+
+### Member Contributions
+
+| Member | Contribution | Commit/Issue Evidence |
+|---------|--------------|-----------------------|
+| **Arkar Moe** | Developed the landing page, implemented HTML/CSS/JavaScript, prepared the landing page content, and connected the CTA buttons. | `/landing-page/index.html`, `/landing-page/style.css`, `/landing-page/script.js`, `/docs/landing-page-content.md` |
+| **Thiri Shin Thant** | Prepared the digital go-to-market strategy, marketing message, and acquisition metrics documentation. | `/docs/go-to-market-plan.md`, `/docs/marketing-message.md`, `/docs/acquisition-metrics.md` |
+| **Min Khant Ko** | Created the acquisition metrics tracking CSV and captured the landing page & CTA screenshots. | `/data/acquisition-metrics-template.csv`, `/screenshots/landing-page.png`, `/screenshots/call-to-action.png` |
+| **Lin Htet Aung** | Updated the README documentation and weekly logbook. | `README.md`, `/docs/weekly-logbook.md` |
