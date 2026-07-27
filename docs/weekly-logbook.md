@@ -637,3 +637,59 @@ MVP Implementation Sprint 2 and Startup Metrics
 - Enhance the admin panel with additional management functions.
 - Perform additional usability testing and resolve any remaining UI issues.
 - Finalize documentation and prepare the project for the final presentation.
+
+# Weekly Logbook – Lab 12
+
+## Group Name
+Quartet
+
+## Project Title
+RSU Nexus – Campus Resource Marketplace
+
+## Lab Date
+27 July 2026
+
+## Work Completed Today
+
+### Member Contributions
+
+| Member | Contribution | Commit/Issue Evidence |
+|---------|--------------|-----------------------|
+| **Arkar Moe** | Developed the landing page, implemented HTML/CSS/JavaScript, prepared the landing page content, and connected the CTA buttons. | `/landing-page/index.html`, `/landing-page/style.css`, `/landing-page/script.js`, `/docs/landing-page-content.md` |
+| **Thiri Shin Thant** | Prepared the digital go-to-market strategy, marketing message, and acquisition metrics documentation. | `/docs/go-to-market-plan.md`, `/docs/marketing-message.md`, `/docs/acquisition-metrics.md` |
+| **Min Khant Ko** | Created the acquisition metrics tracking CSV and captured the landing page & CTA screenshots. | `/data/acquisition-metrics-template.csv`, `/screenshots/landing-page.png`, `/screenshots/call-to-action.png` |
+| **Lin Htet Aung** | Updated the README documentation and weekly logbook. | `README.md`, `/docs/weekly-logbook.md` |
+
+## Landing Page Progress
+
+A responsive landing page was completed to communicate the value of RSU Nexus. The page introduces the platform, explains the problem and solution, highlights key features, includes clear call-to-action buttons, and links users directly to the working prototype. Promotional QR codes and screenshots were also prepared.
+
+## Go-to-Market Progress
+
+The target users were identified as RSU students looking to borrow, rent, share, or offer equipment, learning resources, tutoring, and campus services. Promotion channels include class chat groups, campus QR posters, Instagram/Facebook, and student communities. Marketing messages and CTA buttons were created to encourage students to visit the landing page and test the prototype.
+
+## Metrics Plan
+
+The team will measure:
+- Landing page views
+- CTA button clicks
+- Prototype demo attempts
+- Feedback responses
+- Interest conversion rate
+
+These metrics will be collected using the acquisition tracking spreadsheet, QR code visits, prototype logs, and Google Forms.
+
+## Problems Encountered
+
+- The landing page content was revised several times to better match the final prototype.
+- QR code and deployment links needed to be updated after deployment.
+- Marketing messages were refined to clearly communicate all supported marketplace services (borrow, rent, share, offer resources, tutoring, and student services).
+- Documentation was updated to remain consistent with the latest prototype implementation.
+
+## Next Action Before Lab 13
+
+- Collect real user feedback from RSU students.
+- Monitor acquisition metrics and evaluate campaign performance.
+- Improve the landing page based on user feedback.
+- Continue refining the prototype and implement any remaining features.
+- Update documentation, screenshots, and README with the latest progress.
