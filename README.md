@@ -455,3 +455,39 @@ The Lab 12 landing page accurately represents the RSU Nexus prototype developed 
 | **Thiri Shin Thant** | Prepared the digital go-to-market strategy, marketing message, and acquisition metrics documentation. | `/docs/go-to-market-plan.md`, `/docs/marketing-message.md`, `/docs/acquisition-metrics.md` |
 | **Min Khant Ko** | Created the acquisition metrics tracking CSV and captured the landing page & CTA screenshots. | `/data/acquisition-metrics-template.csv`, `/screenshots/landing-page.png`, `/screenshots/call-to-action.png` |
 | **Lin Htet Aung** | Updated the README documentation and weekly logbook. | `README.md`, `/docs/weekly-logbook.md` |
+
+## Lab 13: Sales Scenario, Demo Script, and User Testing
+
+### Lab 13 Objective
+
+This lab focused on preparing the final demonstration of RSU Nexus by creating a realistic sales scenario, structured demo script, user testing plan, testing results, and a prioritized improvement list. The objective was to verify that the prototype satisfies the project requirements before the final MVP release in Lab 14.
+
+---
+
+### Files Completed
+
+- [x] /docs/sales-scenario.md
+- [x] /docs/demo-script.md
+- [x] /docs/user-testing-plan.md
+- [x] /docs/user-testing-results.md
+- [x] /docs/final-improvement-list.md
+- [x] /docs/weekly-logbook.md
+- [x] /screenshots/demo-flow.png
+- [x] /screenshots/user-testing-evidence.png
+
+---
+
+### Prototype / Demo Link
+
+**Prototype (Main Application):**  
+https://ict-105-quartet-mvp-w2yc.vercel.app
+
+---
+
+### Final Preparation Status
+
+The RSU Nexus prototype is largely complete and demonstrates the complete user workflow, including marketplace exploration, resource details, request submission, status tracking, messaging between users, and administrator management.
+
+User testing has been completed and the feedback has been documented. Most identified issues are minor usability improvements such as clearer labels, improved navigation, and UI consistency. These improvements have been prioritized in the Final Improvement List.
+
+The team considers the prototype **ready for the final improvement phase before Lab 14**, with only minor refinements remaining before the final MVP presentation.
