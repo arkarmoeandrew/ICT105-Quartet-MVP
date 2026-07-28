@@ -1,5 +1,13 @@
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .app-body {
+  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
   background: #f7f5f8;
 }
 
@@ -17,6 +25,8 @@
   position: sticky;
   z-index: 50;
   top: 0;
+  width: 100%;
+  max-width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(36, 20, 40, 0.96);
   color: white;
@@ -156,6 +166,8 @@
 }
 
 .app-footer {
+  width: 100%;
+  max-width: 100%;
   margin-top: 5rem;
   padding: 3rem 0 1.5rem;
   background: #211225;
