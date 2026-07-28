@@ -1576,9 +1576,37 @@ html {
   .form-grid { grid-template-columns: 1fr; }
   .form-grid .span-2 { grid-column: auto; }
   .progress-step { justify-content: center; padding: .8rem .3rem; font-size: .58rem; }
+  .workspace-layout {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .workspace-sidebar,
+  .workspace-sidebar nav,
+  .workspace-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .workspace-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .workspace-heading > div { min-width: 0; }
+  .workspace-heading .button { width: 100%; }
   .workspace-content { padding: 1rem; }
-  .dashboard-grid { grid-template-columns: 1fr; }
-  .metric-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: .5rem; }
+  .dashboard-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .dashboard-grid > * { min-width: 0; }
+  .metric-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: .5rem;
+  }
   .metric-card { padding: .85rem; }
   .metric-card b { font-size: 1.2rem; }
   .admin-section__heading { align-items: stretch; flex-direction: column; }
@@ -1607,8 +1635,16 @@ html {
   .profile-photo-setting .button { grid-column: 1 / -1; width: 100%; }
   .photo-editor-body { padding: 1rem; }
   .photo-editor-mask { inset: 7%; }
-  .app-footer__inner { grid-template-columns: 1fr; }
-  .app-footer__inner > div:first-child { grid-column: auto; }
+  .app-footer__inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem .75rem;
+  }
+  .app-footer__inner > div:first-child { grid-column: 1 / -1; }
+  .app-footer__inner > div > b { font-size: .7rem; }
+  .app-footer__inner > div > a:not(.app-brand) {
+    overflow-wrap: anywhere;
+    font-size: .64rem;
+  }
 }
 
 @media (max-width: 28rem) {
