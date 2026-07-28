@@ -693,3 +693,82 @@ These metrics will be collected using the acquisition tracking spreadsheet, QR c
 - Improve the landing page based on user feedback.
 - Continue refining the prototype and implement any remaining features.
 - Update documentation, screenshots, and README with the latest progress.
+
+# Weekly Logbook – Lab 13
+
+## Group Name
+Quartet
+
+## Project Title
+RSU Nexus – Campus Resource Marketplace
+
+## Date
+28 July 2026
+
+---
+
+## Members and Contributions
+
+| Member | Contribution This Lab | GitHub Evidence |
+|--------|------------------------|-----------------|
+| **Thiri Shin Thant** | Created `/docs/sales-scenario.md` and `/docs/demo-script.md`. | Sales scenario and demo script commits. |
+| **Min Khant Ko** | Created `/docs/user-testing-plan.md` and `/docs/user-testing-results.md`. | User testing documentation commits. |
+| **Arkar Moe** | Created `/docs/final-improvement-list.md`, `/screenshots/demo-flow.png`, and `/screenshots/user-testing-evidence.png`. | Improvement list and screenshot commits. |
+| **Lin Htet Aung** | Updated `README.md` and `/docs/weekly-logbook.md`. | README and weekly logbook commits. |
+
+---
+
+## Work Completed
+
+- **Sales scenario:** Created a realistic customer scenario explaining how RSU students discover and use RSU Nexus to borrow, rent, share, offer resources, and hire student services.
+- **Demo script:** Prepared a complete presentation flow covering the landing page, marketplace exploration, resource details, request submission, status tracking, dashboard, and project closing.
+- **User testing plan:** Defined tester profiles, testing objectives, user tasks, success criteria, observation points, testing procedures, and ethical considerations.
+- **User testing results:** Recorded testing summary, task completion, usability issues, user feedback, and evidence-based improvement decisions.
+- **Final improvement list:** Prioritized improvements into Critical, Important, Useful, and Future categories before the final Lab 14 submission.
+- **Screenshots:** Captured the prototype demonstration flow and user testing evidence for project documentation.
+
+---
+
+## Key Decisions
+
+- Use a single campus marketplace to support borrowing, renting, sharing, offering resources, and hiring student services.
+- Maintain one GitHub repository and one Vercel deployment for the final prototype.
+- Use the landing page as the entry point to the main prototype.
+- Ensure every demo step is traceable to the functional requirements (FR-01 to FR-16).
+- Focus user testing on the complete marketplace workflow rather than individual pages.
+
+---
+
+## Problems Encountered
+
+- Some users were initially unsure how to begin exploring the marketplace.
+- The request workflow required clearer labels and button wording.
+- Navigation between marketplace pages needed to be more consistent.
+- Minor UI improvements were identified from user feedback.
+- Documentation and screenshots needed to match the final prototype.
+
+---
+
+## Next Actions Before Lab 14
+
+- Implement the remaining priority improvements from user testing.
+- Verify all functional requirements (FR-01 to FR-16) are demonstrated.
+- Complete final prototype testing.
+- Update screenshots and documentation if changes are made.
+- Review README and repository structure before final submission.
+- Practice the final project presentation as a team.
+
+---
+
+## Requirement Traceability Notes
+
+The team confirmed that the final prototype remains aligned with the project requirements. Before Lab 14, the following items should receive a final review:
+
+- FR-08 Status Tracking
+- FR-09 Admin Functions
+- FR-10 Input Validation
+- FR-11 Confirmation Messages
+- FR-12 Dashboard & Metrics
+- FR-16 Documentation and Traceability
+
+All documentation, screenshots, and demonstration steps have been prepared to support the final MVP presentation.
