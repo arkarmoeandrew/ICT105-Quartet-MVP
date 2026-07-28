@@ -37,7 +37,7 @@ export function renderAppHeader(active = "") {
         <a href="${root}pages/marketplace.html?type=Service">Services</a>
       </div>
       <div class="app-nav__actions">
-        <a class="button button--outline-light button--small" href="${root}pages/dashboard.html" data-auth-only>Dashboard</a>
+        <a href="${root}pages/dashboard.html" data-auth-only>Dashboard</a>
         <a href="${root}pages/messages.html" data-auth-only>Messages</a>
         <a href="${root}pages/admin.html" data-admin-only hidden>Admin</a>
         <a href="${root}pages/login.html" class="app-profile-link" data-user-link><span data-user-avatar>RS</span><b data-user-name>Log in</b></a>
