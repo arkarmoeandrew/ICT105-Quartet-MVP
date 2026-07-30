@@ -7,7 +7,7 @@ These requirements define the minimum prototype functionalities for the **RSU Ne
 | Req ID | Minimum Prototype Functionality | What Students Must Show in Final Prototype |
 | --- | --- | --- |
 | **FR-01** | **Clear problem-specific homepage or landing screen** | The prototype must clearly show the project title **RSU Nexus – Campus Resource Marketplace**, the target users, the problem being solved, and the main actions users can take, such as browsing resources, creating listings, or requesting services. |
-| **FR-02** | **Primary user pathway** | The prototype must show the main user flow from start to finish: open RSU Nexus → log in → browse marketplace → search/filter listings → view listing details → submit a request or contact the owner → receive confirmation/status. |
+| **FR-02** | **Primary user pathway** | The prototype must show the main user flow from start to finish: open RSU Nexus → log in → Homepage → Explore Marketplace → Search/Filter → Listing Detail → Submit Request → Message Owner → Dashboard |
 | **FR-03** | **User input or data submission feature** | The system must allow students to submit information by creating a resource, equipment, or student service listing with details such as title, description, category, availability, and arrangement information. |
 | **FR-04** | **Data storage or record management** | Submitted listings and request information must be stored persistently in Supabase PostgreSQL, with listing images stored in Supabase Storage. Sample JSON may be used only as temporary development or test data. |
 | **FR-05** | **View records / information list** | The prototype must allow users to view marketplace records, such as available equipment, academic resources, student services, and submitted listings. |
