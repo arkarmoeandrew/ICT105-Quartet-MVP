@@ -27,9 +27,22 @@ let channel = null;
 let selectionVersion = 0;
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-function syncViewportHeight() {
-  const viewportHeight = window.visualViewport?.height || window.innerHeight;
-  document.documentElement.style.setProperty("--messages-viewport-height", `${Math.round(viewportHeight)}px`);
+function syncViewportMetrics() {
+  const viewport = window.visualViewport;
+  const width = viewport?.width || window.innerWidth;
+  const height = viewport?.height || window.innerHeight;
+  const top = viewport?.offsetTop || 0;
+  const left = viewport?.offsetLeft || 0;
+  const root = document.documentElement.style;
+  root.setProperty("--messages-viewport-width", `${Math.round(width)}px`);
+  root.setProperty("--messages-viewport-height", `${Math.round(height)}px`);
+  root.setProperty("--messages-viewport-top", `${Math.round(top)}px`);
+  root.setProperty("--messages-viewport-left", `${Math.round(left)}px`);
+}
+
+function syncMobileChatState() {
+  document.body.classList.toggle("is-mobile-chat-open", Boolean(activeId && mobileQuery.matches));
+  syncViewportMetrics();
 }
 
 function time(value) {
@@ -142,6 +155,7 @@ async function selectConversation(id) {
   const version = ++selectionVersion;
   activeId = id;
   shell.classList.add("has-active-conversation");
+  syncMobileChatState();
   renderConversationList();
   const conversation = conversations.find((item) => item.id === id);
   if (!conversation) return;
@@ -334,6 +348,7 @@ function showConversationList() {
   selectionVersion += 1;
   activeId = null;
   shell.classList.remove("has-active-conversation");
+  syncMobileChatState();
   stream.removeAttribute("aria-busy");
   stream.classList.remove("is-hydrating");
   chatListing.hidden = true;
@@ -367,9 +382,13 @@ filters.forEach((button) => button.addEventListener("click", () => {
 back.addEventListener("click", showConversationList);
 input.addEventListener("input", resizeComposer);
 input.addEventListener("focus", () => {
-  syncViewportHeight();
-  window.setTimeout(() => scrollToLatest("auto"), 180);
+  syncViewportMetrics();
+  window.setTimeout(() => {
+    syncViewportMetrics();
+    scrollToLatest("auto");
+  }, 180);
 });
+input.addEventListener("blur", () => window.setTimeout(syncViewportMetrics, 120));
 input.addEventListener("keydown", (event) => {
   if (event.key === "Enter" && !event.shiftKey) {
     event.preventDefault();
@@ -377,13 +396,15 @@ input.addEventListener("keydown", (event) => {
   }
 });
 mobileQuery.addEventListener("change", (event) => {
+  syncMobileChatState();
   if (!event.matches && !activeId && conversations[0]) void selectConversation(conversations[0].id);
 });
 window.addEventListener("beforeunload", () => { if (channel) void supabase.removeChannel(channel); });
 window.visualViewport?.addEventListener("resize", () => {
-  syncViewportHeight();
+  syncViewportMetrics();
   if (activeId) scrollToLatest("auto");
 }, { passive: true });
-window.addEventListener("resize", syncViewportHeight, { passive: true });
-syncViewportHeight();
+window.visualViewport?.addEventListener("scroll", syncViewportMetrics, { passive: true });
+window.addEventListener("resize", syncViewportMetrics, { passive: true });
+syncViewportMetrics();
 void initialise();
