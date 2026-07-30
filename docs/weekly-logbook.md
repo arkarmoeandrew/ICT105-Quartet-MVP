@@ -772,3 +772,66 @@ The team confirmed that the final prototype remains aligned with the project req
 - FR-16 Documentation and Traceability
 
 All documentation, screenshots, and demonstration steps have been prepared to support the final MVP presentation.
+
+# Weekly Logbook – Lab 14
+
+## Group Name
+Quartet
+
+## Date
+30 July 2026
+
+## Members Present
+- Arkar Moe
+- Thiri Shin Thant
+- Min Khant Ko
+- Lin Htet Aung
+
+## What We Completed Today
+- Completed the final prototype documentation.
+- Updated the feature implementation status.
+- Prepared the final prototype report.
+- Completed the final demo script.
+- Prepared the final pitch slides.
+- Updated the project README.
+- Completed the weekly logbook.
+- Captured and uploaded the final prototype screenshots.
+- Performed the final review before submission.
+
+## Final Prototype Updates
+- Verified the complete user workflow:
+  Homepage → Explore Marketplace → Listing Detail → Submit Request → Message Owner → Dashboard.
+- Updated all final prototype screenshots.
+- Confirmed feature implementation matches the final prototype.
+- Verified prototype navigation and core functionality.
+
+## Final Documentation Updates
+- Completed `feature-implementation-status.md`.
+- Completed `final-prototype-report.md`.
+- Completed `final-demo-script.md`.
+- Updated `README.md`.
+- Updated `weekly-logbook.md`.
+- Completed final venture pitch slides.
+
+## GitHub Contributions Today
+
+| Member | File/Issue/Commit Updated | Evidence Link |
+|---------|---------------------------|---------------|
+| **Arkar Moe** | Uploaded all final prototype screenshots (`final-homepage.png`, `final-input-form.png`, `final-record-list.png`, `final-detail-view.png`, `final-dashboard.png`, `final-admin-view.png`) | GitHub commits |
+| **Thiri Shin Thant** | Created `docs/feature-implementation-status.md`, `docs/final-prototype-report.md`, and `docs/final-demo-script.md` | GitHub commits |
+| **Lin Htet Aung** | Updated `README.md`, `docs/weekly-logbook.md`, and prepared `pitch/final-pitch-slides.pptx` | GitHub commits |
+| **Min Khant Ko** | Reviewed the final prototype, verified documentation consistency, requirement traceability, and supported final testing before submission. | GitHub commits / Team review |
+
+## Problems Found Before Submission
+- Fixed document consistency across all final reports.
+- Verified screenshot names follow the required naming convention.
+- Checked folder structure and documentation.
+- Reviewed spelling, formatting, and requirement traceability.
+- Verified there are no broken links in the repository.
+
+## Action Before Final Presentation
+- Verify all prototype links work correctly.
+- Confirm all screenshots are uploaded.
+- Perform a complete end-to-end demo rehearsal.
+- Ensure the presentation follows the final demo script.
+- Double-check GitHub repository before submission.
