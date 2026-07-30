@@ -1116,7 +1116,7 @@
 
 .site-footer__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) repeat(2, minmax(0, 0.65fr));
+  grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 0.65fr));
   gap: 2.5rem;
 }
 
