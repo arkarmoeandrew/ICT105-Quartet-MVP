@@ -9,9 +9,13 @@
 
 .home-page > main {
   width: 100%;
+  overflow-x: clip;
+}
+
+.home-page > main > .how-section,
+.home-page > main > .final-cta-section {
   max-width: 90rem;
   margin-inline: auto;
-  overflow-x: clip;
 }
 
 .site-header {

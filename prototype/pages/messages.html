@@ -1,3 +1,77 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Private live messaging between RSU Nexus marketplace users."><title>Messages | RSU Nexus</title><link rel="icon" href="../assets/logo/rsu-nexus-logo.png?v=20260719-2"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/variables.css"><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/components.css?v=20260720-3"><link rel="stylesheet" href="../css/app.css?v=20260730-2"><link rel="stylesheet" href="../css/responsive.css?v=20260730-3"></head>
-<body class="app-body"><header data-app-header></header><main class="messages-shell"><aside class="conversation-list"><div class="conversation-list__head"><div><p class="panel__eyebrow">Marketplace inbox</p><h1>Messages</h1></div></div><div class="conversation-items" data-conversation-list><p class="loading-state">Loading conversations…</p></div></aside><section class="chat-panel"><header class="chat-header" data-chat-header><div class="avatar">RS</div><div><b>Select a conversation</b><small>Messages are private between users</small></div></header><div class="message-stream" data-message-stream><div class="empty-state"><h2>Connect through a listing</h2><p>Open a marketplace listing and choose “Message owner.” The conversation will then appear in this inbox.</p><a class="button button--gradient button--small" href="marketplace.html" style="margin-top:1rem">Browse marketplace</a></div></div><form class="message-form" data-message-form><input class="field" name="message" maxlength="1000" autocomplete="off" placeholder="Write a private message…" disabled data-message-input><button class="button button--gradient button--small" type="submit" disabled data-message-send>Send</button></form></section></main><script type="module" src="../js/ui.js?v=20260730-2"></script><script type="module" src="../js/messages.js?v=20260722-2"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Private live messaging between RSU Nexus marketplace users.">
+  <title>Messages | RSU Nexus</title>
+  <link rel="icon" href="../assets/logo/rsu-nexus-logo.png?v=20260719-2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css?v=20260720-3">
+  <link rel="stylesheet" href="../css/app.css?v=20260730-3">
+  <link rel="stylesheet" href="../css/responsive.css?v=20260730-3">
+</head>
+<body class="app-body" data-page="messages">
+  <header data-app-header></header>
+
+  <main class="messages-shell" data-messages-shell>
+    <aside class="conversation-list" aria-label="Conversations">
+      <div class="conversation-list__head">
+        <div>
+          <p class="panel__eyebrow">Marketplace inbox</p>
+          <h1>Messages</h1>
+        </div>
+        <span class="conversation-count" aria-label="Conversation count" data-conversation-count>0</span>
+      </div>
+
+      <label class="conversation-search">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+        <span class="sr-only">Search conversations</span>
+        <input type="search" placeholder="Search conversations" autocomplete="off" data-conversation-search>
+      </label>
+
+      <div class="conversation-items" data-conversation-list>
+        <p class="loading-state">Loading conversations…</p>
+      </div>
+    </aside>
+
+    <section class="chat-panel" aria-label="Selected conversation">
+      <header class="chat-header" data-chat-header>
+        <button class="chat-back" type="button" aria-label="Back to conversations" data-chat-back>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"></path></svg>
+        </button>
+        <span class="avatar" data-chat-avatar>RS</span>
+        <div class="chat-header__copy">
+          <b data-chat-name>Select a conversation</b>
+          <small data-chat-context>Messages are private between users</small>
+        </div>
+        <span class="chat-private"><span aria-hidden="true">●</span> Private</span>
+      </header>
+
+      <div class="message-stream" data-message-stream>
+        <div class="empty-state message-empty">
+          <div class="message-empty__icon" aria-hidden="true">✦</div>
+          <h2>Connect through a listing</h2>
+          <p>Open a marketplace listing and choose “Message owner.” Your private conversation will appear here.</p>
+          <a class="button button--gradient button--small" href="marketplace.html">Browse marketplace</a>
+        </div>
+      </div>
+
+      <form class="message-form" data-message-form>
+        <textarea class="message-input" name="message" rows="1" maxlength="1000" autocomplete="off" placeholder="Message…" disabled data-message-input></textarea>
+        <button class="message-send" type="submit" disabled data-message-send>
+          <span class="sr-only">Send message</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"></path></svg>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="../js/ui.js?v=20260730-2"></script>
+  <script type="module" src="../js/messages.js?v=20260730-1"></script>
+</body>
+</html>
