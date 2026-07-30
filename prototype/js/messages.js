@@ -27,6 +27,11 @@ let channel = null;
 let selectionVersion = 0;
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+function syncViewportHeight() {
+  const viewportHeight = window.visualViewport?.height || window.innerHeight;
+  document.documentElement.style.setProperty("--messages-viewport-height", `${Math.round(viewportHeight)}px`);
+}
+
 function time(value) {
   return new Intl.DateTimeFormat("en", { hour: "numeric", minute: "2-digit" }).format(new Date(value));
 }
@@ -361,7 +366,10 @@ filters.forEach((button) => button.addEventListener("click", () => {
 }));
 back.addEventListener("click", showConversationList);
 input.addEventListener("input", resizeComposer);
-input.addEventListener("focus", () => window.setTimeout(() => scrollToLatest("auto"), 180));
+input.addEventListener("focus", () => {
+  syncViewportHeight();
+  window.setTimeout(() => scrollToLatest("auto"), 180);
+});
 input.addEventListener("keydown", (event) => {
   if (event.key === "Enter" && !event.shiftKey) {
     event.preventDefault();
@@ -373,6 +381,9 @@ mobileQuery.addEventListener("change", (event) => {
 });
 window.addEventListener("beforeunload", () => { if (channel) void supabase.removeChannel(channel); });
 window.visualViewport?.addEventListener("resize", () => {
+  syncViewportHeight();
   if (activeId) scrollToLatest("auto");
 }, { passive: true });
+window.addEventListener("resize", syncViewportHeight, { passive: true });
+syncViewportHeight();
 void initialise();

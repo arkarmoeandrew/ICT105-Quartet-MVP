@@ -1316,7 +1316,7 @@ html {
 .request-card__meta { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: .8rem; color: #817686; font-size: .6rem; }
 
 .app-body[data-page="messages"] {
-  height: 100dvh;
+  height: var(--messages-viewport-height, 100dvh);
   overflow: hidden;
   background: #ffffff;
 }
@@ -1324,7 +1324,7 @@ html {
 .messages-shell {
   display: grid;
   width: 100%;
-  height: calc(100dvh - 4.6rem);
+  height: calc(var(--messages-viewport-height, 100dvh) - 4.6rem);
   min-height: 0;
   grid-template-columns: clamp(19rem, 25vw, 23rem) minmax(0, 1fr);
   overflow: hidden;
@@ -2249,7 +2249,7 @@ html {
     display: block;
     isolation: isolate;
     width: 100%;
-    height: calc(100dvh - 4.25rem);
+    height: calc(var(--messages-viewport-height, 100dvh) - 4.25rem);
     min-height: 0;
     margin: 0;
     border: 0;
@@ -2297,7 +2297,24 @@ html {
   .chat-private { display: none; }
   .message-stream { padding: 1rem .85rem; }
   .message-bubble { max-width: 82%; font-size: .78rem; }
-  .message-form { padding: .65rem .75rem max(.65rem, env(safe-area-inset-bottom)); }
+  .conversation-search input,
+  .message-input {
+    font-size: 16px;
+  }
+  .message-form {
+    gap: .5rem;
+    padding: .55rem .65rem max(.55rem, env(safe-area-inset-bottom));
+  }
+  .message-form__field {
+    padding: .62rem .72rem;
+    border-radius: .85rem;
+  }
+  .message-form__field small { display: none; }
+  .message-send {
+    width: 2.85rem;
+    height: 2.85rem;
+    border-radius: .85rem;
+  }
   .profile-hero__inner { align-items: flex-start; flex-direction: column; }
   .profile-hero__actions { margin-left: 0; }
   .profile-facts { grid-template-columns: 1fr; }
