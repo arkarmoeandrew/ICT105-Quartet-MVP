@@ -24,6 +24,8 @@ let conversations = [];
 let activeId = null;
 let activeFilter = "all";
 let channel = null;
+let selectionVersion = 0;
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 function time(value) {
   return new Intl.DateTimeFormat("en", { hour: "numeric", minute: "2-digit" }).format(new Date(value));
@@ -56,6 +58,26 @@ function dateLabel(value) {
 
 function isUnread(item) {
   return !item.last_read_at || new Date(item.updated_at) > new Date(item.last_read_at);
+}
+
+function scrollToLatest(behavior = "smooth") {
+  requestAnimationFrame(() => {
+    stream.scrollTo({
+      top: stream.scrollHeight,
+      behavior: reducedMotion.matches ? "auto" : behavior
+    });
+  });
+}
+
+function showMessageLoading() {
+  stream.setAttribute("aria-busy", "true");
+  stream.innerHTML = `<div class="message-loading" role="status" aria-label="Loading messages"><span></span><span></span><span></span></div>`;
+}
+
+function findMessageById(id) {
+  if (!id) return null;
+  return [...stream.querySelectorAll(".message-bubble[data-message-id]")]
+    .find((bubble) => bubble.dataset.messageId === String(id)) || null;
 }
 
 async function loadConversations() {
@@ -111,10 +133,18 @@ function renderConversationList() {
 }
 
 async function selectConversation(id) {
+  if (!id) return;
+  const version = ++selectionVersion;
   activeId = id;
   shell.classList.add("has-active-conversation");
   renderConversationList();
   const conversation = conversations.find((item) => item.id === id);
+  if (!conversation) return;
+  if (channel) {
+    const previousChannel = channel;
+    channel = null;
+    void supabase.removeChannel(previousChannel);
+  }
   chatAvatar.innerHTML = conversation.other?.avatar_url ? `<img src="${escapeHtml(conversation.other.avatar_url)}" alt="">` : initials(conversation.other?.display_name);
   chatName.textContent = conversation.other?.display_name || "RSU user";
   chatContext.textContent = conversation.other?.faculty
@@ -132,35 +162,57 @@ async function selectConversation(id) {
     : "RS";
   input.disabled = false;
   send.disabled = false;
-  await loadMessages();
-  if (channel) await supabase.removeChannel(channel);
+  showMessageLoading();
+  await loadMessages(id, version);
+  if (activeId !== id || selectionVersion !== version) return;
   channel = supabase.channel(`messages:${id}`).on("postgres_changes", { event: "INSERT", schema: "public", table: "messages", filter: `conversation_id=eq.${id}` }, (payload) => {
-    appendMessage(payload.new);
-    stream.scrollTop = stream.scrollHeight;
+    if (activeId !== id) return;
+    const existing = findMessageById(payload.new.id);
+    if (existing) {
+      reconcilePendingMessage(existing, payload.new);
+    } else {
+      const pending = [...stream.querySelectorAll(".message-bubble.is-pending")]
+        .find((bubble) => bubble.dataset.body === payload.new.body && payload.new.sender_id === userId);
+      if (pending) reconcilePendingMessage(pending, payload.new);
+      else appendMessage(payload.new);
+    }
+    scrollToLatest();
   }).subscribe();
   const readAt = new Date().toISOString();
   await supabase.from("conversation_participants").update({ last_read_at: readAt }).eq("conversation_id", id).eq("user_id", userId);
+  if (activeId !== id || selectionVersion !== version) return;
   conversation.last_read_at = readAt;
   renderConversationList();
 }
 
-async function loadMessages() {
-  const { data, error } = await supabase.from("messages").select("id,conversation_id,sender_id,body,created_at").eq("conversation_id", activeId).order("created_at");
-  if (error) { stream.innerHTML = `<p class="notice notice--error">${escapeHtml(error.message)}</p>`; return; }
+async function loadMessages(conversationId, version) {
+  stream.classList.add("is-hydrating");
+  const { data, error } = await supabase.from("messages").select("id,conversation_id,sender_id,body,created_at").eq("conversation_id", conversationId).order("created_at");
+  if (activeId !== conversationId || selectionVersion !== version) return;
+  stream.removeAttribute("aria-busy");
+  if (error) {
+    stream.classList.remove("is-hydrating");
+    stream.innerHTML = `<p class="notice notice--error">${escapeHtml(error.message)}</p>`;
+    return;
+  }
   stream.innerHTML = "";
   delete stream.dataset.messageDate;
   if (!data.length) stream.innerHTML = `<div class="empty-state message-empty"><div class="message-empty__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 18.5 3.5 21l1-4A8 8 0 1 1 7 18.5Z"></path><path d="M8 10h8M8 13h5"></path></svg></div><h3>Start the conversation</h3><p>Ask about availability, pickup, or the listing details. Keep personal contact information private.</p></div>`;
   data.forEach(appendMessage);
-  stream.scrollTop = stream.scrollHeight;
+  scrollToLatest("auto");
+  requestAnimationFrame(() => stream.classList.remove("is-hydrating"));
 }
 
-function appendMessage(message) {
+function appendMessage(message, { pending = false } = {}) {
+  const existing = findMessageById(message.id);
+  if (existing) return existing;
   const empty = stream.querySelector(".empty-state");
   if (empty) empty.remove();
   const createdAt = Date.parse(message.created_at);
   const bubbles = stream.querySelectorAll(".message-bubble");
   const previous = bubbles[bubbles.length - 1];
-  const isImmediateRepeat = previous
+  const isImmediateRepeat = !pending
+    && previous
     && previous.dataset.senderId === message.sender_id
     && previous.dataset.body === message.body
     && createdAt - Number(previous.dataset.createdAt) <= 120000;
@@ -177,7 +229,7 @@ function appendMessage(message) {
     }
     repeat.textContent = `Sent ${repeatCount} times`;
     previous.querySelector("time").textContent = time(message.created_at);
-    return;
+    return previous;
   }
   const messageDate = dateKey(message.created_at);
   if (stream.dataset.messageDate !== messageDate) {
@@ -188,7 +240,8 @@ function appendMessage(message) {
     stream.dataset.messageDate = messageDate;
   }
   const bubble = document.createElement("div");
-  bubble.className = `message-bubble ${message.sender_id === userId ? "is-mine" : ""}`;
+  bubble.className = `message-bubble ${message.sender_id === userId ? "is-mine" : ""} ${pending ? "is-pending" : ""}`.trim();
+  bubble.dataset.messageId = String(message.id || "");
   bubble.dataset.senderId = message.sender_id;
   bubble.dataset.body = message.body;
   bubble.dataset.createdAt = String(createdAt);
@@ -196,7 +249,7 @@ function appendMessage(message) {
   bubble.innerHTML = `<span>${escapeHtml(message.body)}</span><time datetime="${escapeHtml(message.created_at)}">${time(message.created_at)}</time>`;
   const row = document.createElement("div");
   const mine = message.sender_id === userId;
-  row.className = `message-row ${mine ? "is-mine" : ""}`;
+  row.className = `message-row ${mine ? "is-mine" : ""} ${pending ? "is-pending" : ""}`.trim();
   if (!mine) {
     const conversation = conversations.find((item) => item.id === activeId);
     const avatar = document.createElement("span");
@@ -208,6 +261,26 @@ function appendMessage(message) {
   }
   row.append(bubble);
   stream.append(row);
+  return bubble;
+}
+
+function reconcilePendingMessage(bubble, message) {
+  if (!bubble) return null;
+  const duplicate = findMessageById(message.id);
+  if (duplicate && duplicate !== bubble) {
+    bubble.closest(".message-row")?.remove();
+    return duplicate;
+  }
+  bubble.dataset.messageId = String(message.id);
+  bubble.dataset.createdAt = String(Date.parse(message.created_at));
+  bubble.classList.remove("is-pending");
+  bubble.closest(".message-row")?.classList.remove("is-pending");
+  const timestamp = bubble.querySelector("time");
+  if (timestamp) {
+    timestamp.dateTime = message.created_at;
+    timestamp.textContent = time(message.created_at);
+  }
+  return bubble;
 }
 
 async function sendMessage(event) {
@@ -216,17 +289,34 @@ async function sendMessage(event) {
   if (!body || !activeId || send.dataset.sending === "true") return;
   send.dataset.sending = "true";
   send.disabled = true;
-    input.value = "";
-    resizeComposer();
+  input.value = "";
+  resizeComposer();
+  const conversationId = activeId;
+  const optimistic = {
+    id: `pending-${Date.now()}-${Math.random().toString(36).slice(2)}`,
+    conversation_id: conversationId,
+    sender_id: userId,
+    body,
+    created_at: new Date().toISOString()
+  };
+  const optimisticBubble = appendMessage(optimistic, { pending: true });
+  scrollToLatest();
   try {
-    const { error } = await supabase.from("messages").insert({ conversation_id: activeId, sender_id: userId, body });
+    const { data, error } = await supabase
+      .from("messages")
+      .insert({ conversation_id: conversationId, sender_id: userId, body })
+      .select("id,conversation_id,sender_id,body,created_at")
+      .single();
     if (error) throw error;
+    reconcilePendingMessage(optimisticBubble, data);
   } catch (error) {
+    optimisticBubble?.closest(".message-row")?.remove();
     input.value = body;
+    resizeComposer();
     alert(error.message);
   } finally {
     send.dataset.sending = "false";
-    send.disabled = false;
+    send.disabled = !activeId;
   }
 }
 
@@ -236,8 +326,11 @@ function resizeComposer() {
 }
 
 function showConversationList() {
+  selectionVersion += 1;
   activeId = null;
   shell.classList.remove("has-active-conversation");
+  stream.removeAttribute("aria-busy");
+  stream.classList.remove("is-hydrating");
   chatListing.hidden = true;
   input.disabled = true;
   send.disabled = true;
@@ -268,6 +361,7 @@ filters.forEach((button) => button.addEventListener("click", () => {
 }));
 back.addEventListener("click", showConversationList);
 input.addEventListener("input", resizeComposer);
+input.addEventListener("focus", () => window.setTimeout(() => scrollToLatest("auto"), 180));
 input.addEventListener("keydown", (event) => {
   if (event.key === "Enter" && !event.shiftKey) {
     event.preventDefault();
@@ -278,4 +372,7 @@ mobileQuery.addEventListener("change", (event) => {
   if (!event.matches && !activeId && conversations[0]) void selectConversation(conversations[0].id);
 });
 window.addEventListener("beforeunload", () => { if (channel) void supabase.removeChannel(channel); });
+window.visualViewport?.addEventListener("resize", () => {
+  if (activeId) scrollToLatest("auto");
+}, { passive: true });
 void initialise();
