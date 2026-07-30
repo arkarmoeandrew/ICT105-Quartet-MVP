@@ -4,6 +4,10 @@
 
 .home-page {
   position: relative;
+  overflow-x: clip;
+}
+
+.home-page > main {
   width: 100%;
   max-width: 90rem;
   margin-inline: auto;
