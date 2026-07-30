@@ -488,6 +488,96 @@ https://ict-105-quartet-mvp-w2yc.vercel.app
 
 The RSU Nexus prototype is largely complete and demonstrates the complete user workflow, including marketplace exploration, resource details, request submission, status tracking, messaging between users, and administrator management.
 
+# RSU Nexus – Campus Resource Marketplace
+
+## Group Members
+
+| Name | Role | Main Contribution |
+|------|------|-------------------|
+| **Arkar Moe** | UI/UX Designer & Frontend Developer | Final prototype screenshots, UI improvements, documentation support |
+| **Thiri Shin Thant** | Documentation Lead | Feature Implementation Status, Final Prototype Report, Final Demo Script |
+| **Min Khant Ko** | Testing & Validation | User testing, validation, requirement verification, final consistency checking |
+| **Lin Htet Aung** | Repository Manager | README update, Weekly Logbook, Final Pitch Slides, repository organization |
+
+---
+
+## Project Overview
+
+RSU Nexus is a web-based campus resource marketplace designed for the Rangsit University community. The platform enables students to discover, share, borrow, lend, and request equipment, learning resources, tutoring services, and student services from one centralized system instead of relying on scattered social media groups and chat applications.
+
+---
+
+## Target Users
+
+- Rangsit University students
+- Student clubs and organizations
+- Tutors
+- Student service providers
+- Academic departments
+
+---
+
+## Problem Solved
+
+Students often struggle to find campus resources because information is scattered across Facebook groups, LINE chats, emails, and personal contacts. RSU Nexus provides one trusted marketplace where students can easily explore resources, submit requests, contact owners, and monitor request status from a single platform.
+
+---
+
+## Final Prototype
+
+- **Prototype folder/link:** /prototype/
+- **Landing page link:** /prototype/index.html
+- **Final demo link** (https://ict-105-quartet-mvp-w2yc.vercel.app)
+
+---
+
+## Final Documentation
+
+- System requirements: /docs/system-requirements.md
+- User stories: /docs/user-stories.md
+- MVP feature list: /docs/mvp-feature-list.md
+- Feature implementation status: /docs/feature-implementation-status.md
+- Final prototype report: /docs/final-prototype-report.md
+- Final demo script: /docs/final-demo-script.md
+- Final reflection: /docs/final-reflection.md
+
+---
+
+## Screenshots
+
+- /screenshots/final-homepage.png
+- /screenshots/final-input-form.png
+- /screenshots/final-record-list.png
+- /screenshots/final-detail-view.png
+- /screenshots/final-dashboard.png
+- /screenshots/final-admin-view.png
+
+---
+
+## Pitch
+
+- Final pitch slides: /pitch/final-pitch-slides.pptx
+
+---
+
+## Data and Diagrams
+
+- Final sample data: /data/
+- Final diagrams: /diagrams/
+
+---
+
+## Final Submission Notes
+
+- Final prototype completed and tested.
+- All functional requirements (FR-01 to FR-16) are documented and traceable.
+- Documentation is consistent with the final prototype.
+- Final screenshots have been uploaded.
+- Team contributions are documented through GitHub commits.
+- Repository structure follows the Lab 14 submission requirements.
+- Prototype supports the complete workflow:
+  **Homepage → Explore Marketplace → Search & Filter → Listing Detail → Submit Request → Message Owner → Dashboard → Admin Management.**
+- The project is ready for final presentation and submission.
 User testing has been completed and the feedback has been documented. Most identified issues are minor usability improvements such as clearer labels, improved navigation, and UI consistency. These improvements have been prioritized in the Final Improvement List.
 
 The team considers the prototype **ready for the final improvement phase before Lab 14**, with only minor refinements remaining before the final MVP presentation.
