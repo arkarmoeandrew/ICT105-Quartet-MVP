@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="../css/variables.css">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/components.css?v=20260720-3">
-  <link rel="stylesheet" href="../css/app.css?v=20260730-3">
+  <link rel="stylesheet" href="../css/app.css?v=20260730-4">
   <link rel="stylesheet" href="../css/responsive.css?v=20260730-3">
 </head>
 <body class="app-body" data-page="messages">
@@ -31,8 +31,13 @@
       <label class="conversation-search">
         <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
         <span class="sr-only">Search conversations</span>
-        <input type="search" placeholder="Search conversations" autocomplete="off" data-conversation-search>
+        <input type="search" placeholder="Search people or listings" autocomplete="off" data-conversation-search>
       </label>
+
+      <div class="conversation-filters" aria-label="Filter conversations">
+        <button class="is-active" type="button" aria-pressed="true" data-conversation-filter="all">All</button>
+        <button type="button" aria-pressed="false" data-conversation-filter="unread">Unread</button>
+      </div>
 
       <div class="conversation-items" data-conversation-list>
         <p class="loading-state">Loading conversations…</p>
@@ -47,31 +52,46 @@
         <span class="avatar" data-chat-avatar>RS</span>
         <div class="chat-header__copy">
           <b data-chat-name>Select a conversation</b>
-          <small data-chat-context>Messages are private between users</small>
+          <small data-chat-context>Private marketplace conversation</small>
         </div>
-        <span class="chat-private"><span aria-hidden="true">●</span> Private</span>
+        <span class="chat-private"><span aria-hidden="true">●</span> Private chat</span>
       </header>
+
+      <a class="chat-listing-context" href="marketplace.html" hidden data-chat-listing>
+        <span class="chat-listing-context__image" aria-hidden="true" data-chat-listing-image>RS</span>
+        <span class="chat-listing-context__copy">
+          <small>Conversation about</small>
+          <b data-chat-listing-title>Marketplace listing</b>
+        </span>
+        <span class="chat-listing-context__status" data-chat-listing-status>Open</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg>
+      </a>
 
       <div class="message-stream" data-message-stream>
         <div class="empty-state message-empty">
-          <div class="message-empty__icon" aria-hidden="true">✦</div>
-          <h2>Connect through a listing</h2>
-          <p>Open a marketplace listing and choose “Message owner.” Your private conversation will appear here.</p>
+          <div class="message-empty__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 18.5 3.5 21l1-4A8 8 0 1 1 7 18.5Z"></path><path d="M8 10h8M8 13h5"></path></svg>
+          </div>
+          <h2>Your marketplace conversations</h2>
+          <p>Choose a conversation, or message an owner from any listing to start a private chat.</p>
           <a class="button button--gradient button--small" href="marketplace.html">Browse marketplace</a>
         </div>
       </div>
 
       <form class="message-form" data-message-form>
-        <textarea class="message-input" name="message" rows="1" maxlength="1000" autocomplete="off" placeholder="Message…" disabled data-message-input></textarea>
+        <div class="message-form__field">
+          <textarea class="message-input" name="message" rows="1" maxlength="1000" autocomplete="off" placeholder="Write a message…" disabled data-message-input></textarea>
+          <small>Enter to send · Shift + Enter for a new line</small>
+        </div>
         <button class="message-send" type="submit" disabled data-message-send>
           <span class="sr-only">Send message</span>
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"></path></svg>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m4 4 17 8-17 8 3-8-3-8Z"></path><path d="M7 12h14"></path></svg>
         </button>
       </form>
     </section>
   </main>
 
   <script type="module" src="../js/ui.js?v=20260730-2"></script>
-  <script type="module" src="../js/messages.js?v=20260730-1"></script>
+  <script type="module" src="../js/messages.js?v=20260730-2"></script>
 </body>
 </html>
