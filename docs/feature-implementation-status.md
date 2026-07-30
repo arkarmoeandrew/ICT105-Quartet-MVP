@@ -48,7 +48,7 @@ Use this file to prove that the prototype implementation is connected to `system
 | FR-08 | Status/progress tracking | Status Module | Pending | Completed | Project Team | Status Module Screenshot | Tracks Available, Borrowed, Pending, Returned, Claimed, and Closed item status. |
 | FR-09 | Admin/manager function | Admin View | Pending | Partially Completed | Project Team | Admin Dashboard Screenshot | Admin can review requests and update item status. Additional management features can be added later. |
 | FR-10 | Validation/error prevention | Forms | Pending | Completed | Project Team | Form Validation Screenshot | Required fields and validation messages reduce invalid submissions. |
-| FR-11 | Confirmation/feedback message | Submission Flow | Pending | Completed | Project Team | Confirmation Message Screenshot | Users receive a success message after submitting a borrow request. |
+| FR-11 | Confirmation/feedback message | Confirmation Message | Pending | Completed | Project Team | Confirmation Message Screenshot | Users receive a success message after submitting a borrow request. |
 | FR-12 | Dashboard/analytics view | Dashboard | Pending | Completed | Project Team | Power BI Dashboard Screenshot | Startup Metrics Dashboard includes KPI cards, charts, slicers, requirement coverage, and record details using the required DAX measures. |
 | FR-13 | UI consistency | All Screens | Partially Completed | Completed | Project Team | UI Screenshot | Consistent colours, typography, spacing, icons, and navigation across all pages. |
 | FR-14 | Mobile/responsive consideration | All Screens | Pending | Partially Completed | Project Team | Mobile View Screenshot | Main pages support mobile devices, with additional responsive improvements planned. |
