@@ -175,9 +175,7 @@ html {
 }
 
 .app-footer__inner {
-  display: grid;
-  grid-template-columns: 1.5fr repeat(3, .65fr);
-  gap: 2rem;
+  display: block;
 }
 
 .app-footer__inner > div > b {

@@ -1095,9 +1095,7 @@
 }
 
 .site-footer__grid {
-  display: grid;
-  grid-template-columns: 1.4fr repeat(3, minmax(8rem, 0.65fr));
-  gap: 2.5rem;
+  display: block;
 }
 
 .site-footer__about > p {
