@@ -737,7 +737,8 @@ html {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 .detail-gallery-arrow {
@@ -1099,7 +1100,7 @@ html {
 .upload-preview {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 3;
   border-radius: .6rem;
   background: #eee9f1;
 }
@@ -1108,7 +1109,8 @@ html {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 .upload-preview__position {
@@ -1155,7 +1157,7 @@ html {
 
 .upload-photo-slot {
   display: grid;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 3;
   place-content: center;
   gap: .2rem;
   border: 1.5px dashed #cfc1d8;
