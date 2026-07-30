@@ -1,5 +1,5 @@
 import { escapeHtml, fetchListings, formatPriceLabel, getSession, listingUrl, setStatus, supabase } from "./supabase-client.js?v=20260720-4";
-import { showToast } from "./ui.js?v=20260730-1";
+import { showToast } from "./ui.js?v=20260730-2";
 
 const grid = document.querySelector("[data-listing-grid]");
 const search = document.querySelector("[data-marketplace-search]");

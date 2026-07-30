@@ -96,7 +96,7 @@
   }
 
   .site-footer__grid {
-    grid-template-columns: 1.3fr repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 
   .site-footer__about {
@@ -257,11 +257,11 @@
   }
 
   .site-footer__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .site-footer__about {
-    grid-column: auto;
+    grid-column: 1 / -1;
   }
 }
 
