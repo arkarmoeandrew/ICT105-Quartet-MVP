@@ -211,7 +211,6 @@ The task-success rate exceeded the Lab 07 target. Search/filter visibility, stat
 - `/docs/mvp-decision.md`
 - `/docs/test-user-notes.md`
 - `/screenshots/lab08_powerbi_dashboard.png` — current dashboard image path
-- `/screenshots/validation-test-screens.png` — currently a placeholder and must be replaced manually with a valid screenshot
 - `/docs/weekly-logbook.md`
 
 ## Lab 09 – Responsible IT Check
