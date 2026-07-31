@@ -35,17 +35,15 @@ Imagine a student who needs a DSLR camera for a multimedia assignment. Instead o
 
 ## 3. Prototype Walkthrough
 
-| Step | Screen / Feature | What to Demonstrate | Requirement ID |
-|------|-------------------|---------------------|----------------|
-| 1 | Homepage | Introduce RSU Nexus, explain the problem, target users, and show the "Explore Marketplace" button. | FR-01 |
-| 2 | Explore Marketplace | Browse equipment, learning resources, tutors, and student services using categories and search. | FR-02, FR-05, FR-06 |
-| 3 | Listing Detail | Open a listing and explain the description, owner information, availability, and request options. | FR-07 |
-| 4 | Submit Request | Demonstrate submitting a borrowing or rental request with form validation and confirmation. | FR-03, FR-10 |
-| 5 | Message Owner | Show how users communicate directly with the resource owner through the built-in messaging system. | FR-08 |
-| 6 | Dashboard / Request Status | Display submitted requests, request status, recent activities, and marketplace summary. | FR-09, FR-11 |
-| 7 | Closing | Summarize how RSU Nexus connects students with campus resources through one centralized marketplace. | FR-12 |
-
----
+| Step | Screen / Feature | Requirement ID |
+|------|------------------|----------------|
+| 1 | Homepage | FR-01 |
+| 2 | Explore Marketplace and Search/Filter | FR-02, FR-05, FR-06 |
+| 3 | Listing Detail and Availability | FR-07, FR-08 |
+| 4 | Create Listing / Submit Request | FR-03, FR-04, FR-10, FR-11 |
+| 5 | Message Owner | FR-02, FR-07, FR-15 |
+| 6 | Request Status, Dashboard and Admin | FR-08, FR-09, FR-12 |
+| 7 | Closing and Traceability | FR-16 |
 
 ## 4. Evidence and Validation
 
