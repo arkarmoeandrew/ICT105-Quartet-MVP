@@ -9,7 +9,7 @@ RSU Nexus – Campus Resource Marketplace
 The team tested version `v0.1` of the RSU Nexus interactive web prototype. The prototype focused on the main campus marketplace workflow for finding academic equipment, learning resources, and student services.
 
 - Prototype version: v0.1
-- Prototype screenshot location: `/screenshots/validation-test-screens.png` (the current repository file is a placeholder and must be replaced manually with a valid screenshot)
+- Testing evidence: `/data/validation-results.csv`, `/docs/test-user-notes.md`, and `/screenshots/user-testing-evidence.png`
 - Main task tested: Search for a campus resource or student service, open the listing details, submit a request, and understand the request status
 - Related requirements from `system-requirements.md`: FR-02, FR-03, FR-05, FR-06, FR-07, FR-08, FR-09, FR-10, FR-11, FR-12, FR-14, FR-15
 
