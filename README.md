@@ -469,7 +469,7 @@ This lab focused on preparing the final demonstration of RSU Nexus by creating a
 - [x] /docs/sales-scenario.md
 - [x] /docs/demo-script.md
 - [x] /docs/user-testing-plan.md
-- [x] /docs/user-testing-results.md
+- [x] /docs/user-testing-result.md
 - [x] /docs/final-improvement-list.md
 - [x] /docs/weekly-logbook.md
 - [x] /screenshots/demo-flow.png
